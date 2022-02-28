@@ -18,6 +18,8 @@ Juan Rinero: Soy de Cordoba Capital, deje mi trabajo actual como administrativo 
 
 Francisco Matarese: Soy de Bella Vista, Buenos Aires y no sé presentarme de una forma que no parezca que mi IQ difícilmente llega a los dos dígitos. Me gustan los sanguches de milanesa y otras cosas, posiblemente menos legales.
 
+Martín Ramirez: soy de Rosario, Santa fé. Me dicen tincho, dani, jony, martin (etc) y más por venir, elegí el que te guste. Me gusta cocinar (asique le podría hacer a Fran unos ricos sanguches de milanesa), el buen vino, la birra, y la PC con todo lo que incluye. Trabajo hace 9 años como líder de un equipo en una empresa que brinda servicios de atención al cliente a otras empresas, como Telecom Personal por ejemplo; harto de ésto, me metí en éste mundo de la programación y cada día lo estoy amando un poquito más. Y aguante el grupo 7!
+
 
 -----------------------------------------------------------------------
 # Paginas de referencia:
