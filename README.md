@@ -20,6 +20,8 @@ Francisco Matarese: Soy de Bella Vista, Buenos Aires y no sé presentarme de una
 
 Martín Ramirez: soy de Rosario, Santa fé. Me dicen tincho, dani, jony, martin (etc) y más por venir, elegí el que te guste. Me gusta cocinar (asique le podría hacer a Fran unos ricos sanguches de milanesa), el buen vino, la birra, y la PC con todo lo que incluye. Trabajo hace 9 años como líder de un equipo en una empresa que brinda servicios de atención al cliente a otras empresas, como Telecom Personal por ejemplo; harto de ésto, me metí en éste mundo de la programación y cada día lo estoy amando un poquito más. Y aguante el grupo 7!
 
+Agustin Andres Nuñez Surroca: Soy de Villa Mercedes, San Luis. Me gusta estar casi todo el dia en la PC, por eso elegí la programación, también estudio portugués. También me gusta ir al gimnasio en todas las mañanas para compensar el sedentarismo.
+
 
 -----------------------------------------------------------------------
 # Paginas de referencia:
