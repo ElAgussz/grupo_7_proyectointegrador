@@ -22,6 +22,8 @@ Martín Ramirez: soy de Rosario, Santa fé. Me dicen tincho, dani, jony, martin 
 
 Agustin Andres Nuñez Surroca: Soy de Villa Mercedes, San Luis. Me gusta estar casi todo el dia en la PC, por eso elegí la programación, también estudio portugués. También me gusta ir al gimnasio en todas las mañanas para compensar el sedentarismo.
 
+Lucia Cerpa: Hola, soy mexicana, tengo 36 años, me gustan las series, el gym (de hecho tengo uno), la tecnología y siempre había tenido inquietud por la programación, codeando un poco quedé fascinada por este mundo y aqui estoy intentando cambiar de profesión para dedicarme al 100 a esto.
+
 
 -----------------------------------------------------------------------
 # Paginas de referencia:
