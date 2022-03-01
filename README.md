@@ -32,12 +32,6 @@ Agustin Andres Nuñez Surroca: Soy de Villa Mercedes, San Luis. Me gusta estar c
 * <a href="https://www.fravega.com"> Ir a Fravega </a>
 * <a href="https://succumom.com"> Ir a Sucummon </a>
 
-<<<<<<< HEAD
-* <a href="https://www.mercadolibre.com.ar"> Mercado Libre </a>
-* <a href="https://www.fravega.com"> Fravega </a>
-* [Sucummon](https://succumom.com)
-=======
->>>>>>> 21c670cad52fe8e21427340348d0ebd63df1e18c
 
 ![](Shrek.jpg)
 ### FALOPA!
