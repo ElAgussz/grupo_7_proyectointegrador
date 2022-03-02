@@ -30,7 +30,7 @@ Lucia Cerpa: Hola, soy mexicana, tengo 36 años, me gustan las series, el gym (d
 
 
 
-* <a href="https://www.mercadolibre.com.ar" target="_blank"> Ir a Mercado Libre </a>
+* <a href="https://www.mercadolibre.com.ar" target="_BLANK"> Ir a Mercado Libre </a>
 * <a href="https://www.fravega.com" target="_BLANK"> Ir a Fravega </a>
 * <a href="https://succumom.com" target="_BLANK"> Ir a Sucummon </a>
 
