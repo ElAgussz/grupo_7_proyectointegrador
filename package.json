@@ -1,0 +1,22 @@
+{
+  "name": "proyecto_integrador",
+  "version": "1.0.0",
+  "description": "<h2> Proyecto integrador </h2>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElAgussz/grupo_7_proyectointegrador.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElAgussz/grupo_7_proyectointegrador/issues"
+  },
+  "homepage": "https://github.com/ElAgussz/grupo_7_proyectointegrador#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
