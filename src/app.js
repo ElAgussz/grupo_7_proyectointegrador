@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const port = 3000;
 const app = express();
-const publicPath = path.join(__dirname, "../public")
+const publicPath = path.join(__dirname, "../scc/public")
 
 app.use(express.static(publicPath));
 
