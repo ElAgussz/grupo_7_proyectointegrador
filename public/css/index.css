@@ -1,0 +1,56 @@
+/*     Header     */
+header{
+    height: 300px;
+    background-color: #ecd9bb;
+}
+
+.boddy{
+    background-color: #ede4d6;
+}
+
+.h1{
+    color: black;
+}
+
+.input{
+    border-radius: 5px;
+}
+
+.burger-menu{
+    color: #36846b;
+    text-align: center;
+}
+
+.user{
+    color: #36846b;
+}
+
+
+.category{
+    width: 400px;
+    clip-path: circle();
+    margin: auto;
+}
+
+.articul{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #13231d;
+    margin: auto;
+}
+
+/*     Footer     */
+
+.footer{
+    color: #36846b;
+    background-color: #13231d;
+    display: flex;
+    height: 12rem;
+    
+}
+
+span{
+    font-weight: 1000;
+    font-size: larger;
+
+}
