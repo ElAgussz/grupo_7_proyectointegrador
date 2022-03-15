@@ -234,6 +234,30 @@ footer {
     max-width: 100%;
 }
 
+.footer-main {
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+section div {
+    text-align: center;
+}
+section div p {
+    text-align: center;
+    padding:4px 0;
+}
+
+.icon {
+    font-size: 40px;
+    color:white
+}
+
+.atencion-cliente:hover .icon,
+.ventas-telefonicas:hover .icon{
+    color: rgba(52, 2, 190, 0.7);
+}
+
 /* TERMINA FOOTER */
 
 @media (min-width: 900px) {

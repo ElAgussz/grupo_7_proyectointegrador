@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/register.css">
-    <title>Crea tu cuenta</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/register.css">
+   <title>Crea tu cuenta</title>
 </head>
 
 <body>
@@ -39,49 +42,73 @@
                <a href="#"><i class="fa-solid fa-truck" id="carrito"></i></a>
                <i class="fa-solid fa-bell" id="notificaciones"></i>
             </ul>
-   
+
          </div>
-   
+
       </nav>
    </header>
 
-    <main>
-        <form class="caja-registro" action="" method="">
-          <p class="texto-crear">Crea una nueva cuenta</p>
-          <i class="fa-solid fa-circle-user" id="icono-avatar"></i>
-          <i class="fa-solid fa-circle-plus" id="icono-mas"></i>
+   <main>
+      <form class="caja-registro" action="" method="">
+         <p class="texto-crear">Crea una nueva cuenta</p>
+         <i class="fa-solid fa-circle-user" id="icono-avatar"></i>
+         <i class="fa-solid fa-circle-plus" id="icono-mas"></i>
          <div class="datos-registro">
-            <label for="nombre"><p class="titulo-informacion"></p></label>
+            <label for="nombre">
+               <p class="titulo-informacion"></p>
+            </label>
             <input class="barras" type="text" name="nombre" placeholder="Nombre completo" required>
          </div>
-         <br class="espacio"> 
+         <br class="espacio">
          <div class="datos-registro">
             <label for="e-mail"></label>
             <input class="barras" type="email" name="e-mail" placeholder="Correo electrónico" required>
          </div>
-         <br class="espacio">  
+         <br class="espacio">
          <div class="datos-registro">
-            <label for="contraseña"><p class="titulo-informacion"></label>
+            <label for="contraseña">
+               <p class="titulo-informacion">
+            </label>
             <input class="barras" type="password" name="contraseña" placeholder="Tu contraseña" required>
          </div>
-         <br class="espacio">  
+         <br class="espacio">
          <div class="datos-registro">
-            <label for="repite-contraseña"><p class="titulo-informacion"></p></label>
+            <label for="repite-contraseña">
+               <p class="titulo-informacion"></p>
+            </label>
             <input class="barras" type="password" name="repite-contraseña" placeholder="Repite tu contraseña" required>
          </div>
-         <br class="espacio"> 
-         <div class="renglon-terminos"><input class="cajita-checkbox" type="checkbox"><a class="terminosYcondiciones" href="#"> Acepto los términos y condiciones</a></div>
+         <br class="espacio">
+         <div class="renglon-terminos"><input class="cajita-checkbox" type="checkbox"><a class="terminosYcondiciones"
+               href="#"> Acepto los términos y condiciones</a></div>
          <button class="boton-crear" type="submit">Crear cuenta</button>
          <p class="texto-pregunta">¿Ya tienes una cuenta?</p>
          <p class="boton-iniciar"><a href="#">Iniciar sesión</a></p>
-        </form>
+      </form>
 
-    </main>
+   </main>
 
-    <footer>
+   <footer>
+      <section class="footer-main">
+         <div class="atencion-cliente">
+            <i class="fa-solid fa-headset icon"></i>
+            <h2>Atención al cliente: </h2>
+            <p>0800-555-0125</p>
+            <p>Lunes a Viernes de 09:00 a 18:00</p>
+            <p>Sabados de 9:00 a 13:00</p>
+         </div>
+         <div class="ventas-telefonicas">
+            <i class="fa-solid fa-phone icon"></i>
+            <h2>Ventas telefónicas: </h2>
+            <p>0800-555-0125</p>
+            <p>Lunes a Viernes de 8:00 a 20:00</p>
+            <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
+         </div>
+      </section>
 
-    </footer>
+   </footer>
 
 
 </body>
+
 </html>
