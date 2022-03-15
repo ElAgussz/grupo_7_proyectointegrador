@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,68 +8,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>Mundo Suculento</title>
     <link rel="icon" href="design/isoto.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
 
 </head>
-    
+
 <body class="boddy">
-    
-    
+
+
     <header>
-        <h1 class="h1">Mundo Suculento</h1>
-        <input class="input"  type="text" placeholder="busca producto o no">
-        <link src="images/Artboard 4.png">
-        <nav>
-            <ul>
-                <li><a href="view/register.html">Register</a></li>
-                <li><a href="view/login.html">Login</a></li>
-            </ul>
+        <nav class="header-top">
+           <img class="logo" src="images/Artboard 4.png">
+           <div class="field buscar" id="searchform">
+              <input type="text" id="searchterm" placeholder="¿Qué buscas?" />
+              <button type="button" id="search"><i class="fa-solid fa-magnifying-glass boton-search"></i></button></i>
+           </div>
+           <i class="fa-solid fa-bars" id="burger"></i>
         </nav>
-        <div class="user">
-            <i class="fa-regular fa-circle-user"></i>
-        </div>
+        <nav class="header-bot">
+           <div class="header-bot-left">
+              <ul>
+                 <li><a href="/">Inicio</a></li>
+                 <li><a href="">Productos</a></li>
+                 <li><a href="">Ayuda</a></li>
+              </ul>
+           </div>
+           <div class="header-bot-right">
+              <ul>
+                 <li><a href="/registro">Crear cuenta</a></li>
+                 <li><a href="/login">Iniciar sesion</a></li>
+                 <a href="#"><i class="fa-solid fa-truck" id="carrito"></i></a>
+                 <i class="fa-solid fa-bell" id="notificaciones"></i>
+              </ul>
 
-        <div class="burger-menu">
-            <i class="fa fa-bars burger"></i>
-        </div>
-    </header>
-
+           </div>
+  
+        </nav>
+     </header>
 
     <img src="images/5824874.jpg" alt="Banner">
 
-   <ur>    
-            <div>
-              <image src="images/suculenta.jpg" class="category">Planta1</image>
-            </div>
-            
-            <div>
-              <image src="images/suculenta.jpg" class="category">Planta2</image>
-            </div>
-   </ur>
-   <hr>
+    <ur>
+        <div>
+            <image src="images/suculenta.jpg" class="category">Planta1</image>
+        </div>
 
-   <article>
-       <img src="images/suculenta.jpg" class="articul">
-   </article>
-   <article>
-    <img src="images/suculenta.jpg" class="articul">
-</article>
+        <div>
+            <image src="images/suculenta.jpg" class="category">Planta2</image>
+        </div>
+    </ur>
+    <hr>
+
+    <article>
+        <img src="images/suculenta.jpg" class="articul">
+    </article>
+    <article>
+        <img src="images/suculenta.jpg" class="articul">
+    </article>
 </body>
 
-<footer class="footer">
-    <div class="atencion-cliente">
-        <span class="spam">Atención al cliente: </span>
-        <p>0800NOROMPASLASBOLAS</p>
-        <p>LU-VI de 09:00 a 18:00</p>
-        <p>SA de 9:00 a 13:00</p>
-    </div> 
-    <div class="ventas-telefonicas">
-        <span class="spam">Ventas telefónicas: </span>
-        <p>0800-555-0125</p>
-        <p>LU-VI de 8:00 a 20:00</p>
-        <p>SA-DO-Feriados 9:00 a 21:00</p>
-    </div>
+<footer>
+    <section class="footer-main">
+       <div class="atencion-cliente">
+          <i class="fa-solid fa-headset icon"></i>
+          <h2>Atención al cliente: </h2>
+          <p>0800-555-0125</p>
+          <p>Lunes a Viernes de 09:00 a 18:00</p>
+          <p>Sabados de 9:00 a 13:00</p>
+       </div>
+       <div class="ventas-telefonicas">
+          <i class="fa-solid fa-phone icon"></i>
+          <h2>Ventas telefónicas: </h2>
+          <p>0800-555-0125</p>
+          <p>Lunes a Viernes de 8:00 a 20:00</p>
+          <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
+       </div>
+    </section>
 
-</footer>
+ </footer>
+
 </html>

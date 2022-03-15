@@ -9,59 +9,6 @@ body {
     background-color: #ebebeb;
 }
 
-header {
-    background-color: #36846b;
-    padding: 20px;
-}
-
-.main-header-topBar {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.logo {
-    max-width: 100px;
-    max-height: 100px;
-    width: 20%;
-    height: 20%;
-    margin: 0;
-}
-
-.barra {
-    max-width: 300px;
-    position: relative;
-    width: 75%;
-    height: 5px;
-    border-radius: 8px;
-    padding: 15px;
-}
-
-header ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end;
-}
-
-.login {
-    margin: 0;
-    padding: 5px;
-}
-
-.basket {
-    margin: 0;
-    padding: 5px;
-}
-
-.register {
-    margin: 0;
-    padding: 5px;
-}
-
 
 /* main */
 
@@ -262,14 +209,6 @@ main h2 {
     width: 80px;
     border-radius: 50%;
     margin: 5px;
-}
-
-footer {
-    background-color: #36846b;
-    display: flex;
-    padding: 20px;
-    height: 150px;
-    top: 100;
 }
 
 @media (min-width:560px) {

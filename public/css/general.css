@@ -1,0 +1,155 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    background-color: #1b4e2a;
+    height: 130px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    padding:20px
+}
+
+
+#burger {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: white;
+    width: 35px;
+    padding:7px;
+    position:relative;
+}
+
+.header-bot {
+    display: none;
+    justify-content: space-between;
+    margin:auto;
+}
+
+.header-bot-left ul,
+.header-bot-right ul {
+    display: flex;
+}
+
+.header-bot-left a,
+.header-bot-right a{
+    padding: 4px 15px;
+    color:white;
+    font-size: 18px;
+}
+
+.header-bot-left li a:hover,
+.header-bot-right li a:hover {
+    background-color:rgba(52, 2, 190, 0.7);
+    border-radius:30px;
+}
+
+#carrito {
+    position: relative;
+    bottom:7px;
+    color:white;
+}
+
+#notificaciones {
+    position: relative;
+    color:white;
+}
+
+#notificaciones:hover,
+#carrito:hover {
+    color:rgb(52, 2, 190)
+}
+
+
+/* BARRA DE BUSQUEDA CODIGO */ 
+
+.buscar {
+    max-width: 100%;
+    position: relative;
+}
+
+.buscar input {
+    height: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+    color:black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+
+.boton-search {
+    position: absolute;
+    top:7px;
+    right: 15px;
+}
+
+/* TERMINA HEADER */
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(43, 193, 212);
+    height: 200px;
+    max-width: 100%;
+}
+
+.footer-main {
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+section div {
+    text-align: center;
+}
+section div p {
+    text-align: center;
+    padding:4px 0;
+}
+
+.icon {
+    font-size: 40px;
+    color:white
+}
+
+.atencion-cliente:hover .icon,
+.ventas-telefonicas:hover .icon{
+    color: rgba(52, 2, 190, 0.7);
+}
+
+/* TERMINA FOOTER */
+
+@media (min-width: 900px) {
+    /* header */
+    
+    header {
+        height: 150px;
+        padding: 0 120px;
+    }
+    
+    #burger {
+        display:none
+    }
+    .header-bot{
+        display:flex
+    }
+
+    .header-top {
+        justify-content: space-between;
+    }
+}
+  /* header */

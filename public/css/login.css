@@ -9,16 +9,14 @@ body{
     background-size: 50%;
 }
 
-header{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+/* Se agregó esto de abajo para que quede bien el footer */
+/* Despues borralo para que veas como quedaba antes */
+
+main {
+    height: 620px;
+    padding-top: 80px;
 }
 
-header img{
-    width: 20%;
-    margin: 10px;
-}
 
 .formulario{
     background-color: #36846bf6;
@@ -58,7 +56,10 @@ form input{
     height: 30px;
 }
 
-a{
+
+/* Te modiqué el codigo de abajo para arreglar el header, antes lo tenias solo con " a { " */
+
+div h6 a{
     color: rgb(19, 17, 17);
     margin: 10px;
     
@@ -92,8 +93,4 @@ button{
         font-size: 28px;
     }
     
-}
-
-footer{
-    height: 400px;
 }
