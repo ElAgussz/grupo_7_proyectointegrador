@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" <script
+        src="https://kit.fontawesome.com/4bc2c34221.js" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/productCart.css">
+    <title>Carrito de compras</title>
+</head>
+
+<body>
+
+    <h3>Items en tu pedido</h3>
+
+    <div class="section-product">
+        <div class="compra-container">
+            <div class="box-image">
+                <img src="/images/foto-prueba.jpeg" alt="planta" class="img-responsive">
+            </div>
+            <div class="details">
+
+                <div class="description">
+                    <p> Echeveria mandala</p>
+                    <a href="#"></a> <!-- aca va link de producto-->
+                </div>
+                <div>
+                    <p> $4500</p>
+                </div>
+                
+                <div class="quantity">
+                    <span>Cantidad:</span>
+                    <br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                    </select>
+                    <i class="fa-solid fa-trash-can-xmark"></i>
+                    <!--Aca va en incono de basura-->
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="resume-container">
+            <div class="resume">
+                <h3>Resumen</h3>
+                <table class="table cart-resume">
+                    <tbody>
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td class="text-right">$4500</td>
+                        </tr>
+                        <tr>
+                            <td>Costo de envío:</td>
+                            <td class="text-right">
+                                <span class="send-green"> !Envio gratis!</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Total:</td>
+                            <td class="text-right">
+                                <span>
+                                    $4500
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <a href="#" class="bottom-pay">
+                    <button class="pay">proceder con el pago</button>
+                </a>
+            </div>
+        </div>
+        <form action="/" method="post" class="box">
+            <div class="container-1">
+                <input type="text" id="discount" placeholder="Aplicar un codigo de promocion(cupón)">
+                <span class="plus-button"><i class="fa-solid fa-plus"></i></span>
+            </div>
+        </form>
+
+        <P>
+            <a href="" class="bottom-home">
+                <i class="fa-solid fa-house"></i>
+                Seguir comprando
+            </a>
+        </P>
+
+        <hr>
+        <footer class="footer">
+
+            <div class="section-footer-suscribe">
+                <div class="container">
+                    <h4>REGISTRATE EN EL NEWSLETTER</h4>
+                    <p>
+                        Entérate antes que nadie de los nuevos lanzamientos, productos exclusivos y promociones
+                        especiales
+                        que
+                        tenemos para vos.
+                    </p>
+
+                    <form action="#" method="post">
+                    <input type="email" id="NewsletterEmail" placeholder="Ingresá tu email"
+                     value="" class="form-control" required="required">
+                    <span>
+                        <input type="submit" class="btn btn-default" value="ENVIAR" id="submitNewsletter">
+                    </span>
+                    </form>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+</body>
+
+</html>
