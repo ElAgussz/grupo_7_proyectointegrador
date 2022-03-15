@@ -14,7 +14,7 @@ body{
 
 main {
     height: 620px;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 
@@ -65,7 +65,7 @@ div h6 a{
     
 }
 
-button{
+form button{
     border-radius: 30%;
     padding: 20px;
     margin: 30px;
