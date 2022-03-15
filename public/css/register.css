@@ -2,13 +2,9 @@
     padding:0px;
     margin:0px;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif
-}
-
-.color-borde {
-    background-color: red;
-    height: 130px;
-    max-width: 100%;
+    font-family: Roboto, sans-serif;
+    text-decoration:none;
+    list-style: none;
 }
 
 
@@ -20,11 +16,6 @@ main {
   background-position: center center; */
 }
 
-footer {
-    background-color: red;
-    height: 200px;
-    max-width: 100%;
-}
 
 .caja-registro {
     background-image: url("https://thumbs.dreamstime.com/b/fondo-del-mármol-sutil-rosado-y-blanco-bonito-de-la-textura-108832280.jpg");
@@ -65,6 +56,7 @@ footer {
     border: solid 2px white;
     border-radius: 50%;
     background-color:rgb(255, 255, 255);
+    max-width: 100%;
 }
 
 .datos-registro {
@@ -138,11 +130,132 @@ footer {
 }
 
 
-@media (min-width: 481px) {
+/* CODIGO DEL HEADER */
 
+header {
+    background-color: rgb(43, 193, 212);
+    height: 130px;
 }
 
-@media (min-width: 769px) {
+.header-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    padding:20px
+}
+
+
+#burger {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: white;
+    width: 35px;
+    padding:7px;
+    position:relative;
+}
+
+.header-bot {
+    display: none;
+    justify-content: space-between;
+    margin:auto;
+}
+
+.header-bot-left ul,
+.header-bot-right ul {
+    display: flex;
+}
+
+.header-bot-left a,
+.header-bot-right a{
+    padding: 4px 15px;
+    color:white;
+    font-size: 18px;
+}
+
+.header-bot-left li a:hover,
+.header-bot-right li a:hover {
+    background-color:rgba(52, 2, 190, 0.7);
+    border-radius:30px;
+}
+
+#carrito {
+    position: relative;
+    bottom:7px;
+    color:white;
+}
+
+#notificaciones {
+    position: relative;
+    color:white;
+}
+
+#notificaciones:hover,
+#carrito:hover {
+    color:rgb(52, 2, 190)
+}
+
+
+/* BARRA DE BUSQUEDA CODIGO */ 
+
+.buscar {
+    max-width: 100%;
+    position: relative;
+}
+
+.buscar input {
+    height: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+    color:black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+
+.boton-search {
+    position: absolute;
+    top:7px;
+    right: 15px;
+}
+
+/* TERMINA HEADER */
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(43, 193, 212);
+    height: 200px;
+    max-width: 100%;
+}
+
+/* TERMINA FOOTER */
+
+@media (min-width: 900px) {
+    /* header */
+    
+    header {
+        height: 150px;
+        padding: 0 120px;
+    }
+    
+    #burger {
+        display:none
+    }
+    .header-bot{
+        display:flex
+    }
+
+    .header-top {
+        justify-content: space-between;
+    }
+}
+  /* header */
     .caja-registro {
         width: 325px;
         height: 470px;
@@ -188,7 +301,7 @@ footer {
     }
 
 
-}
+
 
 @media (min-width: 1280px) {
     .caja-registro {
