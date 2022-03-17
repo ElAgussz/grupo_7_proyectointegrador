@@ -61,18 +61,18 @@ form input{
 
 /* Te modiqué el codigo de abajo para arreglar el header, antes lo tenias solo con " a { " */
 
-div h6 a{
+div h5 a{
     color: rgb(19, 17, 17);
     margin: 10px;
     
 }
 
 form button{
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 20px;
     margin: 30px;
     border: none;
-    background-color: rgb(145, 38, 11);
+    background-color: #77c6a9;
     color: white;
     cursor: pointer;
 }

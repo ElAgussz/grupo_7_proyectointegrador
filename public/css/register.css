@@ -18,7 +18,9 @@ main {
 
 
 .caja-registro {
-    background-image: url("https://thumbs.dreamstime.com/b/fondo-del-mármol-sutil-rosado-y-blanco-bonito-de-la-textura-108832280.jpg");
+    /*background-image: url("https://thumbs.dreamstime.com/b/fondo-del-mármol-sutil-rosado-y-blanco-bonito-de-la-textura-108832280.jpg");*/
+    background-image: url("../img/green.png");
+    background-size: 100%;
     background-repeat:no-repeat;
     background-position: center center;
     background-color: transparent;
@@ -75,7 +77,8 @@ main {
     width: 225px;
     border: solid 2px black;
     max-width: 100%;
-    padding: 10px
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .terminosYcondiciones {
@@ -95,13 +98,13 @@ main {
 
 .boton-crear {
     border: solid 1px black;
-    font-weight: bold;
+    font-weight: 4800;
     width: 100px;
     position: relative;
     left:70px;
     top:10px;
     max-width: 100%;
-    background-color: rgb(11, 210, 236);
+    background-color: #36846b;
     color: rgb(255, 255, 255);
     padding: 3px;
     border-radius: 5px;
@@ -182,8 +185,7 @@ header {
 
 .header-bot-left li a:hover,
 .header-bot-right li a:hover {
-    background-color:rgba(52, 2, 190, 0.7);
-    border-radius:30px;
+    color: #ca1f44;
 }
 
 #carrito {
@@ -199,7 +201,7 @@ header {
 
 #notificaciones:hover,
 #carrito:hover {
-    color:rgb(52, 2, 190)
+    color: #ca1f44;
 }
 
 
@@ -231,7 +233,7 @@ header {
 /* FOOTER */
 
 footer {
-    background-color: rgb(43, 193, 212);
+
     height: 200px;
     max-width: 100%;
 }
@@ -257,7 +259,7 @@ section div p {
 
 .atencion-cliente:hover .icon,
 .ventas-telefonicas:hover .icon{
-    color: rgba(52, 2, 190, 0.7);
+    color: #ca1f44;
 }
 
 /* TERMINA FOOTER */
@@ -295,7 +297,8 @@ section div p {
     }
 
     #icono-mas {
-        left:148px
+        left:148px;
+        color: #13231d
     }
 
     .cajita-checkbox {
@@ -344,6 +347,7 @@ section div p {
         display:flex;
         padding-top: 20px;
         padding-bottom: -10px;
+        color: #13231d
 
     }
 

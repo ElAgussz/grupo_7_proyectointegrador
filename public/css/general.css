@@ -10,6 +10,10 @@ header {
     height: 130px;
 }
 
+.boddy{
+    background-color: #ede4d6;
+}
+
 .header-top {
     display: flex;
     justify-content: space-evenly;
@@ -53,8 +57,7 @@ header {
 
 .header-bot-left li a:hover,
 .header-bot-right li a:hover {
-    background-color:rgba(52, 2, 190, 0.7);
-    border-radius:30px;
+    color: #ca1f44;
 }
 
 #carrito {
@@ -70,7 +73,7 @@ header {
 
 #notificaciones:hover,
 #carrito:hover {
-    color:rgb(52, 2, 190)
+    color:#ca1f44;
 }
 
 
@@ -102,7 +105,7 @@ header {
 /* FOOTER */
 
 footer {
-    background-color: rgb(43, 193, 212);
+    background-color: #13231d;
     height: 200px;
     max-width: 100%;
 }
@@ -121,6 +124,16 @@ section div p {
     padding:4px 0;
 }
 
+div.atencion-cliente,
+div.ventas-telefonicas{
+    color: #36846b;
+}
+
+footer p{
+    font-weight: bold;
+    color: #36846b;
+}
+
 .icon {
     font-size: 40px;
     color:white
@@ -128,7 +141,7 @@ section div p {
 
 .atencion-cliente:hover .icon,
 .ventas-telefonicas:hover .icon{
-    color: rgba(52, 2, 190, 0.7);
+    color:#ca1f44;
 }
 
 /* TERMINA FOOTER */
