@@ -52,104 +52,143 @@
 
         <div class="section-product">
             <div class="compra-container">
-                <div class="box-image">
-                    <img src="/images/foto-prueba.jpeg" alt="planta" class="img-responsive">
-                </div>
-                <div class="details">
-
-                    <div class="description">
-                        <p> Echeveria mandala</p>
-                        <a href="#"></a> <!-- aca va link de producto-->
+                <div>
+                    <div class="box-image">
+                        <img src="/images/foto-prueba.jpeg" alt="planta" class="img-responsive">
                     </div>
-                    <div>
-                        <p> $4500</p>
-                    </div>
+                    <div class="details">
 
-                    <div class="quantity">
-                        <span>Cantidad:</span>
-                        <br>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="3">4</option>
-                            <option value="3">5</option>
-                        </select>
-                        <i class="fa-solid fa-trash-can-xmark"></i>
-                        <!--Aca va en incono de basura-->
+                        <div class="description">
+                            <p> Echeveria mandala</p>
+                            <a href="#"></a> <!-- aca va link de producto-->
+                        </div>
+                        <div>
+                            <p> $4500</p>
+                        </div>
+
+                        <div class="quantity">
+                            <span class="cantidad">Cantidad:</span>
+                            <br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                            </select>
+                            <div>
+                                <i class="fa-solid fa-trash-can-xmark"></i>
+                            </div>
+                            <!--Aca va en incono de basura-->
+                        </div>
                     </div>
 
 
 
                 </div>
             </div>
-            <div class="resume-container">
-                <div class="resume">
-                    <h3>Resumen</h3>
-                    <table class="table cart-resume">
-                        <tbody>
-                            <tr>
-                                <td>Subtotal:</td>
-                                <td class="text-right">$4500</td>
-                            </tr>
-                            <tr>
-                                <td>Costo de envío:</td>
-                                <td class="text-right">
-                                    <span class="send-green"> !Envio gratis!</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Total:</td>
-                                <td class="text-right">
-                                    <span>
-                                        $4500
-                                    </span>
-                                </td>
-                            </tr>
+            <div class="resume-row">
+                <div class="resume-container">
+                    <div class="resume">
+                        <h3>Resumen</h3>
+                        <table class="table cart-resume">
+                            <tbody>
+                                <tr>
+                                    <td>Subtotal:</td>
+                                    <td class="text-right">$4500</td>
+                                </tr>
+                                <tr>
+                                    <td>Costo de envío:</td>
+                                    <td class="text-right">
+                                        <span class="send-green"> !Envio gratis!</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Total:</td>
+                                    <td class="text-right">
+                                        <span>
+                                            $4500
+                                        </span>
+                                    </td>
+                                </tr>
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
 
-                    <a href="#" class="bottom-pay">
-                        <button class="pay">proceder con el pago</button>
+                        <a href="#" class="bottom-pay">
+                            <button class="pay">proceder con el pago</button>
+                        </a>
+                    </div>
+                </div>
+                <div id="payment-coupon">
+                    <p class="small">Ingresá el código promocional (cupón):</p>
+                    <form action="/coupons/activate" id="activateCouponForm" class="form" method="post"
+                        accept-charset="utf-8">
+                        <div class="text-center">
+                            <div class="required" style="max-width: 400px; margin: 0 auto;">
+                                <div class="input-group"><input name="data[Coupon][code]" class="form-control"
+                                        placeholder="Código de cupón" maxlength="36" type="text" id="CouponCode"
+                                        required="required" /><span class="input-group-btn"><button type="submit"
+                                            role="submit" class="btn btn-default">Aplicar</button></span></div>
+                            </div>
+                    </form>
+                </div>
+
+                <P>
+                    <a href="" class="bottom-home">
+                        <i class="fa-solid fa-house"></i>
+                        Seguir comprando
                     </a>
-                </div>
+                </P>
+
+                <br>
             </div>
-            <form action="/" method="post" class="box">
-                <div class="container-1">
-                    <input type="text" id="discount" placeholder="Aplicar un codigo de promocion(cupón)">
-                    <span class="plus-button"><i class="fa-solid fa-plus"></i></span>
+        </div>
+        <section>
+            <div class="section-footer-suscribe">
+                <div class="container-sub">
+                    <h4>REGISTRATE EN EL NEWSLETTER</h4>
+                    <p> Entérate antes que nadie de los nuevos lanzamientos, plantas exlusivas y promociones especiales
+                        que
+                        tenemos para vos.</p>
                 </div>
-            </form>
+                <form action="#" class="form">
+                    <div class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" name="" id="Newsletteremail" placeholder="Ingresá tu email"
+                                class="form-control" required="required">
+                            <span class="input-group-btn">
+                                <input type="submit" class="btn-default" value="Enviar" id="submitNewsletter">
+                            </span>
+                        </div>
+                    </div>
+                </form>
 
-            <P>
-                <a href="" class="bottom-home">
-                    <i class="fa-solid fa-house"></i>
-                    Seguir comprando
-                </a>
-            </P>
+            </div>
+        </section>
 
-            <hr>
     </main>
+
+
     <footer>
         <section class="footer-main">
-           <div class="atencion-cliente">
-              <i class="fa-solid fa-headset icon"></i>
-              <h2>Atención al cliente: </h2>
-              <p>0800-555-0125</p>
-              <p>Lunes a Viernes de 09:00 a 18:00</p>
-              <p>Sabados de 9:00 a 13:00</p>
-           </div>
-           <div class="ventas-telefonicas">
-              <i class="fa-solid fa-phone icon"></i>
-              <h2>Ventas telefónicas: </h2>
-              <p>0800-555-0125</p>
-              <p>Lunes a Viernes de 8:00 a 20:00</p>
-              <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
-           </div>
+            <div class="atencion-cliente">
+                <i class="fa-solid fa-headset icon"></i>
+                <h2>Atención al cliente: </h2>
+                <p>0800-555-0125</p>
+                <p>Lunes a Viernes de 09:00 a 18:00</p>
+                <p>Sabados de 9:00 a 13:00</p>
+            </div>
+            <div class="ventas-telefonicas">
+                <i class="fa-solid fa-phone icon"></i>
+                <h2>Ventas telefónicas: </h2>
+                <p>0800-555-0125</p>
+                <p>Lunes a Viernes de 8:00 a 20:00</p>
+                <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
+            </div>
         </section>
-  
-     </footer>
+
+    </footer>
 
 
 

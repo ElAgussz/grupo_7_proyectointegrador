@@ -1,9 +1,14 @@
 *{
     box-sizing: border-box;
+    
 }
 
 body{
     font-family: 'Roboto', sans-serif;
+}
+
+main h3{
+    margin: 20px;
 }
 
 
@@ -25,7 +30,8 @@ body{
 }
 
 .details{
-    position: relative;
+    position: relative;    
+    line-height: 1;
 }
 
 
@@ -36,6 +42,9 @@ body{
     align-items: center;
 
 
+}
+.cantidad{
+    display: none;
 }
 
 .form-select{
@@ -115,37 +124,9 @@ table tbody tr td{
 }
 
 
-.discount{
-    position: relative;
-    text-align: left;
-   
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
-    font-weight: normal;
-    text-align: center;
-    
-    cursor: pointer;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.428571429;
-}
-
-.container-1{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 5px;
-}
-
-form div input{
-    width: 90%;
-    
-}
-.plus-button{
-    margin: 5px;
+main p{
+    margin: 20px;
+    text-align: start;
 }
 
 .bottom-home{
@@ -153,24 +134,75 @@ form div input{
     text-decoration: none;
     color: #000000;
     position: relative;
-    right: -20px;
+       
+    
 }
 
+.section-footer-suscribe{
+    background-color: #ebebeb;
+    padding: 20px;
+}
+.container-sub {
+    text-align: center;
+    
+}
 
-form input {
+.container-sub h4{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.container-sub p{
+    font-weight: lighter;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-control{
     background-color: #FFFFFF;
     border: 1px solid #1E1B17;
     color: #333333;
     height: 40px;
-    font-weight: bold;
-    margin: -5px;
+    width: 80%;
     text-align: center;
 }
+
+
+.btn-default{
+    border: 1px solid #1E1B17;
+    color: #333333;
+    height: 40px;
+    width: 80px;
+    background-color: #FFFFFF;
+}
+
 
 
 
 @media (min-width: 1024px){
 
-
+    .section-product{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    
 }
 
