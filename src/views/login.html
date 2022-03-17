@@ -6,44 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
     <title>Login</title>
 </head>
 
 <body>
     <header>
-        <nav class="header-top">
-            <img class="logo" src="images/Artboard 4.png">
-            <div class="field buscar" id="searchform">
-                <input type="text" id="searchterm" placeholder="¿Qué buscas?" />
-                <button type="button" id="search"><i class="fa-solid fa-magnifying-glass boton-search"></i></button></i>
+        <div class="main-navbar ">
+            <div class="header-top">
+               <img class="logo" src="images/Artboard 4.png">
             </div>
-            <i class="fa-solid fa-bars" id="burger"></i>
-        </nav>
-        <nav class="header-bot">
-            <div class="header-bot-left">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="">Ayuda</a></li>
-                </ul>
-            </div>
-            <div class="header-bot-right">
-                <ul>
-                    <li><a href="/registro">Crear cuenta</a></li>
-                    <li><a href="/login">Iniciar sesion</a></li>
-                    <a href="#"><i class="fa-solid fa-truck" id="carrito"></i></a>
-                    <i class="fa-solid fa-bell" id="notificaciones"></i>
-                </ul>
-
-            </div>
-
-        </nav>
+            <div class="searchform">
+                <input type="search" id="searchterm" placeholder="Sucubusqueda..." class="searchbar">
+             </div>
+            <nav class="header-bot">
+               <div class="header-bot-left">
+                  <ul class="listas">
+                     <li><a href="/">Inicio</a></li>
+                     <li><a href="/producto">Productos</a></li>
+                     <li><a href="">Ayuda</a></li>
+                  </ul>
+               </div>
+               <div class="header-bot-right">
+                  <ul class="listas">
+                     <li><a href="/registro">Crear cuenta</a></li>
+                     <li><a href="/login">Iniciar sesion</a></li>
+                  </ul>
+               </div>  
+            </nav>
+          </div>
     </header>
     <main>
         <div class="formulario">
@@ -70,6 +67,7 @@
         </div>
     </main>
     <footer>
+        <div class="main-footer">
         <section class="footer-main">
             <div class="atencion-cliente">
                 <i class="fa-solid fa-headset icon"></i>
@@ -86,8 +84,8 @@
                 <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
             </div>
         </section>
-
-    </footer>
+     </div>
+     </footer>
 </body>
 
 </html>
