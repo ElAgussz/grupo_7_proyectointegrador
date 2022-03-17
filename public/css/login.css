@@ -5,8 +5,8 @@
 }
 
 body{
-    background-image: url("../img/Logo1.png");
-    background-size: 50%;
+    background-image: url("../img/Pezzz.jpg");
+    background-size: 45%;
 }
 
 /* Se agregó esto de abajo para que quede bien el footer */
@@ -22,6 +22,7 @@ main {
     background-color: #36846bf6;
     width: 60%;
     margin: auto;
+    border-radius: 10px;
 }
 
 form{
@@ -54,6 +55,7 @@ form input{
     border: none;
     margin: 10px;
     height: 30px;
+    border-radius: 5px;
 }
 
 
@@ -66,7 +68,7 @@ div h6 a{
 }
 
 form button{
-    border-radius: 30%;
+    border-radius: 10%;
     padding: 20px;
     margin: 30px;
     border: none;

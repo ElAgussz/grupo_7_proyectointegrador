@@ -17,6 +17,12 @@
     color: #36846b;
 }
 
+.bruce-banner{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .category{
     display:flex;
     justify-content: center;
@@ -31,28 +37,30 @@
     width: 400px;
     clip-path: circle();
     margin: auto;
-    
+}
+
+.sucu-text{
+    text-align: center;
 }
 
 .catuses{
     width: 400px;
     clip-path: circle();
     margin: auto;
-    
 }
 
 .articul-box{
     display:flex;
     justify-content: center;
-    align-items: center;
     margin: 20px;
+    padding: 5px;
 }
 
 .articul{
     width: 400px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #13231d;
-    margin: auto;
+    box-shadow: 5px 5px 10px #a07d5d;
+    margin: 15px;
 }
 
 .ofertas{

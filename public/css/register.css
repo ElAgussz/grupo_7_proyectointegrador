@@ -32,6 +32,7 @@ main {
     box-shadow: 0px 0px 20px rgb(100, 100, 100);
     top: 80px;
     position: relative;
+    border-radius: 5px;
 }
 
 .texto-crear {
@@ -103,6 +104,7 @@ main {
     background-color: rgb(11, 210, 236);
     color: rgb(255, 255, 255);
     padding: 3px;
+    border-radius: 5px;
 }
 
 .texto-pregunta {
@@ -133,7 +135,7 @@ main {
 /* CODIGO DEL HEADER */
 
 header {
-    background-color: #1b4e2a;
+    background-color: #36846b;
     height: 130px;
 }
 
@@ -215,7 +217,7 @@ header {
     color:black;
     outline: none;
     border: 1px solid silver;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 
 .boton-search {
