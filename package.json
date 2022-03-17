@@ -2,10 +2,10 @@
   "name": "proyecto_integrador",
   "version": "1.0.0",
   "description": "<h2> Proyecto integrador </h2>",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",

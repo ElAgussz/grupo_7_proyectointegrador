@@ -1,13 +1,13 @@
 const express = require("express");
 const path = require("path");
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const publicPath = path.join(__dirname, "../public")
 
 app.use(express.static(publicPath));
 
-app.listen(port, () => {
-    console.log("Se inició el servidor en el puerto " + port)
+app.listen(PORT, () => {
+    console.log("Se inició el servidor en el puerto " + PORT)
 })
 
 app.get('/', (req, res) => {
