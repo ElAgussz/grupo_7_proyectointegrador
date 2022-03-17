@@ -6,7 +6,7 @@
 }
 
 header {
-    background-color: #1b4e2a;
+    background-color: #36846b;
     height: 130px;
 }
 
@@ -88,7 +88,7 @@ header {
     color:black;
     outline: none;
     border: 1px solid silver;
-    border-radius: 30px;
+    border-radius: 0px;
 }
 
 .boton-search {
@@ -137,7 +137,7 @@ section div p {
     /* header */
     
     header {
-        height: 150px;
+        height: 170px;
         padding: 0 120px;
     }
     
