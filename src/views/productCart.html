@@ -11,41 +11,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/productCart.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/productCart.css">
     <title>Carrito de compras</title>
 </head>
 
 <body>
     <header>
-        <nav class="header-top">
-            <img class="logo" src="images/Artboard 4.png">
-            <div class="field buscar" id="searchform">
-                <input type="text" id="searchterm" placeholder="¿Qué buscas?" />
-                <button type="button" id="search"><i class="fa-solid fa-magnifying-glass boton-search"></i></button></i>
+        <div class="main-navbar ">
+            <div class="header-top">
+               <img class="logo" src="images/Artboard 4.png">
             </div>
-            <i class="fa-solid fa-bars" id="burger"></i>
-        </nav>
-        <nav class="header-bot">
-            <div class="header-bot-left">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="">Ayuda</a></li>
-                </ul>
-            </div>
-            <div class="header-bot-right">
-                <ul>
-                    <li><a href="/registro">Crear cuenta</a></li>
-                    <li><a href="/login">Iniciar sesion</a></li>
-                    <a href="#"><i class="fa-solid fa-truck" id="carrito"></i></a>
-                    <i class="fa-solid fa-bell" id="notificaciones"></i>
-                </ul>
-
-            </div>
-
-        </nav>
+            <div class="searchform">
+                <input type="search" id="searchterm" placeholder="Sucubusqueda..." class="searchbar">
+             </div>
+            <nav class="header-bot">
+               <div class="header-bot-left">
+                  <ul class="listas">
+                     <li><a href="/">Inicio</a></li>
+                     <li><a href="/producto">Productos</a></li>
+                     <li><a href="">Ayuda</a></li>
+                  </ul>
+               </div>
+               <div class="header-bot-right">
+                  <ul class="listas">
+                     <li><a href="/registro">Crear cuenta</a></li>
+                     <li><a href="/login">Iniciar sesion</a></li>
+                  </ul>
+               </div>  
+            </nav>
+          </div>
     </header>
     <main>
         <h3>Items en tu pedido</h3>
@@ -132,23 +128,24 @@
             <hr>
     </main>
     <footer>
+        <div class="main-footer">
         <section class="footer-main">
-           <div class="atencion-cliente">
-              <i class="fa-solid fa-headset icon"></i>
-              <h2>Atención al cliente: </h2>
-              <p>0800-555-0125</p>
-              <p>Lunes a Viernes de 09:00 a 18:00</p>
-              <p>Sabados de 9:00 a 13:00</p>
-           </div>
-           <div class="ventas-telefonicas">
-              <i class="fa-solid fa-phone icon"></i>
-              <h2>Ventas telefónicas: </h2>
-              <p>0800-555-0125</p>
-              <p>Lunes a Viernes de 8:00 a 20:00</p>
-              <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
-           </div>
+            <div class="atencion-cliente">
+                <i class="fa-solid fa-headset icon"></i>
+                <h2>Atención al cliente: </h2>
+                <p>0800-555-0125</p>
+                <p>Lunes a Viernes de 09:00 a 18:00</p>
+                <p>Sabados de 9:00 a 13:00</p>
+            </div>
+            <div class="ventas-telefonicas">
+                <i class="fa-solid fa-phone icon"></i>
+                <h2>Ventas telefónicas: </h2>
+                <p>0800-555-0125</p>
+                <p>Lunes a Viernes de 8:00 a 20:00</p>
+                <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
+            </div>
         </section>
-  
+     </div>
      </footer>
 
 

@@ -7,51 +7,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300&family=Shizuru&display=swap"
     rel="stylesheet">
+    
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/productDetail.css">
   <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/productDetail.css">
   <title>Mundo Suculento</title>
 </head>
 
 <body>
   <header>
-    <nav class="header-top">
-      <img class="logo" src="images/Artboard 4.png">
-      <div class="field buscar" id="searchform">
-        <input type="text" id="searchterm" placeholder="¿Qué buscas?" />
-        <button type="button" id="search"><i class="fa-solid fa-magnifying-glass boton-search"></i></button></i>
+    <div class="main-navbar ">
+        <div class="header-top">
+           <img class="logo" src="images/Artboard 4.png">
+        </div>
+        <div class="searchform">
+            <input type="search" id="searchterm" placeholder="Sucubusqueda..." class="searchbar">
+         </div>
+        <nav class="header-bot">
+           <div class="header-bot-left">
+              <ul class="listas">
+                 <li><a href="/">Inicio</a></li>
+                 <li><a href="/producto">Productos</a></li>
+                 <li><a href="">Ayuda</a></li>
+              </ul>
+           </div>
+           <div class="header-bot-right">
+              <ul class="listas">
+                 <li><a href="/registro">Crear cuenta</a></li>
+                 <li><a href="/login">Iniciar sesion</a></li>
+              </ul>
+           </div>  
+        </nav>
       </div>
-      <i class="fa-solid fa-bars" id="burger"></i>
-    </nav>
-    <nav class="header-bot">
-      <div class="header-bot-left">
-        <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="">Productos</a></li>
-          <li><a href="">Ayuda</a></li>
-        </ul>
-      </div>
-      <div class="header-bot-right">
-        <ul>
-          <li><a href="/registro">Crear cuenta</a></li>
-          <li><a href="/login">Iniciar sesion</a></li>
-          <a href="#"><i class="fa-solid fa-truck" id="carrito"></i></a>
-          <i class="fa-solid fa-bell" id="notificaciones"></i>
-        </ul>
-      </div>
-    </nav>
-  </header>
+</header>
 
   <main>
     <!-- <div class="slider">
             <img src="images/img-cafetera-moulinex.jpg" alt="">
         </div>-->
     <div class="main-nombre-producto">
-      <h2>Nombre de producto</h1>
+      <h2>Echeveria Corymbosa</h2>
     </div>
 
     <div class="wrapper">
@@ -59,27 +58,27 @@
         <ul class="slides">
           <li class="slide" id="slide1">
             <a href="#">
-              <img src="images/img-cafetera-moulinex.jpg" alt="photo 1">
+              <img src="images/echeveria-corymbosa.jpg" alt="photo 1">
             </a>
           </li>
           <li class="slide" id="slide2">
             <a href="#">
-              <img src="images/img-macbook-pro-2019.jpg" alt="photo 2">
+              <img src="images/echeveria-corymbosa.jpg" alt="photo 2">
             </a>
           </li>
           <li class="slide" id="slide3">
             <a href="#">
-              <img src="images/img-samsung-galaxy-s10.jpg" alt="photo 3">
+              <img src="images/echeveria-corymbosa.jpg" alt="photo 3">
             </a>
           </li>
           <li class="slide" id="slide4">
             <a href="#">
-              <img src="images/img-tv-samsung-smart.jpg" alt="photo 4">
+              <img src="images/echeveria-corymbosa.jpg" alt="photo 4">
             </a>
           </li>
           <li class="slide">
             <a href="#">
-              <img src="images/img-cafetera-moulinex.jpg" alt="photo 1">
+              <img src="images/echeveria-corymbosa.jpg" alt="photo 1">
             </a>
           </li>
         </ul>
@@ -105,7 +104,7 @@
       </div>
 
 
-      <h2 class="product-name">Nombre de producto</h2>
+      <h2 class="product-name">Echeveria Corymbosa</h2>
       <h4 class="product-name">Características del producto</h2>
         <p class="product-detail"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nesciunt facilis
           eos animi dolorum accusantium perspiciatis, ullam minima rerum. Rerum ipsum enim eos vero saepe minima alias,
@@ -137,32 +136,34 @@
         <h2 class="titulo-ofertas">Te puede interesar</h2>
       </div>
       <div class="offers">
-        <a href=""><img src="images/img-cafetera-moulinex.jpg" alt=""></a>
-        <a href=""><img src="images/img-cafetera-moulinex.jpg" alt=""></a>
-        <a href=""><img src="images/img-cafetera-moulinex.jpg" alt=""></a>
-        <a href=""><img src="images/img-cafetera-moulinex.jpg" alt=""></a>
+        <a href=""><img src="images/echeveria-derecina.jpg" alt=""></a>
+        <a href=""><img src="images/echeveria-rudolf.jpg" alt=""></a>
+        <a href=""><img src="images/echeveria-red-edge.jpg" alt=""></a>
+        <a href=""><img src="images/echeveria-mexican-giant.jpg" alt=""></a>
       </div>
     </div>
   </main>
 
   <footer>
+    <div class="main-footer">
     <section class="footer-main">
-      <div class="atencion-cliente">
-        <i class="fa-solid fa-headset icon"></i>
-        <h2>Atención al cliente: </h2>
-        <p>0800-555-0125</p>
-        <p>Lunes a Viernes de 09:00 a 18:00</p>
-        <p>Sabados de 9:00 a 13:00</p>
-      </div>
-      <div class="ventas-telefonicas">
-        <i class="fa-solid fa-phone icon"></i>
-        <h2>Ventas telefónicas: </h2>
-        <p>0800-555-0125</p>
-        <p>Lunes a Viernes de 8:00 a 20:00</p>
-        <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
-      </div>
+        <div class="atencion-cliente">
+            <i class="fa-solid fa-headset icon"></i>
+            <h2>Atención al cliente: </h2>
+            <p>0800-555-0125</p>
+            <p>Lunes a Viernes de 09:00 a 18:00</p>
+            <p>Sabados de 9:00 a 13:00</p>
+        </div>
+        <div class="ventas-telefonicas">
+            <i class="fa-solid fa-phone icon"></i>
+            <h2>Ventas telefónicas: </h2>
+            <p>0800-555-0125</p>
+            <p>Lunes a Viernes de 8:00 a 20:00</p>
+            <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
+        </div>
     </section>
-  </footer>
+ </div>
+ </footer>
 
 </body>
 
