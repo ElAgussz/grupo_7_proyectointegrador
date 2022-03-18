@@ -194,12 +194,12 @@ main p{
     width: 80px;
     background-color: #FFFFFF;
 }
-
+/* SECTION FOOTER */
 .container{
-	max-width: 1200px;
 	margin:auto;
     background-color: #36846b;
     padding: 20px;
+    
 }
 .row{
 	display: flex;
@@ -284,6 +284,8 @@ ul{
       
   }
   }
+/* SECTION FOOTER */
+
 
 @media (min-width: 1024px){
 
