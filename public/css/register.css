@@ -1,396 +1,165 @@
 * {
-    padding:0px;
-    margin:0px;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-    text-decoration:none;
-    list-style: none;
+    font-family: roboto;
 }
-
-
-main {
-  height: 620px;
-  /* background-image: url("https://img3.wallspic.com/previews/3/0/9/9/3/139903/139903-flor_blanca_y_marron_en_fotografia_de_cerca-x750.jpg");
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center; */
-}
-
 
 .caja-registro {
-    /*background-image: url("https://thumbs.dreamstime.com/b/fondo-del-mármol-sutil-rosado-y-blanco-bonito-de-la-textura-108832280.jpg");*/
-    background-image: url("../img/green.png");
-    background-size: 100%;
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-color: transparent;
+    width: 360px;
+    height: 930px;
     max-width: 100%;
-    width: 250px;
-    height: 440px;
+    text-align: center;
     margin:auto;
-    justify-content:center;
-    bottom: 100px;
-    border: solid 2px black;
-    box-shadow: 0px 0px 20px rgb(100, 100, 100);
-    top: 80px;
-    position: relative;
-    border-radius: 5px;
 }
 
-.texto-crear {
-    font-weight:bold;
-    text-align: center;
-    font-size:22px;
-    padding-top: 15px;
-}
-
-#icono-avatar {
-    font-size: 60px;
-    justify-content: center;
-    display:flex;
-    padding-top: 20px;
-}
-
-#icono-mas {
-    font-size: 20px;
-    position:relative;
-    left: 110px;
-    top: -15px;
-    border: solid 2px white;
-    border-radius: 50%;
-    background-color:rgb(255, 255, 255);
-    max-width: 100%;
-}
-
-.datos-registro {
-    font-weight: bold;
-    font-size: 14px;
-    padding-left: 10px;
-    padding-top: 6px;
-    /* color:white; */
-
-}
-
-.barras {
-    position: relative;
-    bottom: 15px;
-    width: 225px;
-    border: solid 2px black;
-    max-width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.terminosYcondiciones {
-    font-size: 13px;
-}
-
-.cajita-checkbox {
-    position: relative;
-    right:7px;
-}
-
-.renglon-terminos {
-    display: flex;
-    justify-content: center;
-    /* padding-top: 12px; */
-}
-
-.boton-crear {
-    border: solid 1px black;
-    font-weight: 4800;
-    width: 100px;
-    position: relative;
-    left:70px;
-    top:10px;
-    max-width: 100%;
-    background-color: #36846b;
-    color: rgb(255, 255, 255);
-    padding: 3px;
-    border-radius: 5px;
-}
-
-.texto-pregunta {
-    font-weight:bold;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top:18px;
-    
-}
-
-.boton-iniciar {
-    font-weight:bold;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top:20px;
-    max-width: 100%;
-}
-
-.espacio {
-    display: none;
-}
-
-
-/* CODIGO DEL HEADER */
-
-header {
-    background-color: #36846b;
-    height: 130px;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.logo {
-    width: 200px;
-    padding:20px
-}
-
-
-#burger {
-    font-size: 30px;
-    text-align: center;
-    display: block;
-    margin: auto;
-    color: white;
-    width: 35px;
+.caja-registro input {
     padding:7px;
-    position:relative;
+    border: 1px solid black;
 }
 
-.header-bot {
-    display: none;
-    justify-content: space-between;
-    margin:auto;
+.caja-registro label p {
+    padding:10px;
+    color:gray
 }
 
-.header-bot-left ul,
-.header-bot-right ul {
+
+
+
+.namef {
     display: flex;
+    justify-content: space-between;
+    padding:0 15px;
 }
 
-.header-bot-left a,
-.header-bot-right a{
-    padding: 4px 15px;
-    color:white;
-    font-size: 18px;
+.namef p {
+    text-align: left;
 }
 
-.header-bot-left li a:hover,
-.header-bot-right li a:hover {
-    color: #ca1f44;
+.datosf {
+    text-align: left;
+    align-items: left;
+    padding-left: 15px;
 }
 
-#carrito {
-    position: relative;
-    bottom:7px;
-    color:white;
-}
-
-#notificaciones {
-    position: relative;
-    color:white;
-}
-
-#notificaciones:hover,
-#carrito:hover {
-    color: #ca1f44;
-}
-
-
-/* BARRA DE BUSQUEDA CODIGO */ 
-
-.buscar {
-    max-width: 100%;
-    position: relative;
-}
-
-.buscar input {
-    height: 30px;
-    padding: 0 20px;
-    font-size: 18px;
-    color:black;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 5px;
-}
-
-.boton-search {
-    position: absolute;
-    top:7px;
-    right: 15px;
-}
-
-/* TERMINA HEADER */
-
-/* FOOTER */
-
-footer {
-
-    height: 200px;
+.datosf input {
+    width: 305px;
+    border-radius: 8px;
+    padding:10px;
     max-width: 100%;
 }
 
-.footer-main {
-    display:flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
+.namef input {
+    width: 140px;
+    border-radius: 8px;
+    padding:10px;
+    max-width: 100%;
 }
 
-section div {
-    text-align: center;
-}
-section div p {
-    text-align: center;
-    padding:4px 0;
-}
-
-.icon {
-    font-size: 40px;
-    color:white
+.datosf select {
+    width: 325px;
+    padding:10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    max-width: 100%;
 }
 
-.atencion-cliente:hover .icon,
-.ventas-telefonicas:hover .icon{
-    color: #ca1f44;
+.boton-crear{
+    padding:10px;
+    border-radius:7px;
+    background-color: green;
+    color:white;
+    font-size:18px;
+    width: 280px;
+    max-width: 100%;
 }
 
-/* TERMINA FOOTER */
-
-@media (min-width: 900px) {
-    /* header */
-    
-    header {
-        height: 150px;
-        padding: 0 120px;
-    }
-    
-    #burger {
-        display:none
-    }
-    .header-bot{
-        display:flex
-    }
-
-    .header-top {
-        justify-content: space-between;
-    }
+.google {
+    background-color: coral;
+    color: white;
+    width: 280px;
+    padding:7px
 }
-  /* header */
+
+.facebook {
+    background-color: rgb(113, 113, 246);
+    color: white;
+    width: 280px;
+    margin:5px auto;
+    padding:7px;
+}
+
+button .google,
+button .facebook{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+}
+
+div button p {
+    padding-right: 40px;
+}
+
+ button i {
+    font-size: 20px;
+    padding-right: 25px;
+}
+
+.terminosycondiciones {
+    text-align: left;
+}
+
+@media (min-width:761px){
     .caja-registro {
-        width: 325px;
-        height: 470px;
+        width: 600px;
+        height: 910px;
     }
-    .barras {
-        width: 300px;
-    }
-
-    .datos-registro {
-        font-size: 16px;
+    .namef input {
+        width: 260px;
     }
 
-    #icono-mas {
-        left:148px;
-        color: #13231d
+    .datosf input {
+        width: 545px;
     }
 
-    .cajita-checkbox {
-        position: relative;
-        right:20px;
-    }
-    
-    .terminosYcondiciones {
-        font-size:16px;
-        right:15px;
-        position: relative;
-        bottom:3px;
-    }
-    
-    .boton-crear {
-        left:95px;
-        font-size:19px;
-        max-width: 100%;
-        width: 130px;
-        top:20px;
+    .datosf select {
+        width:566px
     }
 
-    .texto-pregunta {
-        top:35px;
+    .boton-crear{
+        width: 565px;
     }
 
-    .boton-iniciar {
-        top:35px;
+    .google:hover {
+        background-color: rgb(255, 81, 0)
     }
 
-
-
-
-@media (min-width: 1280px) {
-    .caja-registro {
-        width: 400px;
-        height: 525px;
-    }
-    .barras {
-        width:375px;
+    .facebook:hover {
+        background-color: rgb(0, 0, 255);
     }
 
-    #icono-avatar {
-        font-size: 80px;
-        justify-content: center;
-        display:flex;
-        padding-top: 20px;
-        padding-bottom: -10px;
-        color: #13231d
-
-    }
-
-    main {
-        height: 700px;
-    }
-    
-    .boton-crear {
-        left:130px;
-        font-size:20px;
-        max-width: 100%;
-        top:-10px
-       
-    }
-
-    .cajita-checkbox {
-        position: relative;
-        right:65px;
-        bottom:25px;
-    }
-
-    .terminosYcondiciones {
-        font-size:15px;
-        position:relative;
-        right:60px;
-        bottom:28px;
-    }
-
-    .texto-pregunta {
-        top:0
-    }
-
-    .boton-iniciar {
-        top:0
-    }
-
-
-
-    #icono-mas {
-        left:185px
-    }
-
-    .espacio {
-        display: flex;
+    .boton-crear:hover {
+        background-color: greenyellow;
+        color:black;
+        font-weight: bold;
     }
 }
+
+@media (min-width:1200px) {
+    .caja-registro {
+        width: 1100px;
+    }
+    .namef input {
+        width: 510px;
+    }
+
+    .datosf input {
+        width: 1050px;
+    }
+
+    .datosf select {
+        width:1070px
+    }
+    .boton-crear {
+        width: 565px;
+    }
+}
+
