@@ -10,8 +10,9 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/productCart.css">
     <title>Carrito de compras</title>
@@ -47,8 +48,8 @@
         <h3>Items en tu pedido</h3>
 
         <div class="section-product">
-            <div class="compra-container">
-                <div>
+            <div class="section-product-desktop">
+                <div class="compra-container">
                     <div class="box-image">
                         <img src="/images/foto-prueba.jpeg" alt="planta" class="img-responsive">
                     </div>
@@ -72,74 +73,73 @@
                                 <option value="3">4</option>
                                 <option value="3">5</option>
                             </select>
-                            <div>
-                                <i class="fa-solid fa-trash-can-xmark"></i>
-                            </div>
-                            <!--Aca va en incono de basura-->
                         </div>
-                    </div>
 
-
-
-                </div>
-            </div>
-            <div class="resume-row">
-                <div class="resume-container">
-                    <div class="resume">
-                        <h3>Resumen</h3>
-                        <table class="table cart-resume">
-                            <tbody>
-                                <tr>
-                                    <td>Subtotal:</td>
-                                    <td class="text-right">$4500</td>
-                                </tr>
-                                <tr>
-                                    <td>Costo de envío:</td>
-                                    <td class="text-right">
-                                        <span class="send-green"> !Envio gratis!</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Total:</td>
-                                    <td class="text-right">
-                                        <span>
-                                            $4500
-                                        </span>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-                        <a href="#" class="bottom-pay">
-                            <button class="pay">proceder con el pago</button>
+                        <a href="#" class="delete-item">
+                            <i class="fa-solid fa-trash-can"></i>
                         </a>
                     </div>
-                </div>
-                <div id="payment-coupon">
-                    <p class="small">Ingresá el código promocional (cupón):</p>
-                    <form action="/coupons/activate" id="activateCouponForm" class="form" method="post"
-                        accept-charset="utf-8">
-                        <div class="text-center">
-                            <div class="required" style="max-width: 400px; margin: 0 auto;">
-                                <div class="input-group"><input name="data[Coupon][code]" class="form-control"
-                                        placeholder="Código de cupón" maxlength="36" type="text" id="CouponCode"
-                                        required="required" /><span class="input-group-btn"><button type="submit"
-                                            role="submit" class="btn btn-default">Aplicar</button></span></div>
-                            </div>
-                    </form>
-                </div>
+                    <br>
+                    <br>
 
-                <P>
-                    <a href="" class="bottom-home">
-                        <i class="fa-solid fa-house"></i>
-                        Seguir comprando
-                    </a>
-                </P>
+                </div>
+                <div class="resume-row">
+                    <div class="resume-container">
+                        <div class="resume">
+                            <h3>Resumen</h3>
+                            <table class="table cart-resume">
+                                <tbody>
+                                    <tr>
+                                        <td>Subtotal:</td>
+                                        <td class="text-right">$4500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Costo de envío:</td>
+                                        <td class="text-right">
+                                            <span class="send-green"> !Envio gratis!</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total:</td>
+                                        <td class="text-right">
+                                            <span>
+                                                $4500
+                                            </span>
+                                        </td>
+                                    </tr>
 
-                <br>
+                                </tbody>
+                            </table>
+
+                            <a href="#" class="bottom-pay">
+                                <button class="pay">proceder con el pago</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="payment-coupon">
+                        <p class="small">Ingresá el código promocional (cupón):</p>
+                        <form action="#" id="activateCouponForm" class="form" method="post">
+                            <div class="text-center">
+                                <div class="required">
+                                    <div class="input-group"><input name="data[Coupon][code]" class="form-control"
+                                            placeholder="Código de cupón" maxlength="36" type="text" id="CouponCode"
+                                            required="required" />
+                                        <span class="input-group-btn"><button type="submit" role="submit"
+                                                class="btn btn-default">Aplicar</button></span>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+
+                </div>
             </div>
         </div>
+        <P>
+            <a href="" class="bottom-home">
+                <i class="fa-solid fa-house"></i>
+                Seguir comprando
+            </a>
+        </P>
         <section>
             <div class="section-footer-suscribe">
                 <div class="container-sub">
@@ -150,7 +150,7 @@
                 </div>
                 <form action="#" class="form">
                     <div class="newsletter-form">
-                        <div class="input-group">
+                        <div class="input-group-sub">
                             <input type="email" name="" id="Newsletteremail" placeholder="Ingresá tu email"
                                 class="form-control" required="required">
                             <span class="input-group-btn">
