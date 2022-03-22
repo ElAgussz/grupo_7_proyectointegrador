@@ -6,7 +6,6 @@
   font-family: 'Poppins',sans-serif;
 }
 body{
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +101,7 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 20px 0
  }
  form .button input{
    height: 100%;
