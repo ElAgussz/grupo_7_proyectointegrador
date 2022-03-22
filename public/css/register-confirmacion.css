@@ -1,0 +1,52 @@
+.contenedor {
+    margin:auto;
+    width: 325px;
+    max-width: 100%;
+}
+
+
+.verificacion {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.verificacion input {
+    padding:10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgb(44, 44, 44);
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+.verificacion a{
+    padding:7px 0;
+}
+
+.verificacion button {
+    width: 215px;
+    padding:7px;
+}
+
+div ul li {
+    padding:5px 0;
+}
+
+.dudas {
+    position: relative;
+    right:25px
+}
+
+.dudas h4 {
+    position: relative;
+    right:17px;
+}
+
+@media(min-width:761px){
+    .contenedor {
+        width: 600px;
+    }
+
+}
