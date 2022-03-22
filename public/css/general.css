@@ -1,104 +1,138 @@
 * {
-    margin:0;
-    padding:0;
-    text-decoration: none;
-    list-style: none;
-}
-
-header {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding: 90px 0 0;
+  }
+  
+  .header {
     background-color: #36846b;
-    height: 130px;
-}
-
-.boddy{
-    background-color: #ede4d6;
-}
-
-.header-top {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.logo {
-    width: 100px;
-    padding:20px
-}
-
-
-#burger {
-    font-size: 30px;
-    text-align: center;
-    display: block;
-    margin: auto;
-    color: white;
-    width: 35px;
-    padding:7px;
-    position:relative;
-}
-
-.header-bot {
-    display: none;
     justify-content: space-between;
-    margin:auto;
-}
-
-.header-bot-left ul,
-.header-bot-right ul {
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .logo {
+    width: 226px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
     display: flex;
-}
-
-.header-bot-left a,
-.header-bot-right a{
-    padding: 4px 15px;
-    color:white;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
     font-size: 18px;
-}
-
-.header-bot-left li a:hover,
-.header-bot-right li a:hover {
-    color: #ca1f44;
-}
-
-#carrito {
-    position: relative;
-    bottom:7px;
-    color:white;
-}
-
-#notificaciones {
-    position: relative;
-    color:white;
-}
-
-#notificaciones:hover,
-#carrito:hover {
-    color:#ca1f44;
-}
-
-
-/* BARRA DE BUSQUEDA CODIGO */ 
-
-.buscar {
-    max-width: 100%;
-    position: relative;
-}
-
-.buscar input {
-    height: 30px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #034574;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
     padding: 0 20px;
-    font-size: 18px;
-    color:black;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 5px;
-}
-
-.boton-search {
-    position: absolute;
-    top:7px;
-    right: 15px;
-}
+    line-height: 70px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+  
+    .logo {
+      width: 170px;
+      padding: 0 20px;
+      line-height: 70px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 80px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+/* TERMINA HEADER */
 
 /* TERMINA HEADER */
 
@@ -146,23 +180,14 @@ footer p{
 
 /* TERMINA FOOTER */
 
-@media (min-width: 900px) {
-    /* header */
-    
-    header {
-        height: 170px;
-        padding: 0 120px;
-    }
-    
-    #burger {
-        display:none
-    }
-    .header-bot{
-        display:flex
-    }
+@media (min-width: 1024px){
 
-    .header-top {
-        justify-content: space-between;
+    .section-product{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
     }
+    
 }
   /* header */

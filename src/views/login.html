@@ -17,31 +17,34 @@
 </head>
 
 <body>
-    <header>
-        <div class="main-navbar ">
-            <div class="header-top">
-               <img class="logo" src="images/Artboard 4.png">
-            </div>
-            <div class="searchform">
-                <input type="search" id="searchterm" placeholder="Sucubusqueda..." class="searchbar">
-             </div>
-            <nav class="header-bot">
-               <div class="header-bot-left">
-                  <ul class="listas">
-                     <li><a href="/">Inicio</a></li>
-                     <li><a href="/producto">Productos</a></li>
-                     <li><a href="">Ayuda</a></li>
-                  </ul>
-               </div>
-               <div class="header-bot-right">
-                  <ul class="listas">
-                     <li><a href="/registro">Crear cuenta</a></li>
-                     <li><a href="/login">Iniciar sesion</a></li>
-                  </ul>
-               </div>  
-            </nav>
-          </div>
-    </header>
+    <header class="header">
+        <nav class="nav">
+          <img src="images/Artboard 4.png" class="logo">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="/" class="nav-menu-link nav-link">Home</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="/producto" class="nav-menu-link nav-link">Producto</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="/login" class="nav-menu-link nav-link nav-menu-link_active"
+                >Login</a
+              >
+              <li class="nav-menu-item">
+                <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
+              </li>
+            </li>
+          </ul>
+        </nav>
+        
+      </header>
     <main>
         <div class="formulario">
             <form action="#" method="POST">
@@ -66,26 +69,42 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="main-footer">
-        <section class="footer-main">
-            <div class="atencion-cliente">
-                <i class="fa-solid fa-headset icon"></i>
-                <h2>Atención al cliente: </h2>
-                <p>0800-555-0125</p>
-                <p>Lunes a Viernes de 09:00 a 18:00</p>
-                <p>Sabados de 9:00 a 13:00</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Navegacion</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contactanos</h4>
+                    <ul>
+                        <li><a href="#">Contacto@mundosuculento.com</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Seguinos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="ventas-telefonicas">
-                <i class="fa-solid fa-phone icon"></i>
-                <h2>Ventas telefónicas: </h2>
-                <p>0800-555-0125</p>
-                <p>Lunes a Viernes de 8:00 a 20:00</p>
-                <p>Sabado-Domingo-Feriados 9:00 a 21:00</p>
-            </div>
-        </section>
-     </div>
-     </footer>
+        </div>
+        <div class="col-md-9 copyright">
+            <p class="text-center-xs">
+                Copyright MundoSuculento - 2022. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
