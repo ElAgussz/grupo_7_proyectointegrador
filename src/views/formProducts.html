@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/formProducts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" <script
+        src="https://kit.fontawesome.com/4bc2c34221.js" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Agregar Producto</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre del producto</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Descripcion</span>
+                        <textarea class="form-control validate" required></textarea>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Categoria</span>
+                        <select class="input-box" id="category">
+                            <option selected>Seleccionar categoria</option>
+                            <option value="1">Nuevo ingreso</option>
+                            <option value="2">Mas popular</option>
+                            <option value="3">Tendencia</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Unidades en stock</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Imagen</span>
+                        <input id="fileInput" type="file" style="display:none;" />
+                        <input type="button" class="" value="AGREGAR IMAGEN"
+                            onclick="document.getElementById('fileInput').click();" />
+                        <div class="box-image">
+                            <i class="fa-solid fa-cloud-arrow-up upload-icon"
+                                onclick="document.getElementById('fileInput').click();"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Agregar producto">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
