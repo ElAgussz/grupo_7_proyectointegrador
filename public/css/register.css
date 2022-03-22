@@ -40,21 +40,21 @@
 }
 
 .datosf input {
-    width: 305px;
+    width: 330px;
     border-radius: 8px;
     padding:10px;
     max-width: 100%;
 }
 
 .namef input {
-    width: 140px;
+    width: 160px;
     border-radius: 8px;
     padding:10px;
     max-width: 100%;
 }
 
 .datosf select {
-    width: 325px;
+    width: 330px;
     padding:10px;
     border: 1px solid black;
     border-radius: 8px;
@@ -112,15 +112,15 @@ div button p {
         height: 910px;
     }
     .namef input {
-        width: 260px;
+        width: 275px;
     }
 
     .datosf input {
-        width: 545px;
+        width: 570px;
     }
 
     .datosf select {
-        width:566px
+        width:570px
     }
 
     .boton-crear{
@@ -147,11 +147,11 @@ div button p {
         width: 800px;
     }
     .namef input {
-        width: 350px;
+        width: 375px;
     }
 
     .datosf input {
-        width: 750px;
+        width: 770px;
     }
 
     .datosf select {

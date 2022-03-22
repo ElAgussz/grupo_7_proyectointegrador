@@ -6,31 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/register-confirmacion.css">
     <title>Confirma tu e-mail</title>
 </head>
 
 <body>
-    <section class="contenedor">
-        <h2>Confirme su correo electrónico</h2>
-        <p>¡Bienvenido!, para utilizar su cuenta en Mundo Suculento, primero debe confirmar su correo. Para ello, se ha enviado un código de verificación a -. <a href="#">Actualizar correo electrónico</a></p>
-        <div class="verificacion">
-            <label class="verificacionXD" for="codigo">Por favor, revise su correo electrónico para encontrar el código de verificación.
-                <input type="text" name="codigo" max-length=6 placeholder="Ingrese su código aquí" required>
-            </label>
-            <a href="#">Reenviar código de verificación</a>
-            <button type="submit">Confirmar e-mail</button>
-        </div>
-        <div class="dudas">
-            <ul>
-                <h4>¿No recibiste un correo electrónico?</h4>
-                <li>Verifique que ingresó el correo electrónico correctamente.</li>
-                <li>Revise su carpeta de correo no deseado.</li>
-                <li>Busque un correo electrónico con el asunto "Confirme su correo electronico en Mundo Suculento".</li>
-                <li>Contacte con el <a href="#">Soporte</a>.</li>
+    <header class="header">
+        <nav class="nav">
+            <img src="images/Artboard 4.png" class="logo">
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-link nav-link">Home</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/producto" class="nav-menu-link nav-link">Producto</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/login" class="nav-menu-link nav-link nav-menu-link_active">Login</a>
+                <li class="nav-menu-item">
+                    <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
+                </li>
+                </li>
             </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="contenedor">
+            <h2>Confirme su correo electrónico</h2>
+            <br>
+            <p>¡Bienvenido!, para utilizar su cuenta en Mundo Suculento, primero debe confirmar su correo. Para ello, se
+                ha enviado un código de verificación a ejemplo@hotmail.com. <a href="#">Actualizar correo
+                    electrónico</a></p>
+            <br>
+            <div class="verificacion">
+                <label class="verificacionXD" for="codigo"><p>Por favor, revise su correo electrónico para encontrar el
+                    código de verificación.</p>
+                    <input type="text" name="codigo" max-length=6 placeholder="Ingrese su código aquí" required>
+                </label>
+                <a href="#">Reenviar código de verificación</a>
+                <button type="submit">Confirmar e-mail</button>
+            </div>
+            <br>
+            <div class="dudas">
+                <ul>
+                    <h4>¿No recibiste un correo electrónico?</h4>
+                    <li>Verifique que ingresó el correo electrónico correctamente.</li>
+                    <li>Revise su carpeta de correo no deseado.</li>
+                    <li>Busque un correo electrónico con el asunto "Confirme su correo electrónico en Mundo Suculento".
+                    </li>
+                    <li>Contacte con el <a href="#">Soporte</a>.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Navegacion</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contactanos</h4>
+                    <ul>
+                        <li><a href="#">Contacto@mundosuculento.com</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Seguinos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="col-md-9 copyright">
+            <p class="text-center-xs">
+                Copyright MundoSuculento - 2022. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

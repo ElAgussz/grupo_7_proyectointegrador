@@ -2,11 +2,13 @@
 
 .contenedor {
     margin:50px auto;
-    width: 300px;
+    width: 310px;
+    height: 690px;
     max-width: 100%;
     background-color: white;
     border-radius: 15px;
     padding:25px;
+    font-size: 15px;
 }
 
 
@@ -28,25 +30,31 @@ body {
     box-shadow: 0px 0px 5px rgb(44, 44, 44);
     border-radius: 5px;
     max-width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
+    width: 255px;
 }
 
 .verificacion a{
-    padding:7px 0;
+    padding:15px 0;
 }
 
 .verificacion button {
-    width: 210px;
+    width: 255px;
     padding:7px;
     border: 1px solid black;
     box-shadow: 0px 0px 5px rgb(44, 44, 44);
     background: linear-gradient(135deg, #36846b, #e91e63);
     color:white;
     font-size: 17px;
+    max-width: 100%;
 }
 
 div ul li {
     padding:5px 0;
+}
+
+.dudas ul {
+    list-style: circle;
 }
 
 .dudas {
@@ -57,11 +65,15 @@ div ul li {
 .dudas h4 {
     position: relative;
     right:17px;
+    padding-bottom: 5px;
 }
 
-@media(min-width:761px){
+
+@media(min-width:600px){
     .contenedor {
-        width: 600px;
+        width: 550px;
+        font-size: 18px;
+        height: 605px;
     }
 
     .verificacion button {
