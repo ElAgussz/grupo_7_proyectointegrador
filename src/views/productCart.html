@@ -20,31 +20,34 @@
 </head>
 
 <body>
-    <header>
-        <div class="main-navbar ">
-            <div class="header-top">
-                <img class="logo" src="images/Artboard 4.png">
-            </div>
-            <div class="searchform">
-                <input type="search" id="searchterm" placeholder="Sucubusqueda..." class="searchbar">
-            </div>
-            <nav class="header-bot">
-                <div class="header-bot-left">
-                    <ul class="listas">
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/producto">Productos</a></li>
-                        <li><a href="">Ayuda</a></li>
-                    </ul>
-                </div>
-                <div class="header-bot-right">
-                    <ul class="listas">
-                        <li><a href="/registro">Crear cuenta</a></li>
-                        <li><a href="/login">Iniciar sesion</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <header class="header">
+        <nav class="nav">
+          <img src="images/Artboard 4.png" class="logo">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="/" class="nav-menu-link nav-link">Home</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="/producto" class="nav-menu-link nav-link">Producto</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="/login" class="nav-menu-link nav-link nav-menu-link_active"
+                >Login</a
+              >
+              <li class="nav-menu-item">
+                <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
+              </li>
+            </li>
+          </ul>
+        </nav>
+        
+      </header>
     <main>
         <h3>Items en tu pedido</h3>
 
