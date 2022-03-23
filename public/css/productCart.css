@@ -225,6 +225,9 @@ main p{
 .row{
 	display: flex;
 	flex-wrap: wrap;
+    max-width: 992px;
+    margin: auto;
+    
 }
 ul{
 	list-style: none;
@@ -233,6 +236,7 @@ ul{
 .footer-col{
    width: auto;
    padding: 0 15px;
+   margin: 0 auto;
 }
 .footer-col h4{
 	font-size: 18px;
