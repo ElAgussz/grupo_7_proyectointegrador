@@ -2,12 +2,18 @@
     font-family: roboto;
 }
 
+a {
+    text-decoration: none;
+    color:blue
+}
+
 .caja-registro {
     width: 360px;
-    height: 930px;
+    height: 1100px;
     max-width: 100%;
     text-align: center;
     margin:auto;
+    position: relative;
 }
 
 .caja-registro input {
@@ -20,6 +26,22 @@
     color:gray
 }
 
+.icono-avatar {
+    width: 150px;
+    position: relative;
+    margin:auto;
+}
+
+.icono-camara {
+    font-size: 30px;
+    padding:15px;
+    position: absolute;
+    right: 45px;
+    top:45px;
+    color:white;
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 40px;
+}
 
 
 
@@ -65,17 +87,25 @@
     padding:10px;
     border-radius:7px;
     background-color: green;
-    color:white;
     font-size:18px;
     width: 280px;
     max-width: 100%;
 }
 
+.boton-crear a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
 .google {
     background-color: coral;
     color: white;
     width: 280px;
-    padding:7px
+    padding:7px;
+    max-width: 100%;
+    position:relative;
 }
 
 .facebook {
@@ -84,6 +114,8 @@
     width: 280px;
     margin:5px auto;
     padding:7px;
+    max-width: 100%;
+    position:relative;
 }
 
 button .google,
@@ -93,23 +125,34 @@ button .facebook{
 
 }
 
-div button p {
-    padding-right: 40px;
-}
-
  button i {
     font-size: 20px;
-    padding-right: 25px;
+}
+
+.icono-google {
+    position: absolute;
+    right:245px;
+}
+
+.icono-facebook {
+    position:absolute;
+    right:250px
 }
 
 .terminosycondiciones {
-    text-align: left;
+    position: relative;
+    left:15px;
+}
+
+.terminosycondiciones input {
+    position:relative;
+    right:270px;
 }
 
 @media (min-width:761px){
     .caja-registro {
         width: 600px;
-        height: 910px;
+        height: 1030px;
     }
     .namef input {
         width: 275px;
@@ -135,10 +178,16 @@ div button p {
         background-color: rgb(0, 0, 255);
     }
 
-    .boton-crear:hover {
-        background-color: greenyellow;
-        color:black;
+    .boton-crear:hover{
+        background-color: rgb(136, 202, 38);
+    }
+    .boton-crear:hover a{
+        color: black;
         font-weight: bold;
+    }
+
+    .terminosycondiciones {
+        left:-130px
     }
 }
 
@@ -158,7 +207,11 @@ div button p {
         width:770px
     }
     .boton-crear {
-        width: 565px;
+        width: 770px;
+    }
+
+    .terminosycondiciones {
+        left:-233px
     }
 }
 
