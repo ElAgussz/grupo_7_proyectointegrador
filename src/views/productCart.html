@@ -22,35 +22,34 @@
 <body>
     <header class="header">
         <nav class="nav">
-          <img src="images/Artboard 4.png" class="logo">
-          <button class="nav-toggle" aria-label="Abrir menú">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="/" class="nav-menu-link nav-link">Home</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/producto" class="nav-menu-link nav-link">Producto</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/login" class="nav-menu-link nav-link nav-menu-link_active"
-                >Login</a
-              >
-              <li class="nav-menu-item">
-                <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
-              </li>
-            </li>
-          </ul>
+            <img src="images/Artboard 4.png" class="logo">
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-link nav-link">Home</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/producto" class="nav-menu-link nav-link">Producto</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/login" class="nav-menu-link nav-link nav-menu-link_active">Login</a>
+                <li class="nav-menu-item">
+                    <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
+                </li>
+                </li>
+            </ul>
         </nav>
-        
-      </header>
-    <main>
-        <h3>Items en tu pedido</h3>
 
+    </header>
+    <main>
+        <div class="items">
+            <h3>Items en tu pedido</h3>
+        </div>
         <div class="section-product">
             <div class="section-product-desktop">
                 <div class="compra-container">
@@ -138,12 +137,14 @@
                 </div>
             </div>
         </div>
-        <P>
-            <a href="" class="bottom-home">
-                <i class="fa-solid fa-house"></i>
-                Seguir comprando
-            </a>
-        </P>
+        <div>
+            <P>
+                <a href="" class="bottom-home">
+                    <i class="fa-solid fa-house"></i>
+                    Seguir comprando
+                </a>
+            </P>
+        </div>
         <section>
             <div class="section-footer-suscribe">
                 <div class="container-sub">
@@ -168,6 +169,7 @@
         </section>
 
     </main>
+    
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -194,18 +196,6 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Nuestro Newsletter</h4>
-                    <p>
-                        Inscribite para recibir nuestras últimas novedades.
-                    </p>
-                    <div>
-                        <form action="index.html">
-							<input type="email" placeholder="Email">
-							<button type="submit"><i class="fas fa-paper-plane"></i></button>
-						</form>
                     </div>
                 </div>
             </div>
