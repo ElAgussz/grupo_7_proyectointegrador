@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ElAgussz/grupo_7_proyectointegrador#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.3"
   },
   "devDependencies": {
