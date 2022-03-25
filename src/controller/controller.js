@@ -17,7 +17,7 @@ const controlador = {
     },
 
     registro: (req, res) => {
-        res.render ("index.ejs")
+        res.render ("register.ejs")
     },
 
     registroConfirmacion: (req, res) => {
