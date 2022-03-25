@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("../img/Pezzz.jpg");
-    background-size: 45%;
-}
 
 /* Se agregó esto de abajo para que quede bien el footer */
 /* Despues borralo para que veas como quedaba antes */
