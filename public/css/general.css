@@ -6,16 +6,19 @@
   body {
     font-family: sans-serif;
     padding: 90px 0 0;
+    
+    
   }
+
   
   .header {
-    background-color: #36846b;
-    height: 80px;
+    background-color: #ebe9eb;    height: 80px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
+    
   }
   
   .nav {
@@ -56,6 +59,7 @@
   .nav-menu-link {
     padding: 8px 12px;
     border-radius: 3px;
+    color: #000;
   }
   
   .nav-menu-link:hover,
@@ -141,13 +145,18 @@
 
 .container{
 	margin:auto;
-    background: linear-gradient(120deg, #36846b,#205847);
     padding: 3%;
-    
+    background-image: url("/images/Imagen-footer.jpeg");
+    background-position: -150px;
+    height: 320px;
 }
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
+    max-width: 992px;
+    margin: auto;
+    
 }
 ul{
 	list-style: none;
@@ -156,7 +165,12 @@ ul{
 .footer-col{
    width: auto;
    padding: 0 15px;
+   margin: 0 auto;
 }
+.footer-col p{
+    color: #ebebeb;
+    margin-bottom: 10px;
+ }
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -196,14 +210,16 @@ ul{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
+  background-color: rgba(255,255,255,0.2);
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
+
+
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
@@ -228,14 +244,7 @@ ul{
 
 /* TERMINA FOOTER */
 
-@media (min-width: 1024px){
 
-    .section-product{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        
-    }
     
-}
+
   /* header */

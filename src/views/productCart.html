@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/productCart.css">
     <title>Carrito de compras</title>
@@ -21,35 +22,34 @@
 <body>
     <header class="header">
         <nav class="nav">
-          <img src="images/Artboard 4.png" class="logo">
-          <button class="nav-toggle" aria-label="Abrir menú">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="/" class="nav-menu-link nav-link">Home</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/producto" class="nav-menu-link nav-link">Producto</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/login" class="nav-menu-link nav-link nav-menu-link_active"
-                >Login</a
-              >
-              <li class="nav-menu-item">
-                <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
-              </li>
-            </li>
-          </ul>
+            <img src="images/Artboard 4.png" class="logo">
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-link nav-link">Home</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/producto" class="nav-menu-link nav-link">Producto</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/login" class="nav-menu-link nav-link nav-menu-link_active">Login</a>
+                <li class="nav-menu-item">
+                    <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
+                </li>
+                </li>
+            </ul>
         </nav>
-        
-      </header>
-    <main>
-        <h3>Items en tu pedido</h3>
 
+    </header>
+    <main>
+        <div class="items">
+            <h3>Items en tu pedido</h3>
+        </div>
         <div class="section-product">
             <div class="section-product-desktop">
                 <div class="compra-container">
@@ -137,12 +137,14 @@
                 </div>
             </div>
         </div>
-        <P>
-            <a href="" class="bottom-home">
-                <i class="fa-solid fa-house"></i>
-                Seguir comprando
-            </a>
-        </P>
+        <div>
+            <P>
+                <a href="" class="bottom-home">
+                    <i class="fa-solid fa-house"></i>
+                    Seguir comprando
+                </a>
+            </P>
+        </div>
         <section>
             <div class="section-footer-suscribe">
                 <div class="container-sub">
@@ -167,6 +169,7 @@
         </section>
 
     </main>
+    
     <footer class="footer">
         <div class="container">
             <div class="row">
