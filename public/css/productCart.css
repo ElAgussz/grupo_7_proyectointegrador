@@ -300,20 +300,29 @@ ul{
 
 .text-center-xs{
     text-align: center;
-    background-color: #fff;
+    background-color: transparent;
     padding: 3px;
     color: #a39d9d;
     font-size: 10px;
     
 }
+.copyright{
+    margin: auto;
+    display: block;
+    position: relative;
+    bottom: -10px;
+    
+}
 
-@media(max-width: 767px){
+@media(max-width: 768px){
     .footer-col{
       width: 100%;
       margin-bottom: 30px;
       justify-content: space-between;
   }
+
   }
+  
  
   
 /* SECTION FOOTER */
@@ -370,6 +379,12 @@ ul{
 
     .input-group-sub{
         width: 60%;
+    }
+
+    .copyright{
+        display: block;
+        position: relative;
+        bottom: -35px;
     }
     
 }
