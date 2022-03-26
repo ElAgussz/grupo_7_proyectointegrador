@@ -222,7 +222,7 @@ main p{
     padding: 3%;
     background-image: url("/images/Imagen-footer.jpeg");
     background-position: -150px;
-    height: 320px;
+    height: auto;
 }
 
 .row{
@@ -303,7 +303,7 @@ ul{
     background-color: #fff;
     padding: 3px;
     color: #a39d9d;
-    font: 100;
+    font-size: 10px;
     
 }
 
