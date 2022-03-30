@@ -4,10 +4,6 @@ const controlador = require('../controller/controller');
 
 router.get('/', controlador.index);
 
-router.get('/producto', controlador.producto)
-
-router.get ('/carrito', controlador.carrito)
-
 router.get ('/login', controlador.login)
 
 router.get ('/registro', controlador.registro)
