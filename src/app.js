@@ -19,8 +19,8 @@ app.use(methodOverride("_method"))
 
 
 app.use('/', router);
-app.use('/', routesProducts);
-app.use('/', routesUser);
+app.use('/', routerProducts);
+app.use('/', routerUser);
 
 
 app.listen(PORT, () => {
