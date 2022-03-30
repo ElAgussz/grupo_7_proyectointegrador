@@ -8,9 +8,10 @@ const controlador = {
     registro: (req, res) => {
         res.render ("register.ejs")
     },
-    registro: (req, res) => {
+    profile: (req, res) => {
         res.render ("profile.ejs")
-    };
+    }
+}
 
 
 
