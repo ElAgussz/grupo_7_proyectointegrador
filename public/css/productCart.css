@@ -1,14 +1,7 @@
 *{
-    box-sizing: border-box;
-    margin:0;
-	padding:0;
-    
+	padding:0; 
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;    
-    
-}
 
 main h3{
     margin: 20px;
@@ -16,7 +9,7 @@ main h3{
 
 
 .section-product{
-    border-top: 1px solid #DDD;
+    border-top: 1px solid rgb(141, 119, 119);
     border-bottom: 1px solid #DDD;
     padding-top: 20px;
     
