@@ -2,51 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" <script
-        src="https://kit.fontawesome.com/4bc2c34221.js" crossorigin="anonymous">
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300&family=Shizuru&display=swap"
-    rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/productCart.css">
-    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="css/productDetail.css">
+    <title>Mundo Suculento</title>
+    <%- include ("./partials/head")%>
 </head>
 
 <body>
     <header class="header">
-        <nav class="nav">
-            <img src="images/Artboard 4.png" class="logo">
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a href="/" class="nav-menu-link nav-link">Home</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="/producto" class="nav-menu-link nav-link">Producto</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="/login" class="nav-menu-link nav-link nav-menu-link_active">Login</a>
-                <li class="nav-menu-item">
-                    <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
-                </li>
-                </li>
-            </ul>
-        </nav>
-
+        <%- include ("./partials/headder")%>
     </header>
     <main>
         <div class="items">
@@ -151,7 +114,8 @@
             <div class="section-footer-suscribe">
                 <div class="container-sub">
                     <h4>REGISTRATE EN EL NEWSLETTER</h4>
-                    <p> Entérate antes que nadie de los nuevos lanzamientos, plantas exlusivas y promociones especiales
+                    <p> Entérate antes que nadie de los nuevos lanzamientos, plantas exlusivas y promociones
+                        especiales
                         que
                         tenemos para vos.</p>
                 </div>
@@ -173,39 +137,7 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Navegacion</h4>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contactanos</h4>
-                    <ul>
-                        <li><a href="#">Contacto@mundosuculento.com</a></li>
-
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Seguinos</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p class="text-center-xs">
-                        Copyright MundoSuculento - 2022. Todos los derechos reservados.
-                    </p>
-                </div>
-            </div>
+        <%- include ("./partials/footer")%>
     </footer>
 
 </body>
