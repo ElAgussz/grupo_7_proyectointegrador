@@ -4,14 +4,6 @@ const controlador = {
         res.render ("index.ejs")
     },
 
-    producto: (req, res) => {
-        res.render ("productDetail.ejs")
-    },
-
-    carrito: (req, res) => {
-        res.render ("productCart.ejs")
-    },
-
     login: (req, res) => {
         res.render ("login.ejs")
     },
