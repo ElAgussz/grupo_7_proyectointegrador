@@ -14,8 +14,6 @@ router.get ('/registro', controlador.registro)
 
 router.get ('/registro-confirmacion', controlador.registroConfirmacion)
 
-router.get ('/registro-avatar', controlador.registroAvatar)
-
 router.get ('/formulario-productos', controlador.formularioProductos)
 
 

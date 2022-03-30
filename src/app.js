@@ -3,11 +3,12 @@ const path = require("path");
 const PORT = process.env.PORT || 3000;
 const app = express();
 const publicPath = path.join(__dirname, "../", "public")
+const viewspath = path.join(__dirname, "../src/views")
+app.set("views", viewspath);
 const router = require('./routes/rutas.js');
-
+app.set ("views engine", "ejs")
 app.use(express.static(publicPath));
 
-app.set ("views engine", "ejs")
 
 app.listen(PORT, () => {
     console.log ("Se inició el servidor en el puerto " + PORT)
