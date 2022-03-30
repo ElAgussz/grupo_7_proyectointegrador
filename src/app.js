@@ -6,7 +6,7 @@ const publicPath = path.join(__dirname, "../", "public")
 const viewspath = path.join(__dirname, "../src/views")
 app.set("views", viewspath);
 const router = require('./routes/rutas.js');
-const router = require('./routes/routesProducts.js');
+const routerProducts = require('./routes/routesProducts.js');
 app.set ("views engine", "ejs")
 app.use(express.static(publicPath));
 
@@ -16,3 +16,6 @@ app.listen(PORT, () => {
 })
 
 app.use('/', router);
+
+
+app.use('/', routerProducts)
