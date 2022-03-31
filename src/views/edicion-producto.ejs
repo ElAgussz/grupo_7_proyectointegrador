@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+        <%- include ("./partials/head")%>
+        <title>Mundo Suculento</title>
+        <link rel="stylesheet" href="css/edicion.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <%- include ("./partials/headder")%>
+  </header>
+<main>
+    <div class="containerr">
+        <div class="row">
+          <div>
+            <div>
+              <div class="row">
+                <div>
+                  <h2">Edit Product</h2>
+                </div>
+              </div>
+              <div >
+                <div >
+                  <form action="" method="post" >
+                    <div >
+                      <label for="name">Product Name
+                      </label>
+                      <input id="name" name="name" type="text" value="Lorem Ipsum Product" >
+                    </div>
+                    <div >
+                      <label for="description">Description</label>
+                      <textarea  rows="5" required="">Lorem ipsum dolor amet gentrify glossier locavore messenger bag chillwave hashtag irony migas wolf kale chips small batch kogi direct trade shaman.</textarea>
+                    </div>
+                    <div >
+                      <label for="category">Category</label>
+                      <select >
+                        <option>Select category</option>
+                        <option value="1" selected="">New Arrival</option>
+                        <option value="2">Most Popular</option>
+                        <option value="3">Trending</option>
+                      </select>
+                    </div>
+                    <div class="row">
+                        <div >
+                            <label for="expire_date">Expire Date
+                            </label>
+                            <input id="expire_date" name="expire_date" type="text" value="22 Oct, 2020" data-large-mode="true">
+                          </div>
+                          <div >
+                            <label for="stock">Units In Stock
+                            </label>
+                            <input id="stock" name="stock" type="text" value="19,765">
+                          </div>
+                    </div>
+                    
+                </form></div>
+                <div >
+                  <div >
+                    <img src="img/product-image.jpg" alt="Product image">
+                    <i onclick="document.getElementById('fileInput').click();"></i>
+                  </div>
+                  <div >
+                    <input id="fileInput" type="file" style="display:none;">
+                    <input type="button" value="CHANGE IMAGE NOW" onclick="document.getElementById('fileInput').click();">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit">Update Now</button>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>
+  <footer class="footer">
+    <%- include ("./partials/footer")%>
+</footer>
+
+</body>
+
+</html>
