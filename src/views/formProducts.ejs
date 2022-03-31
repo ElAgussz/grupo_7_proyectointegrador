@@ -33,17 +33,30 @@
                         <textarea class="form-control validate" required></textarea>
                     </div>
                     <div class="input-box">
-                        <span class="details">Categoria</span>
-                        <select class="input-box" id="category">
-                            <option selected>Seleccionar categoria</option>
-                            <option value="1">Nuevo ingreso</option>
-                            <option value="2">Mas popular</option>
-                            <option value="3">Tendencia</option>
-                        </select>
+                        <span class="details">Id</span>
+                        <input type="text" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Unidades en stock</span>
                         <input type="text" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Categoria</span>
+                        <select class="input-box" id="category">
+                            <option selected>Seleccionar categoria</option>
+                            <option value="1">Echeveria</option>
+                            <option value="2">Sedum</option>
+                            <option value="3">Pachyveria</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Otra categoria</span>
+                        <select class="input-box" id="category">
+                            <option selected>Seleccionar categoria</option>
+                            <option value="1">Sale</option>
+                            <option value="2">Nuevo ingreso</option>
+                            <option value="3">Producto destacado</option>
+                        </select>
                     </div>
                     <div class="input-box">
                         <span class="details">Imagen</span>
@@ -65,7 +78,9 @@
             </form>
         </div>
     </div>
-
+    <footer class="footer">
+        <%- include ("./partials/footer")%>
+    </footer>
 </body>
 
 </html>

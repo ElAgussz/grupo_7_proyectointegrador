@@ -10,7 +10,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #36846b, #e91e63);
+  flex-direction: column;
 }
 .container-m1{
   max-width: 700px;
@@ -20,6 +20,7 @@ body{
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   margin: auto;
+  margin-top: 30px;
 }
 .container-m1 .title{
   font-size: 25px;
@@ -64,7 +65,7 @@ form .input-box span.details{
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-  border-color: #e91e63;
+  border-color: #36846b;
 }
  form .gender-details .gender-title{
   font-size: 20px;
@@ -114,12 +115,10 @@ form .input-box span.details{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: linear-gradient(135deg, #36846b, #e91e63);
- }
+   background-color: #36846b; }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #36846b, #e91e63);
-  }
+  background-color: #36846b;  }
 
 .box-image{
   max-width: 100%;
@@ -131,7 +130,7 @@ form .input-box span.details{
     background: #aaa;
 }
 .upload-icon{
-    background: linear-gradient(135deg, #36846b, #e91e63);
+  background-color: #36846b;  
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -163,6 +162,12 @@ form .input-box span.details{
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
+}
+
+.footer{
+  width: 100%;
+    margin-top: 40px;
+   
 }
 
 
