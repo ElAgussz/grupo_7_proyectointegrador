@@ -1,86 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
-  <head>
-        <%- include ("./partials/head")%>
-        <title>Mundo Suculento</title>
-        <link rel="stylesheet" href="css/edicion.css">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/edicion.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    src="https://kit.fontawesome.com/4bc2c34221.js" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300&family=Shizuru&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/general.css">
+
+
+  <title>Mundo Suculento</title>
 
 </head>
+<header class="header">
+  <%- include ("./partials/headder")%>
+</header>
+
 
 <body>
-  <header class="header">
-    <%- include ("./partials/headder")%>
-  </header>
-<main>
-    <div class="containerr">
-        <div class="row">
-          <div>
-            <div>
-              <div class="row">
-                <div>
-                  <h2">Edit Product</h2>
-                </div>
-              </div>
-              <div >
-                <div >
-                  <form action="" method="post" >
-                    <div >
-                      <label for="name">Product Name
-                      </label>
-                      <input id="name" name="name" type="text" value="Lorem Ipsum Product" >
-                    </div>
-                    <div >
-                      <label for="description">Description</label>
-                      <textarea  rows="5" required="">Lorem ipsum dolor amet gentrify glossier locavore messenger bag chillwave hashtag irony migas wolf kale chips small batch kogi direct trade shaman.</textarea>
-                    </div>
-                    <div >
-                      <label for="category">Category</label>
-                      <select >
-                        <option>Select category</option>
-                        <option value="1" selected="">New Arrival</option>
-                        <option value="2">Most Popular</option>
-                        <option value="3">Trending</option>
-                      </select>
-                    </div>
-                    <div class="row">
-                        <div >
-                            <label for="expire_date">Expire Date
-                            </label>
-                            <input id="expire_date" name="expire_date" type="text" value="22 Oct, 2020" data-large-mode="true">
-                          </div>
-                          <div >
-                            <label for="stock">Units In Stock
-                            </label>
-                            <input id="stock" name="stock" type="text" value="19,765">
-                          </div>
-                    </div>
-                    
-                </form></div>
-                <div >
-                  <div >
-                    <img src="img/product-image.jpg" alt="Product image">
-                    <i onclick="document.getElementById('fileInput').click();"></i>
-                  </div>
-                  <div >
-                    <input id="fileInput" type="file" style="display:none;">
-                    <input type="button" value="CHANGE IMAGE NOW" onclick="document.getElementById('fileInput').click();">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button type="submit">Update Now</button>
-                </div>
-              
-              </div>
+  <div class="container-m1">
+    <div class="title">Modificar Producto</div>
+    <br>
+    <form action="" method="" class="search-products">
+      <div class="user-details-search">
+        <div class="input-box-search">
+          <input type="text" placeholder="Buscar producto por Nombre,Id...." required>
+        </div>
+      </div>
+      <div class="button-search">
+        <input type="submit" value="Buscar">
+      </div>
+      <br>
+      <br>
+    </form>
+
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nombre del producto</span>
+            <input type="text" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Descripcion</span>
+            <textarea class="form-control validate" required></textarea>
+          </div>
+          <div class="input-box">
+            <span class="details">Id</span>
+            <input type="text" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Unidades en stock</span>
+            <input type="text" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Categoria</span>
+            <select class="input-box" id="category">
+              <option selected>Seleccionar categoria</option>
+              <option value="1">Echeveria</option>
+              <option value="2">Sedum</option>
+              <option value="3">Pachyveria</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Otra categoria</span>
+            <select class="input-box" id="category">
+              <option selected>Seleccionar categoria</option>
+              <option value="1">Sale</option>
+              <option value="2">Nuevo ingreso</option>
+              <option value="3">Producto destacado</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Imagen</span>
+            <input id="fileInput" type="file" style="display:none;" />
+            <input type="button" class="" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
+            <div class="box-image">
+              <i class="fa-solid fa-cloud-arrow-up upload-icon"
+                onclick="document.getElementById('fileInput').click();"></i>
             </div>
           </div>
         </div>
-      </div>
-</main>
+        <div class="button">
+          <input type="submit" value="Actualizar producto">
+        </div>
+        <div class="button">
+          <input type="submit" value="Cancelar">
+        </div>
+        <div class="button-delete">
+          <input type="submit" value="Eliminar">
+        </div>
+      </form>
+    </div>
+  </div>
   <footer class="footer">
     <%- include ("./partials/footer")%>
-</footer>
-
+  </footer>
 </body>
 
 </html>
