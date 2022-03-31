@@ -1,0 +1,9 @@
+main {
+    height: 1000px;
+    border: red solid 1px;
+    margin: 5px;
+    padding: 5px;
+    margin: auto;
+    max-width: 900px;
+
+}

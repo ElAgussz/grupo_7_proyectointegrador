@@ -12,6 +12,10 @@ const controlador = {
         res.render ("formProducts.ejs")
     },
 
+    edicionProductos: (req, res) => {
+        res.render ("edicion-producto.ejs")
+    },
+
 }
 
 
