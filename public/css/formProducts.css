@@ -12,7 +12,7 @@ body{
   padding: 10px;
   background: linear-gradient(135deg, #36846b, #e91e63);
 }
-.container{
+.container-m1{
   max-width: 700px;
   width: 100%;
   background-color: #fff;
@@ -21,12 +21,12 @@ body{
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   margin: auto;
 }
-.container .title{
+.container-m1 .title{
   font-size: 25px;
   font-weight: 500;
   position: relative;
 }
-.container .title::before{
+.container-m1 .title::before{
   content: "";
   position: absolute;
   left: 0;
@@ -167,7 +167,7 @@ form .input-box span.details{
 
 
  @media(max-width: 584px){
- .container{
+ .container-m1{
   max-width: 100%;
 }
 form .user-details .input-box{
