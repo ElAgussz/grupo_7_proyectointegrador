@@ -5,12 +5,6 @@ const controlador = require('../controller/controllerProducts');
 
 router.get ('/carrito', controlador.carrito)
 router.get('/producto', controlador.producto)
-
-
-
-
-
-
 router.put('products/:id', controlador.editar)
 router.delete('products/:id', controlador.borrar)
 
