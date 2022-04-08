@@ -17,17 +17,6 @@ const controlador = {
 		res.render("results.ejs")
     },    
 
-    registroConfirmacion: (req, res) => {
-        res.render ("registro-confirmacion.ejs")
-    },
-
-    formularioProductos: (req, res) => {
-        res.render ("formProducts.ejs")
-    },
-
-    edicionProductos: (req, res) => {
-        res.render ("edicion-producto.ejs")
-    },
 
 }
 
