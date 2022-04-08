@@ -6,7 +6,7 @@ const controlador = require('../controller/controllerUser');
 router.get ('/login', controlador.login)
 router.get('/registro', controlador.registro)
 router.get('/profile', controlador.profile)
-
+router.get ('/registro-confirmacion', controlador.registroConfirmacion)
 
 
 

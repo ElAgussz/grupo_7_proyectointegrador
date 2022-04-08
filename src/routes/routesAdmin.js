@@ -1,10 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const controlador = require('../controller/controller');
+const controlador = require('../controller/controllerMain');
 
-router.get('/', controlador.index);
-
-router.get ('/registro-confirmacion', controlador.registroConfirmacion)
 
 router.get ('/formulario-productos', controlador.formularioProductos)
 
