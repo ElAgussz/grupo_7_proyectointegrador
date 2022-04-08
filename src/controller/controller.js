@@ -8,8 +8,14 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controlador = {
     index: (req, res) => {
-        res.render ("index.ejs")
+        const productoDestacado = products.filter(products => products.category == "producto-destacado");
+		const nuevoIngreso = products.filter(products => products.category == "nuevo-ingreso");
+		return res.render("index",{productoDestacado,nuevoIngreso,toThousand})
+        
     },
+    search: (req, res) => {             //RUTA PARA SEARCHBAR
+		res.render("results.ejs")
+    },    
 
     registroConfirmacion: (req, res) => {
         res.render ("registro-confirmacion.ejs")
