@@ -9,12 +9,4 @@ router.get('/producto', controlador.producto)
 
 
 
-
-
-router.put('products/:id', controlador.editar)
-router.delete('products/:id', controlador.borrar)
-
-
-
-
 module.exports = router;
