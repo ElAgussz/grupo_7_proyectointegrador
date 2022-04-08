@@ -11,3 +11,5 @@ router.get ('/formulario-productos', controlador.formularioProductos)
 router.get ('/edicion-productos', controlador.edicionProductos)
 
 module.exports = router;
+
+

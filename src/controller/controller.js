@@ -13,7 +13,7 @@ const controlador = {
 		return res.render("index",{productoDestacado,nuevoIngreso,toThousand})
         
     },
-    search: (req, res) => {             //RUTA PARA SEARCHBAR
+    search: (req, res) => {             //RUTA PARA SEARCH-BAR
 		res.render("results.ejs")
     },    
 
