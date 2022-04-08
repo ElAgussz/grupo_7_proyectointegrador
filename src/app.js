@@ -3,9 +3,10 @@ const path = require("path");
 const PORT = process.env.PORT || 3000;
 const app = express();
 const publicPath = path.join(__dirname, "../", "public")
-const router = require('./routes/routesAdmin.js');
+const router = require('./routes/routesMain.js');
 const routerProducts = require('./routes/routesProducts.js');
 const routerUser = require('./routes/routesUser.js');
+const routerAdmin = require ('./routes/routesAdmin.js')
 const methodOverride = require("method-override");
 const viewspath = path.join(__dirname, "../src/views")
 
@@ -21,6 +22,7 @@ app.use(methodOverride("_method"))
 app.use('/', router);
 app.use('/', routerProducts);
 app.use('/', routerUser);
+app.use('/', routerAdmin);
 
 
 app.listen(PORT, () => {

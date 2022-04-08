@@ -8,7 +8,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controlador = {
     index: (req, res) => {
-        const productoDestacado = products.filter(products => products.category == "producto-destacado");
+    const productoDestacado = products.filter(products => products.category == "producto-destacado");
 		const nuevoIngreso = products.filter(products => products.category == "nuevo-ingreso");
 		return res.render("index.ejs",{productoDestacado,nuevoIngreso,toThousand})
         
