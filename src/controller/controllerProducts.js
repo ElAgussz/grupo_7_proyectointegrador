@@ -11,15 +11,11 @@ const controlador = {
         res.render("productCart.ejs");
     },
     producto: (req, res) => {
-        res.render("productDetail.ejs");
+        const id = req.params.id;
+		const product = products.find(product => product.id == id);
+		return res.render("productDetail.ejs", { product, toThousand });
     },
-    
-    
-    
-    
-    
-    
-    
+     
     editar: (req, res) => {
         const id = req.params.id;
         const product = products.find(product => product.id == id);
