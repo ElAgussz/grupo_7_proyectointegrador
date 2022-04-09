@@ -2,10 +2,11 @@
 <html lang="en">
 
   <head>
+    <base href="/">
     <link rel="stylesheet" href="css/productDetail.css">
     <title>Mundo Suculento</title>
     <%- include ("./partials/head")%>
-</head>
+    </head>
 
 <body>
   <header class="header">
@@ -17,7 +18,7 @@
             <img src="images/img-cafetera-moulinex.jpg" alt="">
         </div>-->
     <div class="main-nombre-producto">
-      <h2>Echeveria Corymbosa</h2>
+      <h2> <%= product.name %> </h2>
     </div>
 
     <div class="wrapper">
@@ -25,27 +26,27 @@
         <ul class="slides">
           <li class="slide" id="slide1">
             <a href="#">
-              <img src="images/echeveria-corymbosa.jpg" alt="photo 1">
+              <img src="images/<%= product.image %>" alt="photo 1">
             </a>
           </li>
           <li class="slide" id="slide2">
             <a href="#">
-              <img src="images/echeveria-corymbosa.jpg" alt="photo 2">
+              <img src="images/<%= product.image %>" alt="photo 2">
             </a>
           </li>
           <li class="slide" id="slide3">
             <a href="#">
-              <img src="images/echeveria-corymbosa.jpg" alt="photo 3">
+              <img src="images/<%= product.image %>" alt="photo 3">
             </a>
           </li>
           <li class="slide" id="slide4">
             <a href="#">
-              <img src="images/echeveria-corymbosa.jpg" alt="photo 4">
+              <img src="images/<%= product.image %>" alt="photo 4">
             </a>
           </li>
           <li class="slide">
             <a href="#">
-              <img src="images/echeveria-corymbosa.jpg" alt="photo 1">
+              <img src="images/<%= product.image %>" alt="photo 1">
             </a>
           </li>
         </ul>
@@ -64,7 +65,7 @@
     </div>
     <div class="completeDetail">
       <div class="price-paid">
-        <h2 class="price">$$$$$$$</h2>
+        <h2 class="price"> $<%= product.price%> </h2>
         <a href="#">
           <h4 class="paid">Ver medios de pago disponibles</h4>
         </a>
@@ -73,28 +74,8 @@
 
       <h2 class="product-name">Echeveria Corymbosa</h2>
       <h4 class="product-name">Características del producto</h2>
-        <p class="product-detail"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nesciunt facilis
-          eos animi dolorum accusantium perspiciatis, ullam minima rerum. Rerum ipsum enim eos vero saepe minima alias,
-          nam at corporis!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex accusantium cum maiores laboriosam odit labore
-          nemo illo aspernatur, impedit, natus voluptate iusto accusamus voluptates obcaecati aut ut nulla! Sunt,
-          architecto.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex accusantium cum maiores laboriosam odit labore
-          nemo illo aspernatur, impedit, natus voluptate iusto accusamus voluptates obcaecati aut ut nulla! Sunt,
-          architecto.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex accusantium cum maiores laboriosam odit labore
-          nemo illo aspernatur, impedit, natus voluptate iusto accusamus voluptates obcaecati aut ut nulla! Sunt,
-          architecto.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex accusantium cum maiores laboriosam odit labore
-          nemo illo aspernatur, impedit, natus voluptate iusto accusamus voluptates obcaecati aut ut nulla! Sunt,
-          architecto.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex accusantium cum maiores laboriosam odit labore
-          nemo illo aspernatur, impedit, natus voluptate iusto accusamus voluptates obcaecati aut ut nulla! Sunt,
-          architecto.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex accusantium cum maiores laboriosam odit labore
-          nemo illo aspernatur, impedit, natus voluptate iusto accusamus voluptates obcaecati aut ut nulla! Sunt,
-          architecto.
-
+        <p class="product-detail"> 
+          <%= product.description %>
         </p>
     </div>
 

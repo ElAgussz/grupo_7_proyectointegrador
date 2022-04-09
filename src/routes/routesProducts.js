@@ -4,7 +4,7 @@ const controlador = require('../controller/controllerProducts');
 
 
 router.get ('/carrito', controlador.carrito)
-router.get('/producto', controlador.producto)
+router.get('/producto/:id', controlador.producto)
 
 
 
