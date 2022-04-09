@@ -5,13 +5,6 @@ const methodOverride = require("method-override"); // Para poder usar los métod
 
 //************* Path´s **************/
 const publicPath = path.join(__dirname, "../", "public")
-<<<<<<< HEAD
-const router = require('./routes/routesMain.js');
-const routerProducts = require('./routes/routesProducts.js');
-const routerUser = require('./routes/routesUser.js');
-const methodOverride = require("method-override");
-=======
->>>>>>> cd18d04e3a2b00dcfd804ee12e1c78e9aa8a9dbd
 const viewspath = path.join(__dirname, "../src/views")
 
 
