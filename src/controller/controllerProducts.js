@@ -11,8 +11,11 @@ const controlador = {
         res.render("productCart.ejs");
     },
     producto: (req, res) => {
-        res.render("productDetail.ejs");
+        const id = req.params.id;
+		const product = products.find(product => product.id == id);
+		return res.render("productDetail.ejs", { product, toThousand });
     },
+<<<<<<< HEAD
 
 
 
@@ -20,6 +23,9 @@ const controlador = {
 
 
 
+=======
+     
+>>>>>>> 672337f8c4c74224edb325c2dd7cb588222cd88a
     editar: (req, res) => {
         const id = req.params.id;
         const product = products.find(product => product.id == id);

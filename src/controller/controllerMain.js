@@ -10,7 +10,7 @@ const controlador = {
     index: (req, res) => {
     const productoDestacado = products.filter(products => products.category == "producto-destacado");
 		const nuevoIngreso = products.filter(products => products.category == "nuevo-ingreso");
-		return res.render("index.ejs",{productoDestacado,nuevoIngreso,toThousand})
+		return res.render("index",{productoDestacado,nuevoIngreso,toThousand})
         
     },
     search: (req, res) => {             //RUTA PARA SEARCH-BAR
