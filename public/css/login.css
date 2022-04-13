@@ -1,87 +1,110 @@
-/* Se agregó esto de abajo para que quede bien el footer */
-/* Despues borralo para que veas como quedaba antes */
 
 main {
-    height: 620px;
-    padding-top: 50px;
+    padding: 20px;
 }
-
 
 .formulario{
-    background-color: #36846bf6;
-    width: 60%;
-    margin: auto;
-    border-radius: 10px;
+    width: 360px;
+    height: 500px;
+    max-width: 100%;
+    text-align: center;
+    margin:auto;
+    padding-top:70px;
 }
 
-form{
-  margin: auto;
-  max-width: 450px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgb(241, 247, 252);
+.formulario form p {
+    padding:7px 0;
+    font-size: 18px;
+    display:block;
+    color: gray;
+    max-width: 100%;
 }
 
-form h3{
-    margin: 40px;
-    justify-content: center;
-    align-items: center;
+.correo {
+    margin-left: -45px;
+    max-width: 100%;
 }
 
-.usuario, .contraseña {
-    width: 90%;
-    max-width: 250px;
-    margin: 10px;
-    margin-bottom: 20px;
-    
+.contraseña {
+    margin-left:-75px;
+    max-width: 100%;
 }
 
-form input{
-    width: 90%;
-    border: none;
-    margin: 10px;
-    height: 30px;
-    border-radius: 5px;
+.formulario label input {
+    padding:10px;
+    border:2px solid black;
+    max-width: 100%;
+    width: 250px;
+}
+
+.registrarseLogin {
+    padding: 5px 0;
+    max-width: 100%;
 }
 
 
-/* Te modiqué el codigo de abajo para arreglar el header, antes lo tenias solo con " a { " */
 
-div h5 a{
-    color: rgb(19, 17, 17);
-    margin: 10px;
-    
+/* Boton login */
+.boton-logear{
+    padding:10px;
+    border-radius:7px;
+    background-color: green;
+    font-size:18px;
+    width: 250px;
+    max-width: 100%;
+    margin-top: 30px;
 }
 
-form button{
-    border-radius: 5%;
-    padding: 20px;
-    margin: 30px;
-    border: none;
-    background-color: #77c6a9;
+.boton-logear a {
+    text-decoration: none;
     color: white;
-    cursor: pointer;
 }
 
-.registrado{
+.boton-logear:hover{
+    background-color: rgb(136, 202, 38);
+}
+.boton-logear:hover a{
+    color: black;
+    font-weight: bold;
+}
+/* Boton login */
+
+.registrarseLogin h5,
+.registrarseLogin a{
+    font-size: 13px;
+    padding:20px 0;
+}
+
+.mantenerSesion{
     padding: 20px;
+    max-width: 100%;
 }
 
-.registrado p{
+.mantenerSesion p{
     display: inline-block;
-    color: rgb(238, 230, 230);
+    color: rgb(0, 0, 0);
     
 }
-.registrado input{
+.mantenerSesion input{
     margin-left: 20px;
 }
 
-@media (min-width: 400px){
-    label, button, h3{
-        font-size: 28px;
+
+@media(min-width:769px){
+    .boton-logear{
+        width: 350px;
+    }
+
+    .formulario label input {
+        width: 350px;
+    }
+
+    .correo {
+        margin-left: -95px;
     }
     
+    .contraseña {
+        margin-left:-124px;
+    }
+
 }

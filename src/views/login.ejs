@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/login.css" type="text/css">
@@ -17,35 +17,36 @@
 </head>
 
 <body>
-  <header class="header">
-    <%- include ("./partials/headder")%>
-  </header>
+    <header class="header">
+        <%- include ("./partials/headder")%>
+    </header>
     <main>
         <div class="formulario">
             <form action="#" method="POST">
-                <h3>L o g i n</h3>
-                <p class="usuario">
-                    <label for="usuario">Usuario: </label>
-                    <input type="text" name="usuario" required>
-                </p>
-                <p class="contraseña">
-                    <label for="contraseña">Contraseña: </label>
-                    <input type="password" name="contraseña" required>
-                </p>
-                <p>
-                <h5>¿No tienes cuenta? <a href="registro"> Crea una aquí.</a></h5>
-                </p>
+                <p class="correo">Correo electrónico</p>
+                <label for="email">
+                    <input type="text" name="emailLogin" required>
+                </label>
 
-                <button type="submit">LOGIN</button>
+                <p class="contraseña">Contraseña</p>
+                <label for="password">
+                    <input type="password" name="passwordLogin" required>
+                </label>
+
+
+                <button class="boton-logear" type="submit"><a>Iniciar sesion</a></button>
+                <div class="registrarseLogin">
+                    <h5>¿No tienes cuenta? <a href="registro"> Crea una aquí.</a></h5>
+                    </div>
             </form>
-            <div class="registrado">
-                <input type="checkbox" name="matenerRegistrado" value="Mantenerme Resitrado">
-                <p>Mantenerme Registrado</p>
+            <div class="mantenerSesion">
+                <input type="checkbox" name="mantenerSesion" value="">
+                <p>Mantener la sesión</p>
             </div>
         </div>
     </main>
     <footer class="footer">
-      <%- include ("./partials/footer")%>
+        <%- include ("./partials/footer")%>
     </footer>
 </body>
 
