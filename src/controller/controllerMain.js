@@ -8,9 +8,9 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controlador = {
     index: (req, res) => {
-    const productoDestacado = products.filter(products => products.category == "producto-destacado");
-		const nuevoIngreso = products.filter(products => products.category == "nuevo-ingreso");
-		return res.render("index.ejs",{productoDestacado,nuevoIngreso,toThousand})
+    const nuevoIngreso = products.filter(products => products.category == "nuevo-ingreso");
+		const oferta = products.filter(products => products.category == "sale");
+		return res.render("index",{nuevoIngreso,oferta,toThousand})
         
     },
     search: (req, res) => {             //RUTA PARA SEARCH-BAR
