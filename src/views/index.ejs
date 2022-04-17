@@ -46,88 +46,98 @@
    </div>
    
 </div>
-         <hr>
+         
+<main>
+   <div>
+      <h2 class="ofertas-text">NUEVOS INGRESOS</h2>
+   </div>
+   <div class="new-products">
+      <section class="last-visit">
 
-      
-         <h2 class="ofertas-text">OFERTAS PITUCAS</h2>
-      <main>
-         <section class="last-visit">
-            <div class="products">
+         <div class="products">
+            <% nuevoIngreso.forEach( product=> { %>
                <article>
-                  <img src="images/echeveria-ben-badis.jpg"  class="product_img">
-                  <div class="main-article">
+                  <a href="/productsDetail/<%= product.id %> " class="link-detail">
+                     <img src="images/<%= product.image %>" class="product_img">
+                  </a>
+                     <div class="main-article">
+                        <h4 class="description">
+                           <%= product.name %>
+                        </h4>
+
+                        <p class="price">$<%= product.price %>
+                        </p>
+                     </div>
+                  <div class="product-extra-link">
+                     <a href="#" data-quantity="1" class="button_add_to_cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                     </a>
                      
-                     <p class="price"> ₳ 112.000</p>
-                     <p class="discount">10% off</p>
-                     <h4 class="description">Echeveria: Ben Badis</h4>
                   </div>
                </article>
+
+               <% }) %>
+
+         </div>
+
+   </div>
+
+   </section>
+   </div>
+
+   <div>
+      <h2 class="ofertas-text">OFERTAS</h2>
+   </div>
+
+   <div class="offers">
+
+      <section class="last-visit">
+
+         <div class="products">
+            <% oferta.forEach( product=> { %>
                <article>
-                  <img src="images/echeveria-mexican-giant.jpg" class="product_img">
-                  <div class="main-article">
+                  <a href="/productsDetail/<%= product.id %> " class="link-detail">
+                     <img src="images/<%= product.image %>" class="product_img">
+                  </a>
+                     <div class="main-article">
+                        <h4 class="description">
+                           <%= product.name %>
+                        </h4>
+                        <p class="price-offer">
+                           $<%= product.price %>
+                        </p>
                      
-                     <p class="price"> ₳ 230.000</p>
-                     <p class="discount">10% off</p>
-                     <h4 class="description">Echeveria: Mexican Giant</h4>
-                  </div>
-               </article>
-               <article>
-                  <img src="images/echeveria-rudolf.jpg"  class="product_img">
-                  <div class="main-article">
-                     
-                     <p class="price">	₳ 70.500</p>
-                     <p class="discount">10% off</p>
-                     <h4 class="description">Echeveria: Rudolf</h4>
-                  </div>
-               </article>
-               <article>
-                  <img src="images/echeveria-riga.jpg"  class="product_img">
-                  <div class="main-article">
-                     
-                     <p class="price">	₳ 23.200</p>
-                     <p class="discount">10% off</p>
-                     <h4 class="description">Echeveria: Riga</h4>
-                  </div>
-               </article>
-               <article>
-                  <img src="images/graptoveria-wind-of-changes.jpg"  class="product_img">
-                  <div class="main-article">
-                     
-                     <p class="price">	₳ 60.000</p>
-                     <p class="discount">10% off</p>
-                     <h4 class="description">Graptoveria: Wind of Changes</h4>
-                  </div>
-               </article>
-               <article>
-                  <img src="images/echeveria-pink-frills.jpg"  class="product_img">
-                  <div class="main-article">
-                     
-                     <p class="price">	₳ 12</p>
-                     <p class="discount">10% off</p>
-                     <h4 class="description">Echeveria: Pink Frills</h4>
-                  </div>
-               </article>
-               <article>
-                  <img src="images/echeveria-kirov.jpg"  class="product_img">
-                  <div class="main-article">
-                     
-                     <p class="price">	₳ 38.299</p>
-                     <p class="discount">10% off</p>
-                     <h4 class="description">Echeveria: Mirov</h4>
-                  </div>
-               </article>
-               <article>
-                  <img src="images/echeveria-madiba.jpg"  class="product_img">
-                  <div class="main-article">
-                     
-                     <p class="price">	₳ 13.200</p>
-                     <p class="discount">10% off</p>
-                     <h4 class="description">Echeveria: Madiba</h4>
-                  </div>
-               </article>
-            </div>
-         </section>
-      </main>
+                        <div class="discount-line">
+                           
+                           <h2 class="final-price">
+                              $<%= product.discount> 0 ? toThousand((product.price * ((100 -
+                                 product.discount)/100))) : toThousand(product.price) %>
+                           </h2>
+                           <% if(product.discount> 0){ %>
+                              <p class="discount">
+                                 <%= product.discount %> % OFF
+                              </p>
+                              <% } %>
+
+
+                        </div>
+                  
+         </div>
+         <div class="product-extra-link">
+            <a href="#" data-quantity="1" class="button_add_to_cart">
+               <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+         </div>
+         </article>
+         <% }) %>
+   </div>
+
+   </section>
+   </div>
+
+
+
+</main>
          
          <hr>
          
