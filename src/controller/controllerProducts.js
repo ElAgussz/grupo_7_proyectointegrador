@@ -15,28 +15,6 @@ const controlador = {
 		const product = products.find(product => product.id == id);
 		return res.render("productDetail.ejs", { product, toThousand });
     },
-
-
-
-
-
-
-
-    editar: (req, res) => {
-        const id = req.params.id;
-        const product = products.find(product => product.id == id);
-        return res.redirect("/products", { product });
-    },
-    borrar: (req, res) => {
-        const id = req.params.id;
-        products = products.map(product => {
-            if (product.id != id) {
-                return product;
-            }
-        })
-        return res.redirect("/products");
-    },
-
 }
 
 

@@ -15,7 +15,7 @@
         "price": 800,
         "discount": 0,
         "gender": "Echeveria",
-        "category": "Nuevo-ingreso",
+        "category": "nuevo-ingreso",
         "description": "Híbrido creado en Argentina por una gran cultivadora, Sonia Clayton. Resistente y fácil de cultivar.•INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
         "image": "echeveria-ceniza.jpg"
     },
@@ -63,9 +63,9 @@
         "id": 7,
         "name": "Echeveria Kirov",
         "price": 900,
-        "discount": 5,
+        "discount": 0,
         "gender": "Echeveria",
-        "category": "sale",
+        "category": "producto-destacado",
         "description": "Echeveria Kirov es un híbrido que no se sabe exactamente su procedencia, aunque se cree que uno de sus ascendentes es Echeveria Violet Queen. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
         "image": "echeveria-kirov.jpg"
     },
@@ -147,7 +147,7 @@
         "gender": "Echeveria",
         "category": "sale",
         "description": "Como la mayoría de las Echeverias, esta es una planta fácil de cuidar. Tiene forma de roseta y presenta diferentes tonalidades que van del púrpura al azul plateado y verde. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
-        "image": "echeveria-pink-frills.jpg"
+        "image": "echeveria-pink.frills.jpg"
     },
     {
         "id": 16,
@@ -165,7 +165,7 @@
         "price": 900,
         "discount": 0,
         "gender": "Echeveria",
-        "category": "producto-destacado",
+        "category": "nuevo-ingreso",
         "description": "Esta planta tiene un origen y parentales desconocidos, pero no quita su belleza en todas sus temporadas. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
         "image": "echeveria-riga.jpg"
     },
@@ -205,7 +205,7 @@
         "price": 900,
         "discount": 0,
         "gender": "Graptoveria",
-        "category": "producto-destacado",
+        "category": "nuevo-ingreso",
         "description": "La Pachyveria orpet es un hibrido creado por la cruza de Echeveria x pachyphytum. Crece formando una única roseta, sus hojas son carnosas en forma de cuchara. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
         "image": "graptoveria-orpet.jpg"
     },
