@@ -16,7 +16,7 @@ const app = express();
 
 //************* Template engines **************/
 app.set("views", viewspath);
-app.set ("views engine", "ejs")
+app.set ("view engine", "ejs")
 
 app.use(express.static(publicPath));
 app.use(methodOverride("_method"))
