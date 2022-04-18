@@ -44,66 +44,71 @@
             <span class="details">Id</span>
             <input type="text" required>
           </div>
-          <div class="input-box">
-            <span class="details">Nombre del producto</span>
-            <input type="text" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Descripcion</span>
-            <textarea class="form-control validate" required></textarea>
-          </div>
-          <div class="input-box">
-            <span class="details">Unidades en stock</span>
-            <input type="text" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Precio</span>
-            <input type="text" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Descuento</span>
-            <input type="text" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Genero</span>
-            <select class="input-box" id="category">
-              <option selected>Seleccionar categoria</option>
-              <option value="1">Echeveria</option>
-              <option value="2">Sedum</option>
-              <option value="3">Pachyveria</option>
-            </select>
-          </div>
-          <div class="input-box">
-            <span class="details">Categoria</span>
-            <select class="input-box" id="category">
-              <option selected>Seleccionar categoria</option>
-              <option value="1">Sale</option>
-              <option value="2">Nuevo ingreso</option>
-              <option value="3">Producto destacado</option>
-            </select>
-          </div>
-          <div class="input-box">
-            <span class="details">Imagen</span>
-            <input id="fileInput" type="file" style="display:none;" />
-            <input type="button" class="" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
-            <div class="box-image">
-              <i class="fa-solid fa-cloud-arrow-up upload-icon"
-                onclick="document.getElementById('fileInput').click();"></i>
+          
+          <% for(i = 0; i < product.length; i++) { %>
+
+            <div class="input-box">
+              <span class="details"><%= product.name%></span>
+              <input type="text" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><%= product.description%></span>
+              <textarea class="form-control validate" required></textarea>
+            </div>
+            <div class="input-box">
+              <span class="details">Unidades en stock</span>
+              <input type="text" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><%= product.price%></span>
+              <input type="text" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><%= product.discount%></span>
+              <input type="text" required>
+            </div>
+            <div class="input-box">
+              <span class="details"><%= product.gender%></span>
+              <select class="input-box" id="category">
+                <option selected>Seleccionar categoria</option>
+                <option value="1">Echeveria</option>
+                <option value="2">Sedum</option>
+                <option value="3">Pachyveria</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details"><%= product.category%></span>
+              <select class="input-box" id="category">
+                <option selected>Seleccionar categoria</option>
+                <option value="1">Sale</option>
+                <option value="2">Nuevo ingreso</option>
+                <option value="3">Producto destacado</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details"><%= product.imagen%></span>
+              <input id="fileInput" type="file" style="display:none;" />
+              <input type="button" class="" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
+              <div class="box-image">
+                <i class="fa-solid fa-cloud-arrow-up upload-icon"
+                  onclick="document.getElementById('fileInput').click();"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="button">
-          <input type="submit" value="Actualizar producto">
-        </div>
-        <div class="button">
-          <input type="submit" value="Cancelar">
-        </div>
-        <div class="button-delete">
-          <input type="submit" value="Eliminar">
-        </div>
-      </form>
+          <div class="button">
+            <input type="submit" value="Actualizar producto">
+          </div>
+          <div class="button">
+            <input type="submit" value="Cancelar">
+          </div>
+          <div class="button-delete">
+            <input type="submit" value="Eliminar">
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+            
+   <% } %>
   <footer class="footer">
     <%- include ("./partials/footer")%>
   </footer>
