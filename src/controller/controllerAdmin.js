@@ -7,15 +7,15 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controlador = {
-    formularioProductos: (req, res) => {
+    formularioProducto: (req, res) => {
         res.render("formProducts.ejs");
     },
-    edicionProductos: (req, res) => {
+    edicionProducto: (req, res) => {
         const id = req.params.id;
-        const product = products.find(product => product.id == id);
+        const product = products.find(product => products.id == id);
         res.render("edicion-producto.ejs", { product });
     },
-    productoEditado: (req, res) => {
+    actualizarProducto: (req, res) => {
     //  falta la logica
     },
     eliminarProductos: (req, res) => {

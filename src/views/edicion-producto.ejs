@@ -37,78 +37,84 @@
       <br>
     </form>
 
+
     <div class="content">
-      <form action="#">
+      <form action="/edicion-productos/<%= product.id %>?_method=PUT" method="POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Id</span>
+            <input type="text" value="<%= product.id %>" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Nombre del producto</span>
+            <input type="text" value="<%= product.name %>" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Descripcion</span>
+            <input type="text" value="<%= product.description %>" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Unidades en stock</span>
             <input type="text" required>
           </div>
-          
-          <% for(i = 0; i < product.length; i++) { %>
-
-            <div class="input-box">
-              <span class="details"><%= product.name%></span>
-              <input type="text" required>
-            </div>
-            <div class="input-box">
-              <span class="details"><%= product.description%></span>
-              <textarea class="form-control validate" required></textarea>
-            </div>
-            <div class="input-box">
-              <span class="details">Unidades en stock</span>
-              <input type="text" required>
-            </div>
-            <div class="input-box">
-              <span class="details"><%= product.price%></span>
-              <input type="text" required>
-            </div>
-            <div class="input-box">
-              <span class="details"><%= product.discount%></span>
-              <input type="text" required>
-            </div>
-            <div class="input-box">
-              <span class="details"><%= product.gender%></span>
-              <select class="input-box" id="category">
-                <option selected>Seleccionar categoria</option>
-                <option value="1">Echeveria</option>
-                <option value="2">Sedum</option>
-                <option value="3">Pachyveria</option>
-              </select>
-            </div>
-            <div class="input-box">
-              <span class="details"><%= product.category%></span>
-              <select class="input-box" id="category">
-                <option selected>Seleccionar categoria</option>
-                <option value="1">Sale</option>
-                <option value="2">Nuevo ingreso</option>
-                <option value="3">Producto destacado</option>
-              </select>
-            </div>
-            <div class="input-box">
-              <span class="details"><%= product.imagen%></span>
-              <input id="fileInput" type="file" style="display:none;" />
-              <input type="button" class="" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
-              <div class="box-image">
-                <i class="fa-solid fa-cloud-arrow-up upload-icon"
-                  onclick="document.getElementById('fileInput').click();"></i>
-              </div>
+          <div class="input-box">
+            <span class="details">Precio</span>
+            <input type="text" value="<%= product.price %>" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Descuento</span>
+            <input type="text" value="<%= product.discount %>" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Genero</span>
+            <select class="input-box" id="category">
+              <option selected>Seleccionar categoria</option>
+              <option value="1" <%= product.gender == "Echeveria" ? "selected" : null %> >Echeveria</option>
+              <option value="2" <%= product.gender == "Sedum" ? "selected" : null %>>Sedum</option>
+              <option value="3" <%= product.gender == "Pachyveria" ? "selected" : null %>>Pachyveria</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Categoria</span>
+            <select class="input-box" id="category">
+              <option selected>Seleccionar categoria</option>
+              <option value="1" <%= product.category == "sale" ? "selected" : null %> >Sale</option>
+              <option value="2" <%= product.category == "nuevo-ingreso" ? "selected" : null %> >Nuevo ingreso</option>
+              <option value="3" <%= product.category == "producto-destacado" ? "selected" : null %> >Producto destacado</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Imagen</span>
+            <input id="fileInput" type="file" style="display:none;" />
+            <input type="button" class="" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
+            <div class="box-image">
+              <i class="fa-solid fa-cloud-arrow-up upload-icon"
+                onclick="document.getElementById('fileInput').click();"></i>
             </div>
           </div>
-          <div class="button">
-            <input type="submit" value="Actualizar producto">
-          </div>
-          <div class="button">
-            <input type="submit" value="Cancelar">
-          </div>
-          <div class="button-delete">
+        </div>
+        
+        
+        <div class="button">
+            <a href="/productos/<%= product.id %>"><input type="submit" value="Actualizar producto"></a>
+        </div>
+        <div class="button">
+          <a href="/productos/<%= product.id %>"><input type="submit" value="Cancelar"></a>
+        </div>
+        <div class="button-delete">
+          <form action="/edicion-productos/<%= product.id %>?_method=DELETE>" method="POST">
             <input type="submit" value="Eliminar">
-          </div>
-        </form>
-      </div>
+          </form>
+        </div>
+      </form>
     </div>
-            
-   <% } %>
+  </div>
+
+
+
+
+
+
   <footer class="footer">
     <%- include ("./partials/footer")%>
   </footer>
