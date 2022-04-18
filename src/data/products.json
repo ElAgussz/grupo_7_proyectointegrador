@@ -147,7 +147,7 @@
         "gender": "Echeveria",
         "category": "sale",
         "description": "Como la mayoría de las Echeverias, esta es una planta fácil de cuidar. Tiene forma de roseta y presenta diferentes tonalidades que van del púrpura al azul plateado y verde. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
-        "image": "echeveria-pink.frills.jpg"
+        "image": "echeveria-pink-frills.jpg"
     },
     {
         "id": 16,
@@ -155,7 +155,7 @@
         "price": 1400,
         "discount": 0,
         "gender": "Echeveria",
-        "category": "nuevo-ingreso",
+        "category": "producto-destacado",
         "description": "Echeveria agavoides ‘Red Edge’  ó 'Multifida' O también llamada Lipstick. Se cultiva al aire libre y a pleno sol. Cuánto más luz tenga, mejor exhibirá sus colores y forma. Pueden tolerar períodos secos  prolongados, pero NUNCA humedad permanente, especialmente en el invierno.•INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
         "image": "echeveria-red-edge.jpg"
     },
@@ -163,9 +163,9 @@
         "id": 17,
         "name": "Echeveria Riga",
         "price": 900,
-        "discount": 0,
+        "discount": 5,
         "gender": "Echeveria",
-        "category": "nuevo-ingreso",
+        "category": "sale",
         "description": "Esta planta tiene un origen y parentales desconocidos, pero no quita su belleza en todas sus temporadas. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
         "image": "echeveria-riga.jpg"
     },
@@ -205,7 +205,7 @@
         "price": 900,
         "discount": 0,
         "gender": "Graptoveria",
-        "category": "nuevo-ingreso",
+        "category": "producto-destacado",
         "description": "La Pachyveria orpet es un hibrido creado por la cruza de Echeveria x pachyphytum. Crece formando una única roseta, sus hojas son carnosas en forma de cuchara. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
         "image": "graptoveria-orpet.jpg"
     },
