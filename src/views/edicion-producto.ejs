@@ -67,7 +67,7 @@
           </div>
           <div class="input-box">
             <span class="details">Genero</span>
-            <select class="input-box" name="description" id="category">
+            <select class="input-box" name="gender" id="category">
               <option selected>Seleccionar categoria</option>
               <option value="1" <%= product.gender == "Echeveria" ? "selected" : null %> >Echeveria</option>
               <option value="2" <%= product.gender == "Sedum" ? "selected" : null %>>Sedum</option>
@@ -76,7 +76,7 @@
           </div>
           <div class="input-box">
             <span class="details">Categoria</span>
-            <select class="input-box" name="description" id="category">
+            <select class="input-box" name="category" id="category">
               <option selected>Seleccionar categoria</option>
               <option value="1" <%= product.category == "sale" ? "selected" : null %> >Sale</option>
               <option value="2" <%= product.category == "nuevo-ingreso" ? "selected" : null %> >Nuevo ingreso</option>
@@ -88,8 +88,10 @@
             <input id="fileInput" type="file" style="display:none;" />
             <input type="button" class="" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
             <div class="box-image">
+
               <i class="fa-solid fa-cloud-arrow-up upload-icon"
                 onclick="document.getElementById('fileInput').click();"></i>
+                <img class="imagenXD" src="../public/images/<%= product.image %>">
             </div>
           </div>
         </div>

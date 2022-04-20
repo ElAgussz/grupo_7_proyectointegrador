@@ -2,7 +2,7 @@ const path = require("path")
 const fs = require('fs');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -17,19 +17,19 @@ const controlador = {
     },
     actualizarProducto: (req, res) => {
         const id = req.params.id;
-        const product = products.map(product => {
-            if(products.id == id){
+        products = products.map(product => {
+            if(product.id == id){
                 product.name = req.body.name,
                 product.price = req.body.price,
                 product.discount = req.body.discount,
                 product.gender = req.body.gender,
                 product.category = req.body.category,
                 product.description = req.body.description,
-                product.imagen = req.file.filename
+                product.imagen = req.file?.filename ?? ""
             }
             return product;
         })
-        fs.writeFileSync(productsFilePath, JSON.stringify(product, null, 2))
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
 		return res.redirect("/productos");
     
     },
@@ -42,11 +42,6 @@ const controlador = {
         })
         return res.redirect("/products");
     },
-    prueba:(req, res) => {
-        const id = req.params.id;
-		const product = products.find(product => products.id == id);
-		return res.render("edicion-producto.ejs", { product });
-    }
 }
 
 

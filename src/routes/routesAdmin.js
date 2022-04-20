@@ -22,8 +22,7 @@ const upload = multer({ storage })
 router.get('/formulario-productos', controlador.formularioProducto)
 
 router.get('/editar/:id', controlador.edicionProducto)
-router.get('/editar', controlador.prueba)
-router.put('/editar/:id', upload.any(), controlador.actualizarProducto)
+router.put('/editar/:id', upload.single("image"), controlador.actualizarProducto)
 
 module.exports = router;
 
