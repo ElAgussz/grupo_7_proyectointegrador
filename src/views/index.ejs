@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <title>Mundo Suculento 2.0</title>
-    <link rel="icon" href="design/isoto.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+   <title>Mundo Suculento 2.0</title>
+   <link rel="icon" href="design/isoto.ico">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/general.css">
+   <link rel="stylesheet" href="css/index.css">
 
 </head>
 
@@ -23,43 +23,43 @@
 
    <header class="header">
       <%- include ("./partials/headder")%>
-    </header>
-<div class="main-grid">
+   </header>
+   <div class="main-grid">
 
-   <div class="grid">
-      <div class="img-wrapper">
-         <img class="blur" src="images/echeveria-rudolf.jpg">
-         <div class="content fade">ECHEVERIA</div>
+      <div class="grid">
+         <div class="img-wrapper">
+            <img class="blur" src="images/echeveria-rudolf.jpg">
+            <div class="content fade">ECHEVERIA</div>
+         </div>
       </div>
-   </div>
-   <div class="grid">
-      <div class="img-wrapper">
-         <img class="blur" src="images/graptoveria-wind-of-changes.jpg">
-         <div class="content fade">GRAPTOVERIA</div>
+      <div class="grid">
+         <div class="img-wrapper">
+            <img class="blur" src="images/graptoveria-wind-of-changes.jpg">
+            <div class="content fade">GRAPTOVERIA</div>
+         </div>
       </div>
-   </div>
-   <div class="grid">
-      <div class="img-wrapper">
-         <img class="blur" src="images/echeveria-ben-badis.jpg">
-         <div class="content fade">ECHEVERIA 2</div>
+      <div class="grid">
+         <div class="img-wrapper">
+            <img class="blur" src="images/echeveria-ben-badis.jpg">
+            <div class="content fade">ECHEVERIA 2</div>
+         </div>
       </div>
-   </div>
-   
-</div>
-         
-<main>
-   <div>
-      <h2 class="ofertas-text">NUEVOS INGRESOS</h2>
-   </div>
-   <div class="new-products">
-      <section class="last-visit">
 
-         <div class="products">
-            <% nuevoIngreso.forEach( product=> { %>
-               <article>
-                  <a href="/producto/<%= product.id %> " class="link-detail">
-                     <img src="images/<%= product.image %>" class="product_img">
-                  </a>
+   </div>
+
+   <main>
+      <div>
+         <h2 class="ofertas-text">NUEVOS INGRESOS</h2>
+      </div>
+      <div class="new-products">
+         <section class="last-visit">
+
+            <div class="products">
+               <% nuevoIngreso.forEach( product=> { %>
+                  <article>
+                     <a href="/producto/<%= product.id %> " class="link-detail">
+                        <img src="images/<%= product.image %>" class="product_img">
+                     </a>
                      <div class="main-article">
                         <h4 class="description">
                            <%= product.name %>
@@ -68,37 +68,34 @@
                         <p class="price">$<%= product.price %>
                         </p>
                      </div>
-                  <div class="product-extra-link">
-                     <a href="#" data-quantity="1" class="button_add_to_cart">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                     <button type="button" class="button" name="carrito">
+                        <span class="button__text"> Añadir al Carrito</span>
+                      </button>
+                  </article>
+
+                  <% }) %>
+
+            </div>
+
+      </div>
+
+      </section>
+      </div>
+
+      <div>
+         <h2 class="ofertas-text">OFERTAS</h2>
+      </div>
+
+      <div class="offers">
+
+         <section class="last-visit">
+
+            <div class="products">
+               <% oferta.forEach( product=> { %>
+                  <article>
+                     <a href="/productsDetail/<%= product.id %> " class="link-detail">
+                        <img src="images/<%= product.image %>" class="product_img">
                      </a>
-                     
-                  </div>
-               </article>
-
-               <% }) %>
-
-         </div>
-
-   </div>
-
-   </section>
-   </div>
-
-   <div>
-      <h2 class="ofertas-text">OFERTAS</h2>
-   </div>
-
-   <div class="offers">
-
-      <section class="last-visit">
-
-         <div class="products">
-            <% oferta.forEach( product=> { %>
-               <article>
-                  <a href="/productsDetail/<%= product.id %> " class="link-detail">
-                     <img src="images/<%= product.image %>" class="product_img">
-                  </a>
                      <div class="main-article">
                         <h4 class="description">
                            <%= product.name %>
@@ -106,9 +103,9 @@
                         <p class="price-offer">
                            $<%= product.price %>
                         </p>
-                     
+
                         <div class="discount-line">
-                           
+
                            <h2 class="final-price">
                               $<%= product.discount> 0 ? toThousand((product.price * ((100 -
                                  product.discount)/100))) : toThousand(product.price) %>
@@ -121,29 +118,27 @@
 
 
                         </div>
-                  
-         </div>
-         <div class="product-extra-link">
-            <a href="#" data-quantity="1" class="button_add_to_cart">
-               <i class="fa-solid fa-bag-shopping"></i>
-            </a>
-         </div>
-         </article>
-         <% }) %>
-   </div>
 
-   </section>
-   </div>
+                     </div>
+                     <button type="button" class="button">
+                        <span class="button__text">Agregar item</span>
+                      </button>
+                  </article>
+                  <% }) %>
+            </div>
+
+         </section>
+      </div>
 
 
 
-</main>
-         
-         <hr>
-         
-         <footer class="footer">
-            <%- include ("./partials/footer")%>
-          </footer>
+   </main>
+
+   <hr>
+
+   <footer class="footer">
+      <%- include ("./partials/footer")%>
+   </footer>
 
 </body>
 
