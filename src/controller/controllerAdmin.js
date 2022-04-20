@@ -12,21 +12,41 @@ const controlador = {
     },
     edicionProducto: (req, res) => {
         const id = req.params.id;
-        const product = products.find(product => products.id == id);
-        res.render("edicion-producto.ejs", { product });
+		const product = products.find(product => product.id == id);
+		return res.render("edicion-producto.ejs", { product });
     },
     actualizarProducto: (req, res) => {
-    //  falta la logica
+        const id = req.params.id;
+        const product = products.map(product => {
+            if(products.id == id){
+                product.name = req.body.name,
+                product.price = req.body.price,
+                product.discount = req.body.discount,
+                product.gender = req.body.gender,
+                product.category = req.body.category,
+                product.description = req.body.description,
+                product.imagen = req.file.filename
+            }
+            return product;
+        })
+        fs.writeFileSync(productsFilePath, JSON.stringify(product, null, 2))
+		return res.redirect("/productos");
+    
     },
     eliminarProductos: (req, res) => {
         const id = req.params.id;
-        products = products.map(product => {
-            if (product.id != id) {
+        const product = products.map(product => {
+            if (products.id != id) {
                 return product;
             }
         })
         return res.redirect("/products");
     },
+    prueba:(req, res) => {
+        const id = req.params.id;
+		const product = products.find(product => products.id == id);
+		return res.render("edicion-producto.ejs", { product });
+    }
 }
 
 
