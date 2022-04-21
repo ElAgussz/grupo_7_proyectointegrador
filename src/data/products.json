@@ -116,7 +116,8 @@
     "category": "nuego-ingreso",
     "description": "De esta planta no esta clara su parentales, se la conoce como MOMOCA sin variegar. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
     "image": "echeveria-mandala-citrus.jpg",
-    "stock": 0
+    "stock": 0,
+    "show": true
   },
   {
     "id": 11,
@@ -260,7 +261,7 @@
     "description": "Es un hermoso híbrido, que tiende a formar un grupo de rosetas, muy delicadas. •INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
     "image": "graptoveria-winds-of-changes.jpg",
     "stock": 0,
-    "show": true,
-    "imagen": ""
-  },
+    "show": true
+    
+  }
 ]
