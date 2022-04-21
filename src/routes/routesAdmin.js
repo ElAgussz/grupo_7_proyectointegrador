@@ -7,7 +7,7 @@ const multer = require('multer');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, "../../images"))
+        cb(null, path.join(__dirname, "../../public/images"))
     },
     filename: (req, file, cb) => {
         const newFileName = Date.now() + "-"
@@ -19,7 +19,8 @@ const upload = multer({ storage })
 
 
 
-router.get('/formulario-productos', controlador.formularioProducto)
+router.get('/formulario-productos', controlador.formularioProducto);
+router.post('/formulario-productos', upload.single("image"), controlador.create);
 
 router.get('/editar/:id', controlador.edicionProducto)
 router.put('/editar/:id', upload.single("image"), controlador.actualizarProducto)

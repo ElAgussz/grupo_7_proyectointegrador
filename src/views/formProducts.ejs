@@ -25,44 +25,39 @@
     <div class="container-m1">
         <div class="title">Agregar Producto</div>
         <div class="content">
-            <form action="#">
+            <form action="/formulario-productos" method="post" enctype="multipart/form-data">
                 <div class="user-details">
                     <div class="input-box">
-                        <span class="details">Id</span>
-                        <input type="text" required>
+                        <label class="details" name="id">Id</label>
+                        <input type="text" name="id" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Nombre del producto</span>
-                        <input type="text" required>
+                        <label class="details" name="name" >Nombre del producto</label>
+                        <input type="text" name="name" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Descripcion</span>
-                        <textarea class="form-control validate" required></textarea>
+                        <label class="details" name="description" >Descripcion</label>
+                        <textarea class="form-control validate" name="description"  required></textarea>
                     </div>
                     <div class="input-box">
-                        <span class="details">Unidades en stock</span>
-                        <input type="text" required>
+                        <label class="details" name="stock">Unidades en stock</label>
+                        <input type="text" name="stock" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Precio</span>
-                        <input type="text" required>
+                        <lab class="details" name="price">Precio</label>
+                        <input type="text" name="price" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Descuento</span>
-                        <input type="text" required>
+                        <label class="details" name="discount">Descuento</label>
+                        <input type="text" name="discount" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Genero</span>
-                        <select class="input-box" id="category">
-                            <option selected>Seleccionar categoria</option>
-                            <option value="1">Echeveria</option>
-                            <option value="2">Sedum</option>
-                            <option value="3">Pachyveria</option>
-                        </select>
+                        <label class="details" name="gender" >Genero</label>
+                        <input type="text" name="gender" required>
                     </div>
                     <div class="input-box">
-                        <span class="details">Categoria</span>
-                        <select class="input-box" id="category">
+                        <span class="details" name="category">Categoria</span>
+                        <select class="input-box" name="category" id="category">
                             <option selected>Seleccionar categoria</option>
                             <option value="1">Sale</option>
                             <option value="2">Nuevo ingreso</option>
@@ -70,14 +65,8 @@
                         </select>
                     </div>
                     <div class="input-box">
-                        <span class="details">Imagen</span>
-                        <input id="fileInput" type="file" multiple />
-                        <input type="button" class="" value="SUBIR"
-                            onclick="document.getElementById('fileInput').click();" multiple />
-                        <div class="box-image">
-                            <i class="fa-solid fa-cloud-arrow-up upload-icon"
-                                onclick="document.getElementById('fileInput').click();"></i>
-                        </div>
+                        <label for="image" class="details">Imagen</label>
+                        <input type="file" id="image" name="image" multiple />
                     </div>
                 </div>
                 <div class="button">
