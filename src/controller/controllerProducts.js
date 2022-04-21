@@ -13,7 +13,10 @@ const controlador = {
     producto: (req, res) => {
         const id = req.params.id;
 		const product = products.find(product => product.id == id);
-		return res.render("productDetail.ejs", { product, toThousand });
+            if (id > product) {
+                res.redirect ('index.ejs')
+            }
+            return res.render("productDetail.ejs", { product, toThousand });
     },
 }
 
