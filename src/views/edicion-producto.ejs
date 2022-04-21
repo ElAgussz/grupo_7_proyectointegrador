@@ -87,16 +87,9 @@
             </select>
           </div>
           <div class="input-box">
-            <span class="details">Imagen</span>
-            <input id="fileInput" name="image" type="file" style="display:none;" />
-            <input type="button" name="image" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
-            <div class="box-image">
-
-              <i class="fa-solid fa-cloud-arrow-up upload-icon"
-                onclick="document.getElementById('fileInput').click();"></i>
-              <img class="imagenXD" src="../images/<%= product.image %>">
-            </div>
-          </div>
+            <label for="image" class="details">Imagen</label>
+            <input type="file" id="image" name="image" multiple />
+        </div>
         </div>
         <div class="button">
           <input type="submit" value="Actualizar producto">
