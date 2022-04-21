@@ -2,9 +2,9 @@
   {
     "id": 1,
     "name": "Echeveria Ben Badis",
-    "price": 600,
-    "discount": 10,
-    "gender": "Echeveria",
+    "price": "600",
+    "discount": "10",
+    "gender": "echeveria",
     "category": "sale",
     "description": "Es un hibrido de E. derenbergii x purpusorum. Las plantas disponibles son de unos 5 cm o similar. Los colores son mas verdes en ciertas epocas del año, pero cuando se estresan tienen el color de la foto.•INFORMACIÓN DE ENVÍO Todas las plantas se envían a raíz desnuda, sin tierra ni maceta.•TAMAÑO Y APARIENCIA DE LA PLANTA El tamaño de la planta se basa en el diámetro de la maceta N*11. Las plantas pueden ser un poco más grandes o más pequeñas que la maceta en la que crecen. Todas las plantas son únicas, pueden variar de forma y color, según la disponibilidad o la época del año.",
     "image": "echeveria-ben-badis.jpg",
@@ -262,6 +262,5 @@
     "image": "graptoveria-winds-of-changes.jpg",
     "stock": 0,
     "show": true
-    
   }
 ]
