@@ -25,22 +25,22 @@ const controlador = {
                 product.gender = req.body.gender,
                 product.category = req.body.category,
                 product.description = req.body.description,
-                product.imagen = req.file?.filename ?? ""
+                product.image = req.file?.filename ?? product.image
             }
             return product;
         })
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
-		return res.redirect("/productos");
+		return res.redirect("/");
     
     },
     eliminarProductos: (req, res) => {
         const id = req.params.id;
-        const product = products.map(product => {
-            if (products.id != id) {
+        products = products.filter(product => {
+            if (product.id != id) {
                 return product;
             }
         })
-        return res.redirect("/products");
+        return res.redirect("/");
     },
 }
 

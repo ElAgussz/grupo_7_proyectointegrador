@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="/css/general.css">
 
 
-  <title>Editando <%= product.name %></title>
+  <title>Editando <%= product.name %>
+  </title>
 
 </head>
 <header class="header">
@@ -69,43 +70,47 @@
             <span class="details">Genero</span>
             <select class="input-box" name="gender" id="category">
               <option selected>Seleccionar categoria</option>
-              <option value="1" <%= product.gender == "Echeveria" ? "selected" : null %> >Echeveria</option>
-              <option value="2" <%= product.gender == "Sedum" ? "selected" : null %>>Sedum</option>
-              <option value="3" <%= product.gender == "Pachyveria" ? "selected" : null %>>Pachyveria</option>
+              <option value="Echeveria" <%=product.gender=="Echeveria" ? "selected" : null %> >Echeveria</option>
+              <option value="Sedum" <%=product.gender=="Sedum" ? "selected" : null %>>Sedum</option>
+              <option value="Pachyveria" <%=product.gender=="Pachyveria" ? "selected" : null %>>Pachyveria</option>
             </select>
           </div>
           <div class="input-box">
             <span class="details">Categoria</span>
             <select class="input-box" name="category" id="category">
               <option selected>Seleccionar categoria</option>
-              <option value="1" <%= product.category == "sale" ? "selected" : null %> >Sale</option>
-              <option value="2" <%= product.category == "nuevo-ingreso" ? "selected" : null %> >Nuevo ingreso</option>
-              <option value="3" <%= product.category == "producto-destacado" ? "selected" : null %> >Producto destacado</option>
+              <option value="sale" <%=product.category=="sale" ? "selected" : null %> >Sale</option>
+              <option value="nuevo-ingreso" <%=product.category=="nuevo-ingreso" ? "selected" : null %> >Nuevo ingreso
+              </option>
+              <option value="producto-destacado" <%=product.category=="producto-destacado" ? "selected" : null %>
+                >Producto destacado</option>
             </select>
           </div>
           <div class="input-box">
             <span class="details">Imagen</span>
-            <input id="fileInput" type="file" style="display:none;" />
-            <input type="button" class="" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
+            <input id="fileInput" name="image" type="file" style="display:none;" />
+            <input type="button" name="image" value="SUBIR" onclick="document.getElementById('fileInput').click();" />
             <div class="box-image">
 
               <i class="fa-solid fa-cloud-arrow-up upload-icon"
                 onclick="document.getElementById('fileInput').click();"></i>
-                <img class="imagenXD" src="../public/images/<%= product.image %>">
+              <img class="imagenXD" src="../images/<%= product.image %>">
             </div>
           </div>
         </div>
-        
-        
         <div class="button">
           <input type="submit" value="Actualizar producto">
         </div>
+      </form>
+      <form action="/editar/<%= product.id %>?_method=DELETE" method="POST" enctype="multipart/form-data">
         <div class="button-delete">
-            <input type="submit" value="Eliminar">
+          <input type="submit" value="Eliminar">
         </div>
+      </form>
+      <form>
         <div class="button">
-          <a href="/productos"><input type="submit" value="Cancelar"></a>
-         </div>
+          <a href="/"><input type="submit" value="Cancelar"></a>
+        </div>
       </form>
     </div>
   </div>
