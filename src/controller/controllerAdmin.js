@@ -26,15 +26,9 @@ const controlador = {
     create: (req, res) => {
         const id = req.body
         const productoNuevo = {
-            id: products.length > 0 ? products[products.length - 1].id + 1 : 1,
-            name: req.body.name,
-            description: req.body.description,
-            stock: req.body.stock,
-            price: req.body.price,
-            discount: req.body.discount,
-            gender: req.body.gender,
-            category: req.body.category,
-            image: req.file.filename
+			id: products.length > 0 ? products[ products.length - 1 ].id + 1 : 1,
+			...req.body,
+			image: req.file?.filename ?? "default-image.png"
         }
 
         products.push(productoNuevo);
@@ -74,7 +68,7 @@ const controlador = {
     },
     eliminarProducto: (req, res) => {
         const id = req.params.id;
-		products = products = products.map(product => {
+		products = products.map(product => {
 			if(product.id == id){
 				product.show = false
 			}
