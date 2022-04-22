@@ -24,6 +24,7 @@ router.post('/formulario-productos', upload.single("image"), controlador.create)
 
 router.get('/editar/:id', controlador.edicionProducto)
 router.put('/editar/:id', upload.single("image"), controlador.actualizarProducto)
+router.delete('/editar/:id', controlador.eliminarProducto)
 
 module.exports = router;
 
