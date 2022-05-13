@@ -1,5 +1,7 @@
 const path = require ("path")
 const fs = require('fs');
+const User = require('../models/User');
+const bcryptjs = require('bcryptjs');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -11,6 +13,38 @@ const controlador = {
     login: (req, res) => {
         res.render ("login.ejs")
     },
+    loginProcess: (req, res) => {
+		let userToLogin = User.findByField('email', req.body.email);
+		
+		if(userToLogin) {
+			let OkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+			if (OkPassword) {
+				delete userToLogin.password;
+				req.session.userLogged = userToLogin;
+
+				if(req.body.remember_user) {
+					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+				}
+
+				return res.redirect('/index');
+			} 
+			return res.render('userLoginForm', {
+				errors: {
+					email: {
+						msg: 'Las credenciales son inválidas'
+					}
+				}
+			});
+		}
+
+		return res.render('userLoginForm', {
+			errors: {
+				email: {
+					msg: 'No se encuentra este email en nuestra base de datos'
+				}
+			}
+		});
+	},
 
     registro: (req, res) => {
         res.render ("register.ejs")
@@ -19,6 +53,12 @@ const controlador = {
     registroConfirmacion: (req, res) => {
         res.render ("registro-confirmacion.ejs")
     },
+
+    logout: (req, res) => {
+		res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
+	}
 
 }
 

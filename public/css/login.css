@@ -42,6 +42,10 @@ main {
     max-width: 100%;
 }
 
+.text-danger{
+    color: rgb(255, 0, 0);
+}
+
 
 
 /* Boton login */

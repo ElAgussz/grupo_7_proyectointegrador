@@ -2,6 +2,8 @@
 const express = require("express");
 const path = require("path");
 const methodOverride = require("method-override"); // Para poder usar los métodos PUT y DELETE
+const session = require("express-session")
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
 
 //************* Path´s **************/
 const publicPath = path.join(__dirname, "../", "public")
@@ -20,7 +22,12 @@ app.set ("view engine", "ejs")
 
 app.use(express.static(publicPath));
 app.use(methodOverride("_method"))
-
+app.use(session({
+    secret: "A la grande le puse cuca",
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(userLoggedMiddleware);
 
 
 //************* Rutas: requires & use **************/

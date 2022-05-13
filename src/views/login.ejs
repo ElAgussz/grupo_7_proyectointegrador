@@ -24,13 +24,18 @@
         <div class="formulario">
             <form action="#" method="POST">
                 <p class="correo">Correo electrónico</p>
-                <label for="email">
-                    <input type="text" name="emailLogin" required>
+                <label>
+                    <input type="text" name="email" required>
+                    <% if (locals.errors && errors.email) { %>
+                        <div class="text-danger">
+                            <%= errors.email.msg %>
+                        </div>
+                    <% } %>
                 </label>
 
                 <p class="contraseña">Contraseña</p>
                 <label for="password">
-                    <input type="password" name="passwordLogin" required>
+                    <input type="password" name="password" required>
                 </label>
 
 
