@@ -48,13 +48,6 @@ main h2 {
 	100% { transform: translateX(-500%); }
 }
 
-
-.wrapper {
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-
 .slider {
 	position: relative;
 }
