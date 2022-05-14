@@ -46,11 +46,15 @@ const controlador = {
 		});
 	},
 
-    registro: (req, res) => {
+    register: (req, res) => {
         res.render ("register.ejs")
     },
 
-    registroConfirmacion: (req, res) => {
+	processRegister:(req, res) => {
+
+	},
+
+    registerConfirmacion: (req, res) => {
         res.render ("registro-confirmacion.ejs")
     },
 

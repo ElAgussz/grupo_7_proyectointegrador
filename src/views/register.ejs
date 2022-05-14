@@ -26,16 +26,16 @@
 <body class="boddy">
    <header class="header">
       <%- include ("./partials/headder")%>
-    </header>
+   </header>
 
    <main class="caja-registro">
       <p class="texto-crear"></p>
-         <h1>Registrar una nueva cuenta</h1><br>
-         <div class="icono-avatar">
-            <img class="icono-avatar" src="images/icono-gris.png">
-            <i class="fa-solid fa-camera icono-camara"></i>
-         </div>
-      <form action="/registro" method="POST">
+      <h1>Registrar una nueva cuenta</h1><br>
+      <div class="icono-avatar">
+         <img class="icono-avatar" src="images/icono-gris.png">
+         <i class="fa-solid fa-camera icono-camara"></i>
+      </div>
+      <form action="/register" method="POST">
          <div class="namef">
             <label for="nombre">
                <p>Nombre/s</p>
@@ -83,33 +83,33 @@
                <input type="text" name="ciudad" required>
             </label>
          </div>
+         <label class="terminosycondiciones" for="terminos">Acepto los<a href="/"> terminos y condiciones</a>
+            <input type="checkbox" name="terminos" required>
+         </label>
+         <div class="XD">
+            <br>
+            <button class="boton-crear"><a href="/registro-confirmacion">Registrarse</a></button>
+            <div>
+               <br>
+               <p>¿Ya tienes una cuenta?</p>
+               <a href="/login">Inicia sesión</a>
+            </div>
+            <div><br>
+               <button class="google">
+                  <p><i class="fa-brands fa-google icono-google"></i>Registrarse con Google </p>
+               </button>
+               <button class="facebook">
+                  <p><i class="fa-brands fa-facebook-f icono-facebook"></i>Registrarse con Facebook</p>
+               </button>
+            </div>
+         </div>
       </form>
       <br>
-      <label class="terminosycondiciones" for="terminos">Acepto los<a href="/"> terminos y condiciones</a>
-         <input type="checkbox" name="terminos" required>
-      </label>
-      <div class="XD">
-         <br>
-         <button class="boton-crear"><a href="/registro-confirmacion">Registrarse</a></button>
-         <div>
-            <br>
-            <p>¿Ya tienes una cuenta?</p>
-            <a href="/login">Inicia sesión</a>
-         </div>
-         <div><br>
-            <button class="google">
-               <p><i class="fa-brands fa-google icono-google"></i>Registrarse con Google  </p>
-            </button>
-            <button class="facebook">
-               <p><i class="fa-brands fa-facebook-f icono-facebook"></i>Registrarse con Facebook</p>
-            </button>
-         </div>
-      </div>
    </main>
 
    <footer class="footer">
       <%- include ("./partials/footer")%>
-    </footer>
+   </footer>
 </body>
 
 </html>
