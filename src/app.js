@@ -31,6 +31,7 @@ app.use(session({
 }));
 app.use(cookies());
 // app.use(userLoggedMiddleware); // VER PROBLEMAS ACA
+app.use(express.urlencoded({ extended: false }));
 
 
 //************* Rutas: requires & use **************/

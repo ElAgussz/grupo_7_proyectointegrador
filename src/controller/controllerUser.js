@@ -11,7 +11,27 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controlador = {
 
-    login: (req, res) => {
+   
+    register: (req, res) => {
+        res.render ("register.ejs")
+    },
+
+	processRegister:(req, res) => {
+		const resultValidation = validationResult(req);
+
+		if(resultValidation.errors.length > 0) {
+			return res.render("register.ejs", {
+				errors: resultValidation.mapped(),
+				oldData: req.body
+			});
+		}
+	},
+
+    registerConfirmation: (req, res) => {
+        res.render ("registro-confirmacion.ejs")
+    },
+
+	login: (req, res) => {
         res.render ("login.ejs")
     },
     loginProcess: (req, res) => {
@@ -23,7 +43,7 @@ const controlador = {
 				delete userToLogin.password;
 				req.session.userLogged = userToLogin;
 
-				if(req.body.remember_user) {
+				if(req.body.mantenerSesion) {
 					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
 				}
 
@@ -47,24 +67,6 @@ const controlador = {
 		});
 	},
 
-    register: (req, res) => {
-        res.render ("register.ejs")
-    },
-
-	processRegister:(req, res) => {
-		const resultValidation = validationResult(req);
-
-		if(resultValidation.errors.length > 0) {
-			return res.render("register.ejs", {
-				errors: resultValidation.mapped(),
-				oldData: req.body
-			});
-		}
-	},
-
-    registerConfirmation: (req, res) => {
-        res.render ("registro-confirmacion.ejs")
-    },
 
     logout: (req, res) => {
 		res.clearCookie('userEmail');
