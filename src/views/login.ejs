@@ -21,7 +21,7 @@
         <%- include ("./partials/headder")%>
     </header>
     <main>
-        <div class="formulario">
+        <div class="formulario" action="/login">
             <form action="#" method="POST">
                 <p class="correo">Correo electrónico</p>
                 <label>
@@ -32,7 +32,8 @@
                         </div>
                     <% } %>
                 </label>
-
+                <br>
+                <br>    
                 <p class="contraseña">Contraseña</p>
                 <label for="password">
                     <input type="password" name="password" required>

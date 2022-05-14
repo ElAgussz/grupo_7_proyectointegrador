@@ -29,7 +29,7 @@ const controlador = {
 
 				return res.redirect('/index');
 			} 
-			return res.render('userLoginForm', {
+			return res.render('/login', {
 				errors: {
 					email: {
 						msg: 'Las credenciales son inválidas'
@@ -38,7 +38,7 @@ const controlador = {
 			});
 		}
 
-		return res.render('userLoginForm', {
+		return res.render('/login', {
 			errors: {
 				email: {
 					msg: 'No se encuentra este email en nuestra base de datos'
