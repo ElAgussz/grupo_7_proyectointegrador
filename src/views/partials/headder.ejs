@@ -1,28 +1,46 @@
 <!DOCTYPE html>
+
 <html lang="en">
-        <nav class="nav">
-          <img src="images/Artboard 4.png" class="logo">
-          <button class="nav-toggle" aria-label="Abrir menú">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="/" class="nav-menu-link nav-link">Home</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/producto" class="nav-menu-link nav-link">Producto</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/registro" class="nav-menu-link nav-link">Crear cuenta</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="/login" class="nav-menu-link nav-link nav-menu-link_active"
-                >Login</a
-              >
-              <li class="nav-menu-item">
-                <a href="/carrito" class="nav-menu-link nav-link">Carrito</a>
-              </li>
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <div class="logo"><a href="/">LOGO</a></div>
+        <ul class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="/registro">Crear Cuenta</a></li>
+          <li><a href="/login">Iniciar Sesión</a></li>
+          <li>
+            <a href="#" class="desktop-link">Usuario</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Usuario</label>
+            <ul>
+              <li><a href="#">Salir</a></li>
+              <li><a href="#">Ayuda</a></li>
+            </ul>
+            <a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </nav>
+  </div>
+
+</body>
+
 </html>
