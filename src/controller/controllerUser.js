@@ -56,7 +56,8 @@ const controlador = {
 
 		if(resultValidation.errors.length > 0) {
 			return res.render("register.ejs", {
-				errors: resultValidation.mapped()
+				errors: resultValidation.mapped(),
+				oldData: req.body
 			});
 		}
 	},

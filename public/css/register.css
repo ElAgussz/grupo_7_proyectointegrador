@@ -137,18 +137,29 @@ button .facebook{
 
 .terminosycondiciones {
     position: relative;
-    left:15px;
+    left:10px
+    
 }
 
 .terminosycondiciones input {
     position:relative;
     right:270px;
+    margin:10px 0;
 }
+
+.text-danger {
+    color:brown;
+    text-align: left;
+    padding: 1px 0;
+}
+
+
+
 
 @media (min-width:761px){
     .caja-registro {
         width: 600px;
-        height: 1030px;
+        height: 1100px;
     }
     .namef input {
         width: 275px;
@@ -207,7 +218,7 @@ button .facebook{
     }
 
     .terminosycondiciones {
-        left:-233px
+        left:-230px
     }
 }
 

@@ -25,20 +25,21 @@ const upload = multer({storage});
 // Validar los campos del formulario de registro
 
 const validations = [
-    body('nombre').notEmpty().withMessage('Tenes que poner un nombre'),
-    body('apellido').notEmpty().withMessage('Tenes que escribir un apellido'),
-    body('email').notEmpty().withMessage('Tenes que escribir un email valido'),
-    body('contraseña').notEmpty().withMessage('Tenes que escribir una contraseña'),
-    body('country').notEmpty().withMessage('Tenes que elegir tu pais'),
-    body('ciudad').notEmpty().withMessage('Tenes que escribir tu ciudad donde vives'),
-    body('genero').notEmpty().withMessage('Tenes que elegir tu género'),
+    body('nombre').notEmpty().withMessage('Tienes que poner un nombre'),
+    body('apellido').notEmpty().withMessage('Tienes que escribir un apellido'),
+    body('email').notEmpty().withMessage('Tienes que escribir tu correo electrónico').bail().isEmail().withMessage('Tienes que escribir un correo electrónico válido'),
+    body('contraseña').notEmpty().withMessage('Tienes que escribir una contraseña'),
+    body('pais').notEmpty().withMessage('Tienes que elegir el pais donde vives'),
+    body('ciudad').notEmpty().withMessage('Tienes que escribir la ciudad donde vives'),
+    body('genero').notEmpty().withMessage('Tienes que elegir tu género'),
+    body('cumpleaños').notEmpty().withMessage('Tienes que poner tu fecha de nacimiento'),
 ]
 
 
 // Vista del formulario de registro
 router.get('/register', guestMiddleware, controlador.register)
 // Procesar el registro
-router.post('register', upload.single("avatar"), validations, controlador.processRegister) // Procesar el registro
+router.post('/register', upload.single("avatar"), validations, controlador.processRegister) // Procesar el registro
 // Proceso de confirmacion luego de poner los datos correctamente en el formulario
 router.get ('/register-confirmation', controlador.registerConfirmation)
 

@@ -39,65 +39,107 @@
          <div class="namef">
             <label for="nombre">
                <p>Nombre/s</p>
-               <input type="text" name="nombre" required>
+               <input type="text" name="nombre" value="<%= locals.oldData ? oldData.nombre : null%>"> 
+               <% if(locals.errors && errors.nombre) { %>
+               <div class="text-danger">
+                  <%= errors.nombre.msg %>
+               </div>
+               <% } %>
             </label>
             <label for="apellido">
                <p>Apellido/s</p>
-               <input type="text" name="apellido" required>
+               <input type="text" name="apellido" value="<%= locals.oldData ? oldData.apellido : null%>">
+               <% if(locals.errors && errors.apellido) { %>
+                  <div class="text-danger">
+                     <%= errors.apellido.msg %>
+                  </div>
+                  <% } %>
             </label>
          </div>
          <div class="namef">
             <label for="email">
                <p>Correo electrónico</p>
-               <input type="email" name="email" required>
+               <input type="text" name="email" value="<%= locals.oldData ? oldData.email : null%>">
+               <% if(locals.errors && errors.email) { %>
+                  <div class="text-danger">
+                     <%= errors.email.msg %>
+                  </div>
+                  <% } %>
             </label>
             <label for="contraseña">
                <p>Contraseña</p>
-               <input type="password" name="contraseña" required>
+               <input type="password" name="contraseña" value="<%= locals.oldData ? oldData.contraseña : null%>">
+               <% if(locals.errors && errors.contraseña) { %>
+                  <div class="text-danger">
+                     <%= errors.contraseña.msg %>
+                  </div>
+                  <% } %>
             </label>
             </div>
             <div class="datosf">
             <label for="telefono">
                <p>Teléfono (opcional)</p>
-               <input type="tel" name="telefono">
+               <input type="tel" name="telefono" value="<%= locals.oldData ? oldData.telefono : null%>">
             </label>
             <label for="genero">
                <p>Género</p>
                <select name="genero">
+                  <option value="">Elige un género</option>
                   <% 
                   let generos = ['Masculino', 'Femenino']
                   %>
                   <% for (const genero of generos) { %>
-                     <option value="<%= genero %>"><%= genero %></option>
+                     <option value="<%= genero %>" <%= locals.oldData && (genero === oldData.genero) ? 'selected' : null %>><%= genero %></option>
                   <% } %>
+                  <% if(locals.errors && errors.genero) { %>
+                     <div class="text-danger">
+                        <%= errors.genero.msg %>
+                     </div>
+                     <% } %>
             </label>
             </select><br>
             <label for="cumpleaños">
                <p>Fecha de nacimiento</p>
                <input type="date" name="cumpleaños" placeholder="XD">
+               <% if(locals.errors && errors.cumpleaños) { %>
+                  <div class="text-danger">
+                     <%= errors.cumpleaños.msg %>
+                  </div>
+                  <% } %>
             </label>
             <label for="paises">
                <p>País</p>
-               <select name="country">
+               <select name="pais">
+                  <option value="">Elige un país</option>
                   <% 
-                  let countries = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Cuba', 'Ecuador', 'El Salvador', 'Guatemala', 'México', 'Paraguay', 'Perú', 'Uruguay', 'Venezuela']
+                  let paises = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Cuba', 'Ecuador', 'El Salvador', 'Guatemala', 'México', 'Paraguay', 'Perú', 'Uruguay', 'Venezuela']
                   %>
-                  <% for (const country of countries) { %>
-                     <option value="<%= country %>"><%= country %></option>
+                  <% for (const pais of paises) { %>
+                     <option value="<%= pais %>" <%= locals.oldData && (pais === oldData.pais) ? 'selected' : null %>><%= pais %></option>
                   <% } %>
+                  <% if(locals.errors && errors.pais) { %>
+                     <div class="text-danger">
+                        <%= errors.pais.msg %>
+                     </div>
+                     <% } %>
                </select>
             </label><br>
             <label for="ciudad">
                <p>Ciudad</p>
-               <input type="text" name="ciudad" required>
+               <input type="text" name="ciudad" value="<%= locals.oldData ? oldData.ciudad : null%>">
+               <% if(locals.errors && errors.ciudad) { %>
+                  <div class="text-danger">
+                     <%= errors.ciudad.msg %>
+                  </div>
+                  <% } %>
             </label>
          </div>
          <label class="terminosycondiciones" for="terminos">Acepto los<a href="/"> terminos y condiciones</a>
-            <input type="checkbox" name="terminos" required>
+            <input type="checkbox" name="terminos">
          </label>
          <div class="XD">
             <br>
-            <button class="boton-crear"><a href="/registro-confirmacion">Registrarse</a></button>
+            <button class="boton-crear" type="submit">Registrarse</button>
             <div>
                <br>
                <p>¿Ya tienes una cuenta?</p>
