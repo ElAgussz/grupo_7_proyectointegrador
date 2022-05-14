@@ -35,7 +35,7 @@
          <img class="icono-avatar" src="images/icono-gris.png">
          <i class="fa-solid fa-camera icono-camara"></i>
       </div>
-      <form action="/register" method="POST">
+      <form action="/register" method="POST" enctype="multipart/form-data">
          <div class="namef">
             <label for="nombre">
                <p>Nombre/s</p>
@@ -69,13 +69,13 @@
             </label>
             <label for="paises">
                <p>País</p>
-               <select>
-                  <option></option>
-                  <option value="">Argentina</option>
-                  <option value="">Chile</option>
-                  <option value="">Bolivia</option>
-                  <option value="">Uruguay</option>
-                  <option value="">Paraguay</option>
+               <select name="country">
+                  <% 
+                  let countries = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Cuba', 'Ecuador', 'El Salvador', 'Guatemala', 'México', 'Paraguay', 'Perú', 'Uruguay', 'Venezuela']
+                  %>
+                  <% for (const country of countries) { %>
+                     <option value="<%= country %>"><%= country %></option>
+                  <% } %>
                </select>
             </label><br>
             <label for="ciudad">
