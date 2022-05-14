@@ -54,7 +54,7 @@ const controlador = {
 
 	},
 
-    registerConfirmacion: (req, res) => {
+    registerConfirmation: (req, res) => {
         res.render ("registro-confirmacion.ejs")
     },
 
