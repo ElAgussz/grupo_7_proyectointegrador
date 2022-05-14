@@ -68,7 +68,7 @@
             </label>
             <label for="contraseña">
                <p>Contraseña</p>
-               <input type="password" name="contraseña" value="<%= locals.oldData ? oldData.contraseña : null%>">
+               <input type="password" name="contraseña">
                <% if(locals.errors && errors.contraseña) { %>
                   <div class="text-danger">
                      <%= errors.contraseña.msg %>
@@ -91,13 +91,13 @@
                   <% for (const genero of generos) { %>
                      <option value="<%= genero %>" <%= locals.oldData && (genero === oldData.genero) ? 'selected' : null %>><%= genero %></option>
                   <% } %>
+               </select>
                   <% if(locals.errors && errors.genero) { %>
                      <div class="text-danger">
                         <%= errors.genero.msg %>
                      </div>
                      <% } %>
-            </label>
-            </select><br>
+            </label><br>
             <label for="cumpleaños">
                <p>Fecha de nacimiento</p>
                <input type="date" name="cumpleaños" placeholder="XD">
@@ -107,7 +107,7 @@
                   </div>
                   <% } %>
             </label>
-            <label for="paises">
+            <label for="pais">
                <p>País</p>
                <select name="pais">
                   <option value="">Elige un país</option>
@@ -117,13 +117,14 @@
                   <% for (const pais of paises) { %>
                      <option value="<%= pais %>" <%= locals.oldData && (pais === oldData.pais) ? 'selected' : null %>><%= pais %></option>
                   <% } %>
-                  <% if(locals.errors && errors.pais) { %>
-                     <div class="text-danger">
-                        <%= errors.pais.msg %>
-                     </div>
-                     <% } %>
+                  
                </select>
-            </label><br>
+               <% if(locals.errors && errors.pais) { %>
+                  <div class="text-danger">
+                     <%= errors.pais.msg %>
+                  </div>
+                  <% } %>
+            </label>
             <label for="ciudad">
                <p>Ciudad</p>
                <input type="text" name="ciudad" value="<%= locals.oldData ? oldData.ciudad : null%>">
@@ -135,7 +136,12 @@
             </label>
          </div>
          <label class="terminosycondiciones" for="terminos">Acepto los<a href="/"> terminos y condiciones</a>
-            <input type="checkbox" name="terminos">
+            <input type="checkbox" name="terminos" >
+            <% if(locals.errors && errors.terminos) { %>
+               <div class="text-danger-terminos">
+                  <%= errors.terminos.msg %>
+               </div>
+               <% } %>
          </label>
          <div class="XD">
             <br>

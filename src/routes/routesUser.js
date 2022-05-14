@@ -33,6 +33,7 @@ const validations = [
     body('ciudad').notEmpty().withMessage('Tienes que escribir la ciudad donde vives'),
     body('genero').notEmpty().withMessage('Tienes que elegir tu género'),
     body('cumpleaños').notEmpty().withMessage('Tienes que poner tu fecha de nacimiento'),
+    body('terminos').notEmpty().withMessage('Tienes que aceptar los términos y condiciones para continuar'),
 ]
 
 
