@@ -52,7 +52,13 @@ const controlador = {
     },
 
 	processRegister:(req, res) => {
+		const resultValidation = validationResult(req);
 
+		if(resultValidation.errors.length > 0) {
+			return res.render("register.ejs", {
+				errors: resultValidation.mapped()
+			});
+		}
 	},
 
     registerConfirmation: (req, res) => {

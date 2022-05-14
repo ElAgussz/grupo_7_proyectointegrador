@@ -25,12 +25,13 @@ const upload = multer({storage});
 // Validar los campos del formulario de registro
 
 const validations = [
-    body('nombre').notEmpty(),
-    body('apellido').notEmpty(),
-    body('contraseña').notEmpty(),
-    body('country').notEmpty(),
-    body('ciudad').notEmpty(),
-    body('nombre').notEmpty(),
+    body('nombre').notEmpty().withMessage('Tenes que poner un nombre'),
+    body('apellido').notEmpty().withMessage('Tenes que escribir un apellido'),
+    body('email').notEmpty().withMessage('Tenes que escribir un email valido'),
+    body('contraseña').notEmpty().withMessage('Tenes que escribir una contraseña'),
+    body('country').notEmpty().withMessage('Tenes que elegir tu pais'),
+    body('ciudad').notEmpty().withMessage('Tenes que escribir tu ciudad donde vives'),
+    body('genero').notEmpty().withMessage('Tenes que elegir tu género'),
 ]
 
 

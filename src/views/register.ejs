@@ -63,10 +63,13 @@
             </label>
             <label for="genero">
                <p>Género</p>
-               <select>
-                  <option></option>
-                  <option>Masculino</option><br>
-                  <option>Femenino</option><br>
+               <select name="genero">
+                  <% 
+                  let generos = ['Masculino', 'Femenino']
+                  %>
+                  <% for (const genero of generos) { %>
+                     <option value="<%= genero %>"><%= genero %></option>
+                  <% } %>
             </label>
             </select><br>
             <label for="cumpleaños">
