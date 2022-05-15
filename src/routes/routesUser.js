@@ -25,15 +25,28 @@ const upload = multer({storage});
 // Validar los campos del formulario de registro
 
 const validations = [
-    body('nombre').notEmpty().withMessage('Tienes que poner un nombre'),
-    body('apellido').notEmpty().withMessage('Tienes que escribir un apellido'),
+    body('nombre').notEmpty().withMessage('Tienes que escribir tu nombre'),
+    body('apellido').notEmpty().withMessage('Tienes que escribir tu apellido'),
     body('email').notEmpty().withMessage('Tienes que escribir tu correo electrónico').bail().isEmail().withMessage('Tienes que escribir un correo electrónico válido'),
-    body('contraseña').notEmpty().withMessage('Tienes que escribir una contraseña'),
-    body('pais').notEmpty().withMessage('Tienes que elegir el pais donde vives'),
-    body('ciudad').notEmpty().withMessage('Tienes que escribir la ciudad donde vives'),
+    body('contraseña').notEmpty().withMessage('Tienes que escribir tu contraseña'),
+    body('pais').notEmpty().withMessage('Tienes que elegir tu pais'),
+    body('ciudad').notEmpty().withMessage('Tienes que escribir tu ciudad'),
     body('genero').notEmpty().withMessage('Tienes que elegir tu género'),
-    body('cumpleaños').notEmpty().withMessage('Tienes que poner tu fecha de nacimiento'),
-    body('terminos').notEmpty().withMessage('Tienes que aceptar los términos y condiciones para continuar'),
+    body('cumpleaños').notEmpty().withMessage('Tienes que elegir tu fecha de nacimiento'),
+    body('terminos').notEmpty().withMessage('Tienes que aceptar los términos y condiciones'),
+    body('avatar').custom((value, { req }) => {
+        let file = req.file;
+        let extensionesPermitidas = [".jpg", ".png"];
+        if (!file) {
+            throw new Error ('Tienes que subir una imagen');
+        } else {
+            let extensionArchivo = path.extname(file.originalname);
+            if (!extensionesPermitidas.includes(extensionArchivo)) {
+                throw new Error ('Las extensiones permitidas son .jpg y .png' );
+            }
+        }
+        return true;
+    })
 ]
 
 
