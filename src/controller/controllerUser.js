@@ -25,6 +25,7 @@ const controlador = {
 				oldData: req.body
 			});
 		}
+		res.send("funciono bien")
 	},
 
     registerConfirmation: (req, res) => {
