@@ -7,7 +7,7 @@ const cookies = require('cookie-parser');
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
 
 //************* Path´s **************/
-const publicPath = path.join(__dirname, "../", "public")
+const publicPath = path.join(__dirname, "../", "public") 
 const viewspath = path.join(__dirname, "../src/views")
 
 

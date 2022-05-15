@@ -25,7 +25,10 @@ const controlador = {
 				oldData: req.body
 			});
 		}
-		res.send("funciono bien")
+
+		User.create(req.body);
+		
+		return res.send("funciono bien")
 	},
 
     registerConfirmation: (req, res) => {
