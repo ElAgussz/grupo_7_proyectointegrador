@@ -66,12 +66,12 @@
                   </div>
                   <% } %>
             </label>
-            <label for="contraseña">
+            <label for="password" name="password">
                <p>Contraseña</p>
-               <input type="password" name="contraseña">
-               <% if(locals.errors && errors.contraseña) { %>
+               <input type="password" name="password">
+               <% if(locals.errors && errors.password) { %>
                   <div class="text-danger">
-                     <%= errors.contraseña.msg %>
+                     <%= errors.password.msg %>
                   </div>
                   <% } %>
             </label>

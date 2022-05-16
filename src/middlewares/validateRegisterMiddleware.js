@@ -5,7 +5,7 @@ const validations = [
     body('nombre').notEmpty().withMessage('Tienes que escribir tu nombre'),
     body('apellido').notEmpty().withMessage('Tienes que escribir tu apellido'),
     body('email').notEmpty().withMessage('Tienes que escribir tu correo electrónico').bail().isEmail().withMessage('Tienes que escribir un correo electrónico válido'),
-    body('contraseña').notEmpty().withMessage('Tienes que escribir tu contraseña'),
+    body('password').notEmpty().withMessage('Tienes que escribir tu contraseña'),
     body('pais').notEmpty().withMessage('Tienes que elegir tu pais'),
     body('ciudad').notEmpty().withMessage('Tienes que escribir tu ciudad'),
     body('genero').notEmpty().withMessage('Tienes que elegir tu género'),
