@@ -4,8 +4,6 @@ const User = require('../models/User');
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator')
 
-const productsFilePath = path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -26,7 +24,7 @@ const controlador = {
 			});
 		}
 
-		let userInDB = user.findByField('email', req.body.email);
+		let userInDB = User.findByField('email', req.body.email);
 
 		if(userInDB) {
 			return res.render('register.ejs', {
@@ -46,7 +44,7 @@ const controlador = {
 			avatar: req.file.filename
 		}
 
-		let userCreated = User.create(userToCreate);
+		User.create(userToCreate);
 		
 		return res.send("funciono bien")
 	},
