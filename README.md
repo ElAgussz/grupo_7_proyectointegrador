@@ -16,14 +16,9 @@ Nuestro sitio esta orientado hacia un publico el cual busca plantas para adornar
 
 Juan Rinero: Soy de Cordoba Capital, deje mi trabajo actual como administrativo cansado de la monotia para poder enfocarme en algo que realmente me gusta y pueda tener una futuro mejor. Actualmente cursando Desarrollo Web Full Stack en Digital House. Buscando formar un perfil integral con conocimiento Back-End / Front-End con herramientas como Node, Express, React e implementarlas en nuevos desafíos y proyectos.
 
-Francisco Matarese: Soy de Bella Vista, Buenos Aires y no sé presentarme de una forma que no parezca que mi IQ difícilmente llega a los dos dígitos. Me gustan los sanguches de milanesa y otras cosas, posiblemente menos legales.
-
-Martín Ramirez: soy de Rosario, Santa fé. Me dicen tincho, dani, jony, martin (etc) y más por venir, elegí el que te guste. Me gusta cocinar (asique le podría hacer a Fran unos ricos sanguches de milanesa), el buen vino, la birra, y la PC con todo lo que incluye. Trabajo hace 9 años como líder de un equipo en una empresa que brinda servicios de atención al cliente a otras empresas, como Telecom Personal por ejemplo; harto de ésto, me metí en éste mundo de la programación y cada día lo estoy amando un poquito más. Y aguante el grupo 7!
+Martín Ramirez: soy de Rosario. Me dicen tincho, dani, jony (etc), el que te guste. Me gusta cocinar, el buen vino, la birra, y la PC. Trabajo como líder de un equipo en una empresa que brinda servicios de atención al cliente a otras empresas. Busco nuevos rumbos y me metí en éste mundo de la programación que siempre llamó mi atención y cada día lo estoy amando un poquito más.
 
 Agustin Andres Nuñez Surroca: Soy de Villa Mercedes, San Luis. Me gusta estar casi todo el dia en la PC, por eso elegí la programación, también estudio portugués. También me gusta ir al gimnasio en todas las mañanas para compensar el sedentarismo.
-
-Lucia Cerpa: Hola, soy mexicana, tengo 36 años, me gustan las series, el gym (de hecho tengo uno), la tecnología y siempre había tenido inquietud por la programación, codeando un poco quedé fascinada por este mundo y aqui estoy intentando cambiar de profesión para dedicarme al 100 a esto.
-
 
 -----------------------------------------------------------------------
 # Paginas de referencia:
@@ -35,5 +30,3 @@ Lucia Cerpa: Hola, soy mexicana, tengo 36 años, me gustan las series, el gym (d
 * <a href="https://succumom.com" target="_blank"> Ir a Sucummon </a>
 
 
-![](Shrek.jpg)
-### FALOPA!
