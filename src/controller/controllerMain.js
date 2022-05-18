@@ -13,9 +13,7 @@ const controlador = {
 		return res.render("index",{nuevoIngreso,oferta,toThousand})
         
     },
-    search: (req, res) => {             //RUTA PARA SEARCH-BAR
-		res.render("results.ejs")
-    },    
+       
 
 
 }

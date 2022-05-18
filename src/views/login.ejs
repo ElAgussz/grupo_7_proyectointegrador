@@ -21,8 +21,8 @@
         <%- include ("./partials/headder")%>
     </header>
     <main>
-        <div class="formulario" action="/login">
-            <form action="#" method="POST">
+        <div class="formulario">
+            <form action="/login" method="POST">
                 <p class="correo">Correo electrónico</p>
                 <label>
                     <input type="text" name="email" required>
@@ -35,14 +35,14 @@
                 <br>
                 <br>    
                 <p class="contraseña">Contraseña</p>
-                <label for="password">
+                <label for="password" name="password">
                     <input type="password" name="password" required>
                 </label>
 
 
                 <button class="boton-logear" type="submit"><a>Iniciar sesion</a></button>
                 <div class="registrarseLogin">
-                    <h5>¿No tienes cuenta? <a href="registro"> Crea una aquí.</a></h5>
+                    <h5>¿No tienes cuenta? <a href="/register"> Crea una aquí.</a></h5>
                     </div>
             </form>
             <div class="mantenerSesion">

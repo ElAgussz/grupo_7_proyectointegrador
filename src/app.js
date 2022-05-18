@@ -30,7 +30,7 @@ app.use(session({
     saveUninitialized: false
 }));
 app.use(cookies());
-// app.use(userLoggedMiddleware); // VER PROBLEMAS ACA
+app.use(userLoggedMiddleware); // VER PROBLEMAS ACA
 app.use(express.urlencoded({ extended: false }));
 
 

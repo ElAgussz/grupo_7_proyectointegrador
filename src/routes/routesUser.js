@@ -8,6 +8,7 @@ const authMiddleware = require("../middlewares/authMiddleware");
 const validations = require('../middlewares/validateRegisterMiddleware')
 
 
+
 // Para procesar la imagen de perfil en el formulario de registro
 
 const storage = multer.diskStorage({
@@ -36,7 +37,6 @@ router.get ('/register-confirmation', controlador.registerConfirmation)
 router.get ('/login', guestMiddleware, controlador.login)
 router.post ('/login', controlador.loginProcess)
 router.get ('/logout', controlador.logout)
-
 
 
 module.exports = router;

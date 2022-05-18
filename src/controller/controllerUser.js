@@ -69,9 +69,9 @@ const controlador = {
 					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
 				}
 
-				return res.redirect('/index');
+				return res.redirect('/');
 			} 
-			return res.render('/login', {
+			return res.render('login.ejs', {
 				errors: {
 					email: {
 						msg: 'Las credenciales son inválidas'
@@ -80,20 +80,23 @@ const controlador = {
 			});
 		}
 
-		return res.render('/login', {
+		return res.render('login.ejs', {
 			errors: {
 				email: {
 					msg: 'No se encuentra este email en nuestra base de datos'
 				}
 			}
-		});
+		})
 	},
-
-
-    logout: (req, res) => {
+	profile: (req, res) => {
+		return res.render('userProfile', {
+			user: req.session.userLogged
+		});
+	},	
+	logout: (req, res) => {
 		res.clearCookie('userEmail');
 		req.session.destroy();
-		return res.redirect('/index');
+		return res.redirect('/');
 	}
 
 }

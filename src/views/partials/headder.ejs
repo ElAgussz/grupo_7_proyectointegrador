@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <title></title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,23 +21,24 @@
         <ul class="links">
           <li><a href="/">Home</a></li>
           <li><a href="#">Productos</a></li>
-          <li><a href="/register">Crear Cuenta</a></li>
-          <li><a href="/login">Iniciar Sesión</a></li>
+          <% if (locals.isLogged) { %>
           <li>
-            <a href="#" class="desktop-link">Usuario</a>
+            <a href="#" class="desktop-link">Bienvenido <%= locals.userLogged.nombre %> </a>
             <input type="checkbox" id="show-features">
-            <label for="show-features">Usuario</label>
+            <label for="show-features"><%= locals.userLogged.nombre %></label>
             <ul>
-              <li><a href="#">Salir</a></li>
+              <li><a href="/logout">Salir</a></li>
               <li><a href="#">Ayuda</a></li>
             </ul>
-          <li>
             <a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
           </li>
-
+          <% } else { %>
+          <li><a href="/register">Crear Cuenta</a></li>
+          <li><a href="/login">Iniciar Sesión</a></li>
+          <% } %>
         </ul>
       </div>
-
+      
 
     </nav>
   </div>

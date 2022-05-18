@@ -1,1 +1,16 @@
-[]
+[
+ {
+  "id": 1,
+  "nombre": "juan",
+  "apellido": "Rinero",
+  "email": "juanrinero@gmail.com",
+  "password": "$2a$10$UXHVJLmQMEY50wtQQdCJJ.FfS.hHDSaeWKyPYhzQboR//ZS7LKiJ2",
+  "telefono": "",
+  "genero": "Masculino",
+  "cumpleaños": "2022-05-12",
+  "pais": "Argentina",
+  "ciudad": "Capital",
+  "terminos": "on",
+  "avatar": "1652839240449_img.png"
+ }
+]
