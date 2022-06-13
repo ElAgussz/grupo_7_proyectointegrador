@@ -52,7 +52,7 @@ module.exports = (sequelize, dataTypes) => {
     const products = sequelize.define(alias, cols, config);
 
     products.associate = (models) => {
-        products.belongsTo(models.Genres, { 
+        products.belongsTo(models.genres, { 
             as: "genero",
             foreignKey: "genre_id"
         })
@@ -60,6 +60,11 @@ module.exports = (sequelize, dataTypes) => {
         products.belongsTo(models.category, { 
             as: "categoria",
             foreignKey: "category_id"
+        })
+
+        products.hasMany(models.users, { 
+            as: "productos_user",
+            foreignKey: "user_id"
         })
     }
 
