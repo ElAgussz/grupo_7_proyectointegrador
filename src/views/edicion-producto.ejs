@@ -45,10 +45,6 @@
       <form action="/editar/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">ID</span>
-            <input disabled type="text" name="id" value="<%= product.id %>" required>
-          </div>
-          <div class="input-box">
             <span class="details">Nombre del producto</span>
             <input type="text" name="name" value="<%= product.name %>" required>
           </div>

@@ -1,5 +1,7 @@
 const path = require("path")
 const fs = require('fs');
+let db = path.join(__dirname, '../database/models')
+
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 
@@ -23,59 +25,62 @@ const controlador = {
 
     },
 
-    create: (req, res) => {
-        const id = req.body
-        const productoNuevo = {
-			id: products.length > 0 ? products[ products.length - 1 ].id + 1 : 1,
-			...req.body,
-			image: req.file?.filename ?? "default-image.png"
-        }
-
-        products.push(productoNuevo);
-        fs.writeFileSync(productsFilePath, JSON.stringify(products))
-        return res.redirect("/formulario-productos")
-    },
-
-    edicionProducto: (req, res) => {
-        const id = req.params.id;
+    create: (req, res) => { 
         
-        const product = products.find(product => {
-            if(product.id == id && product.show == true){
-                return res.render("edicion-producto.ejs", {product})
-            }
+        db.Productos.create({
+            name: req.body.name,
+            price: req.body.price,
+            discount: req.body.discount,
+            genre_id: req.body.genre,
+            category_id: req.body.category,
+            description: req.body.description,
+            stock: req.body.stock,
+            image: req.file?.filename ?? product.image,
+        })
+        .then(() => {
+            res.render("/")
         })
 
-        return res.send("no existe pa")
+
+    },
+    edicionProducto: (req, res) => {
+
+        let producto = db.Productos.findByPk(req.params.id)
+        let productoGenero = db.Generos.findAll();
+        let productoCategoria = db.Categorias.findAll();
+
+        Promise.all([producto, productoGenero, productoCategoria])
+            .then(function ([productos, generos, categorias]) {
+                res.render("edicion-producto.ejs", { productos: productos, generos: generos, categorias: categorias })
+            })
 
     },
     actualizarProducto: (req, res) => {
-        const id = req.params.id;
-        products = products.map(product => {
-            if (product.id == id) {
-                product.name = req.body.name,
-                    product.price = req.body.price,
-                    product.discount = req.body.discount,
-                    product.gender = req.body.gender,
-                    product.category = req.body.category,
-                    product.description = req.body.description,
-                    product.image = req.file?.filename ?? product.image
+        db.Productos.update({
+            name: req.body.name,
+            price: req.body.price,
+            discount: req.body.discount,
+            genre_id: req.body.genre,
+            category_id: req.body.category,
+            description: req.body.description,
+            stock: req.body.stock,
+            image: req.file?.filename ?? product.image,
+        }, {
+            where: {
+                id: req.params.id
             }
-            return product;
         })
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
-        return res.redirect("/");
 
+        res.redirect("/editar/" + req.params.id)
     },
     eliminarProducto: (req, res) => {
-        const id = req.params.id;
-		products = products.map(product => {
-			if(product.id == id){
-				product.show = false
-			}
-			return product;
-		});
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
-		return res.redirect("/");
+        db.Productos.destroy({
+            where: {
+                id: req.params.id
+            }
+        })
+
+        res.redirect("/")
     },
 }
 

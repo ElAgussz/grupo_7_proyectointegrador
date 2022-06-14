@@ -28,10 +28,6 @@
             <form action="/formulario-productos" method="post" enctype="multipart/form-data">
                 <div class="user-details">
                     <div class="input-box">
-                        <label class="details" name="id">Id</label>
-                        <input type="text" name="id" required>
-                    </div>
-                    <div class="input-box">
                         <label class="details" name="name" >Nombre del producto</label>
                         <input type="text" name="name" required>
                     </div>
@@ -53,7 +49,12 @@
                     </div>
                     <div class="input-box">
                         <label class="details" name="gender" >Genero</label>
-                        <input type="text" name="gender" required>
+                        <select class="input-box" name="gender" id="category">
+                            <option selected>Seleccionar categoria</option>
+                            <option value="Echeveria">Echeveria</option>
+                            <option value="Sedum">Sedum</option>
+                            <option value="Pachyveria">Pachyveria</option>
+                          </select>
                     </div>
                     <div class="input-box">
                         <span class="details" name="category">Categoria</span>
