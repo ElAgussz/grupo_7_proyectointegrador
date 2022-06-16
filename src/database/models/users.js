@@ -55,7 +55,7 @@ module.exports = (sequelize, dataTypes) => {
 
     const users = sequelize.define(alias, cols, config);
 
-    users.associate = (models) => {
+    /*users.associate = (models) => {
         users.belongsTo(models.tipo_usuario_id, { 
             as: "tipo_usuario",
             foreignKey: "tipo_usuario_id"
@@ -68,10 +68,10 @@ module.exports = (sequelize, dataTypes) => {
 
         users.belongsTo(models.products, {
             as: "user_products",
-            foreignKey: user_id
+            foreignKey: "user_id"
         })
     }
-
+*/
 
     return users;
 

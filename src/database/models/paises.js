@@ -22,13 +22,13 @@ module.exports = (sequelize, dataTypes) => {
 
     const paises = sequelize.define(alias, cols, config);
 
-    paises.associate = (models) => {
+    /*paises.associate = (models) => {
         paises.hasMany(models.users, { 
             as: "User_pais",
             foreignKey: "pais_id"
         })
     }
-
+*/
     return paises;
 
     

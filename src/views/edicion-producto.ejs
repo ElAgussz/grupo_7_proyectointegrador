@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/css/general.css">
 
 
-  <title>Editando <%= product.name %>
+  <title>Editando <%= productos.name %>
   </title>
 
 </head>
@@ -42,45 +42,45 @@
 
 
     <div class="content">
-      <form action="/editar/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+      <form action="/editar/<%= productos.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Nombre del producto</span>
-            <input type="text" name="name" value="<%= product.name %>" required>
+            <input type="text" name="name" value="<%= productos.name %>" required>
           </div>
           <div class="input-box">
             <span class="details">Descripcion</span>
-            <input type="text" name="description" value="<%= product.description %>" required>
+            <input type="text" name="description" value="<%= productos.description %>" required>
           </div>
           <div class="input-box">
             <span class="details">Unidades en stock</span>
-            <input type="text" name="stock" value="<%= product.stock %>" required>
+            <input type="text" name="stock" value="<%= productos.stock %>" required>
           </div>
           <div class="input-box">
             <span class="details">Precio</span>
-            <input type="text" name="price" value="<%= product.price %>" required>
+            <input type="text" name="price" value="<%= productos.price %>" required>
           </div>
           <div class="input-box">
             <span class="details">Descuento</span>
-            <input type="text" name="discount" value="<%= product.discount %>" required>
+            <input type="text" name="discount" value="<%= productos.discount %>" required>
           </div>
           <div class="input-box">
             <span class="details">Genero</span>
             <select class="input-box" name="gender" id="category">
               <option selected>Seleccionar categoria</option>
-              <option value="Echeveria" <%=product.gender=="Echeveria" ? "selected" : null %> >Echeveria</option>
-              <option value="Sedum" <%=product.gender=="Sedum" ? "selected" : null %>>Sedum</option>
-              <option value="Pachyveria" <%=product.gender=="Pachyveria" ? "selected" : null %>>Pachyveria</option>
+              <option value="Echeveria" <%=productos.gender=="Echeveria" ? "selected" : null %> >Echeveria</option>
+              <option value="Sedum" <%=productos.gender=="Sedum" ? "selected" : null %>>Sedum</option>
+              <option value="Pachyveria" <%=productos.gender=="Pachyveria" ? "selected" : null %>>Pachyveria</option>
             </select>
           </div>
           <div class="input-box">
             <span class="details">Categoria</span>
             <select class="input-box" name="category" id="category">
               <option selected>Seleccionar categoria</option>
-              <option value="sale" <%=product.category=="sale" ? "selected" : null %> >Sale</option>
-              <option value="nuevo-ingreso" <%=product.category=="nuevo-ingreso" ? "selected" : null %> >Nuevo ingreso
+              <option value="sale" <%=productos.category=="sale" ? "selected" : null %> >Sale</option>
+              <option value="nuevo-ingreso" <%=productos.category=="nuevo-ingreso" ? "selected" : null %> >Nuevo ingreso
               </option>
-              <option value="producto-destacado" <%=product.category=="producto-destacado" ? "selected" : null %>
+              <option value="producto-destacado" <%=productos.category=="producto-destacado" ? "selected" : null %>
                 >Producto destacado</option>
             </select>
           </div>
@@ -93,7 +93,7 @@
           <input type="submit" value="Actualizar producto">
         </div>
       </form>
-      <form action="/editar/<%= product.id %>?_method=DELETE" method="POST" enctype="multipart/form-data">
+      <form action="/editar/<%= productos.id %>?_method=DELETE" method="POST" enctype="multipart/form-data">
         <div class="button-delete">
           <input type="submit" value="Eliminar">
         </div>

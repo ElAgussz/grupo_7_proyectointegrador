@@ -1,6 +1,6 @@
 const path = require("path")
 const fs = require('fs');
-let db = path.join(__dirname, '../database/models')
+let db = require ('../database/models')
 
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
@@ -19,9 +19,8 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controlador = {
     formularioProducto: (req, res) => {
-        const id = req.params.id;
-        const product = products.find(product => product.id == id);
-        return res.render("formProducts.ejs", { product });
+        
+        return res.render("formProducts.ejs", );
 
     },
 
@@ -32,24 +31,24 @@ const controlador = {
             price: req.body.price,
             discount: req.body.discount,
             genre_id: req.body.genre,
-            category_id: req.body.category,
+            category_id: req.body.category, 
             description: req.body.description,
             stock: req.body.stock,
-            image: req.file?.filename ?? product.image,
+            //image: req.file?.filename ?? product.image,
         })
         .then(() => {
-            res.render("/")
-        })
+            res.json(req.body)
+        }) 
 
-
+ 
     },
     edicionProducto: (req, res) => {
 
         let producto = db.Productos.findByPk(req.params.id)
-        let productoGenero = db.Generos.findAll();
-        let productoCategoria = db.Categorias.findAll();
+        let productoGenero = db.Generos.findAll(); 
+        //let productoCategoria = db.Categorias.findAll();
 
-        Promise.all([producto, productoGenero, productoCategoria])
+        Promise.all([producto, productoGenero, /*productoCategoria*/])
             .then(function ([productos, generos, categorias]) {
                 res.render("edicion-producto.ejs", { productos: productos, generos: generos, categorias: categorias })
             })
@@ -60,11 +59,11 @@ const controlador = {
             name: req.body.name,
             price: req.body.price,
             discount: req.body.discount,
-            genre_id: req.body.genre,
-            category_id: req.body.category,
+            genre_id: req.body.genre, 
+            category_id: req.body.category, 
             description: req.body.description,
             stock: req.body.stock,
-            image: req.file?.filename ?? product.image,
+            //image: req.file?.filename ?? product.image,
         }, {
             where: {
                 id: req.params.id
@@ -78,7 +77,7 @@ const controlador = {
             where: {
                 id: req.params.id
             }
-        })
+        }) 
 
         res.redirect("/")
     },

@@ -5,7 +5,6 @@ module.exports = (sequelize, dataTypes) => {
         id:{
             type: dataTypes.INTEGER(10),
             primaryKey: true,
-            allowNull: false,
             autoIncrement: true
         }, 
         name:{ 
@@ -22,11 +21,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         genre_id:{
             type: dataTypes.INTEGER(10),
-            allowNull: false
         },
         category_id:{
-            type: dataTypes.INTEGER(10),
-            allowNull: false
+            type: dataTypes.INTEGER(10),          
         },
         description:{
             type: dataTypes.INTEGER(10),
@@ -38,7 +35,6 @@ module.exports = (sequelize, dataTypes) => {
         },
         user_id:{
             type: dataTypes.INTEGER(10),
-            allowNull: false
         } 
     }
 
@@ -51,7 +47,7 @@ module.exports = (sequelize, dataTypes) => {
 
     const products = sequelize.define(alias, cols, config);
 
-    products.associate = (models) => {
+    /*products.associate = (models) => {
         products.belongsTo(models.genres, { 
             as: "genero",
             foreignKey: "genre_id"
@@ -66,7 +62,7 @@ module.exports = (sequelize, dataTypes) => {
             as: "productos_user",
             foreignKey: "user_id"
         })
-    }
+    }*/
 
     return products;
 

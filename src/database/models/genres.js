@@ -22,12 +22,12 @@ module.exports = (sequelize, dataTypes) => {
 
     const genres = sequelize.define(alias, cols, config);
 
-    genres.associate = (models) => {
+    /*genres.associate = (models) => {
         genres.hasMany(models.products, { 
             as: "generos",
             foreignKey: "genre_id"
         })
-    }
+    }*/
 
     return genres;
 
