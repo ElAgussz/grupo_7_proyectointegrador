@@ -49,17 +49,19 @@
         }else if(isNaN(stock.value)){
             errores.push("Debe ingresar un valor numerico en descuento")
         }
-
+        /*  CHEQUEAR POR EL VALUE EN EL FORM 
+        
         let genero = document.querySelector(".genero");
 
         if( genero.selectedIndex == null || genero.selectedIndex == 0 ){
             errores.push("Debe seleccionar una genero")
         }
+        
         let categoria = document.querySelector(".categoria");
 
         if( categoria.selectedIndex == null || categoria.selectedIndex == 0 ){
             errores.push("Debe seleccionar una categoria")
-        }
+        }*/
         
         // capturando errores //
 
