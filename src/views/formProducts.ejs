@@ -25,41 +25,44 @@
     <div class="container-m1">
         <div class="title">Agregar Producto</div>
         <div class="content">
-            <form action="/formulario-productos" method="post" enctype="multipart/form-data">
+            <div class="errores">
+                <ul></ul>
+            </div>
+            <form action="/formulario-productos" method="post" enctype="multipart/form-data" class="form-products">
                 <div class="user-details">
                     <div class="input-box">
                         <label class="details" name="name" >Nombre del producto</label>
-                        <input type="text" name="name" required>
+                        <input type="text" name="name" class="nombre" >
                     </div>
                     <div class="input-box">
                         <label class="details" name="description" >Descripcion</label>
-                        <textarea class="form-control validate" name="description"  required></textarea>
+                        <textarea class="form-control validate" name="description" id="descripcion"  ></textarea>
                     </div>
                     <div class="input-box">
                         <label class="details" name="stock">Unidades en stock</label>
-                        <input type="text" name="stock" required>
+                        <input type="text" name="stock" class="stock" >
                     </div>
                     <div class="input-box">
                         <lab class="details" name="price">Precio</label>
-                        <input type="text" name="price" required>
+                        <input type="text" name="price" class="precio" >
                     </div>
                     <div class="input-box">
                         <label class="details" name="discount">Descuento</label>
-                        <input type="text" name="discount" required>
+                        <input type="text" name="discount" class="descuento" >
                     </div>
                     <div class="input-box">
                         <label class="details" name="gender" >Genero</label>
-                        <select class="input-box" name="gender" id="category">
-                            <option selected>Seleccionar categoria</option>
-                            <option value="Echeveria">Echeveria</option>
-                            <option value="Sedum">Sedum</option>
-                            <option value="Pachyveria">Pachyveria</option>
+                        <select class="input-box genero" name="gender" id="category">
+                            <option value="0">Seleccionar categoria</option>
+                            <option value="1">Echeveria</option>
+                            <option value="2">Sedum</option>
+                            <option value="3">Pachyveria</option>
                           </select>
                     </div>
                     <div class="input-box">
                         <span class="details" name="category">Categoria</span>
-                        <select class="input-box" name="category" id="category">
-                            <option selected>Seleccionar categoria</option>
+                        <select class="input-box categoria" name="category" id="category" class="categoria">
+                            <option value="0">Seleccionar categoria</option>
                             <option value="1">Sale</option>
                             <option value="2">Nuevo ingreso</option>
                             <option value="3">Producto destacado</option>
@@ -67,7 +70,7 @@
                     </div>
                     <div class="input-box">
                         <label for="image" class="details">Imagen</label>
-                        <input type="file" id="image" name="image" multiple />
+                        <input type="file" id="image" name="image" accept="image/png,image/jpeg" />
                     </div>
                 </div>
                 <div class="button">
@@ -82,6 +85,8 @@
     <footer class="footer">
         <%- include ("./partials/footer")%>
     </footer>
+    <script src="js/formProducts.js">
+    </script>
 </body>
 
 </html>
