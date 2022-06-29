@@ -4,7 +4,7 @@
 
     form.addEventListener("submit" , (e) => {
 
-        e.preventDefault();
+    
     
         const valoresAceptados = /^[0-9]+$/;
         let errores = [];
@@ -68,11 +68,10 @@
 
             let ulErrores = document.querySelector("div.errores ul")
             errores.forEach(error => {
-                ulErrores.innerHTML += `<li>${error}<li>`
-
-                
+                ulErrores.innerHTML += `<li>${error}<li>`   
             });
             
-            }
-        
+            }else {
+                alert("Producto creado")
+            }        
     })
