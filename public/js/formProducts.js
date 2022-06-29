@@ -3,8 +3,6 @@
     
 
     form.addEventListener("submit" , (e) => {
-
-        e.preventDefault();
     
         const valoresAceptados = /^[0-9]+$/;
         let errores = [];
