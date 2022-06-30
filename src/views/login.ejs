@@ -25,7 +25,7 @@
             <form action="/login" method="POST">
                 <p class="correo">Correo electrónico</p>
                 <label>
-                    <input type="text" name="email" required>
+                    <input type="text" name="email" >
                     <% if (locals.errors && errors.email) { %>
                         <div class="text-danger">
                             <%= errors.email.msg %>
@@ -36,7 +36,12 @@
                 <br>    
                 <p class="contraseña">Contraseña</p>
                 <label for="password" name="password">
-                    <input type="password" name="password" required>
+                    <input type="password" name="password" >
+                    <% if (locals.errors && errors.password) { %>
+                        <div class="text-danger">
+                            <%= errors.password.msg %>
+                        </div>
+                    <% } %>
                 </label>
 
 
