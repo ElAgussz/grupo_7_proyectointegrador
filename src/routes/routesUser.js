@@ -6,7 +6,6 @@ const multer = require('multer');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require("../middlewares/authMiddleware");
 const validations = require('../middlewares/validateRegisterMiddleware')
-const loginValidations = require ('../middlewares/validateLogin')
 
 
 
