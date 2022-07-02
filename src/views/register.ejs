@@ -35,11 +35,11 @@
          <img class="icono-avatar" src="images/icono-gris.png">
          <i class="fa-solid fa-camera icono-camara"></i>
       </div>
-      <form action="/register" method="POST" enctype="multipart/form-data">
+      <form class="formularioregistro" action="/register" method="POST" enctype="multipart/form-data">
          <div class="namef">
             <label for="nombre">
                <p>Nombre/s</p>
-               <input type="text" name="nombre" value="<%= locals.oldData ? oldData.nombre : null%>" minlength="2"> 
+               <input class="camponombre" type="text" name="nombre" value="<%= locals.oldData ? oldData.nombre : null%>" minlength="2"> 
                <% if(locals.errors && errors.nombre) { %>
                <div class="text-danger">
                   <%= errors.nombre.msg %>
@@ -59,7 +59,7 @@
          <div class="namef">
             <label for="email">
                <p>Correo electrónico</p>
-               <input type="text" name="email" value="<%= locals.oldData ? oldData.email : null%>">
+               <input class="campoemail" type="text" name="email" value="<%= locals.oldData ? oldData.email : null%>">
                <% if(locals.errors && errors.email) { %>
                   <div class="text-danger">
                      <%= errors.email.msg %>
@@ -68,7 +68,7 @@
             </label>
             <label for="password" name="password">
                <p>Contraseña</p>
-               <input type="password" name="password" minlength="8">
+               <input class="campocontraseña" type="password" name="password" minlength="8">
                <% if(locals.errors && errors.password) { %>
                   <div class="text-danger">
                      <%= errors.password.msg %>
@@ -135,7 +135,7 @@
                   <% } %>
             </label>
             <label for="avatar">
-               <input type="file" name="avatar">  
+               <input class="campoavatar" type="file" name="avatar" >  
                <% if(locals.errors && errors.avatar) { %>
                   <div class="text-danger-terminos">
                      <%= errors.avatar.msg %>
@@ -175,6 +175,7 @@
    <footer class="footer">
       <%- include ("./partials/footer")%>
    </footer>
+   <script src="js/registerValidaciones.js"></script>
 </body>
 
 </html>
