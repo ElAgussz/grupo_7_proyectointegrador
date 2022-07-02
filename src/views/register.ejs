@@ -39,7 +39,7 @@
          <div class="namef">
             <label for="nombre">
                <p>Nombre/s</p>
-               <input type="text" name="nombre" value="<%= locals.oldData ? oldData.nombre : null%>"> 
+               <input type="text" name="nombre" value="<%= locals.oldData ? oldData.nombre : null%>" minlength="2"> 
                <% if(locals.errors && errors.nombre) { %>
                <div class="text-danger">
                   <%= errors.nombre.msg %>
@@ -68,7 +68,7 @@
             </label>
             <label for="password" name="password">
                <p>Contraseña</p>
-               <input type="password" name="password">
+               <input type="password" name="password" minlength="8">
                <% if(locals.errors && errors.password) { %>
                   <div class="text-danger">
                      <%= errors.password.msg %>
