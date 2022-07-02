@@ -37,7 +37,7 @@ const controlador = {
             //image: req.file?.filename ?? product.image,
         })
         .then(() => {
-            res.json(req.body)
+            res.redirect("/formulario-productos")
         }) 
 
  
