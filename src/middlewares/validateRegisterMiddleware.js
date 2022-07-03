@@ -19,7 +19,7 @@ const validations = [
         } else {
             let extensionArchivo = path.extname(file.originalname);
             if (!extensionesPermitidas.includes(extensionArchivo)) {
-                throw new Error ('Las extensiones permitidas son .jpg, .png, jpeg y gif' );
+                throw new Error ('Las extensiones permitidas son .jpg, .png, jpeg' );
             }
         }
         return true;

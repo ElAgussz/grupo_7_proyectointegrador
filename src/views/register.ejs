@@ -41,10 +41,11 @@
                <p>Nombre/s</p>
                <input class="camponombre" type="text" name="nombre" value="<%= locals.oldData ? oldData.nombre : null%>" minlength="2"> 
                <% if(locals.errors && errors.nombre) { %>
-               <div class="text-danger">
-                  <%= errors.nombre.msg %>
-               </div>
-               <% } %>
+                  <div class="text-danger">
+                     <%= errors.nombre.msg %>
+                  </div>
+                  <% } %>
+              
             </label>
             <label for="apellido">
                <p>Apellido/s</p>
@@ -175,7 +176,7 @@
    <footer class="footer">
       <%- include ("./partials/footer")%>
    </footer>
-   <script src="js/registerValidaciones.js"></script>
+   <script src="/js/registerValidaciones.js"></script>
 </body>
 
 </html>
