@@ -34,8 +34,8 @@ router.get ('/register-confirmation', controlador.registerConfirmation)
 
 
 
-router.get ('/login', guestMiddleware, controlador.login)
-router.post ('/login', controlador.loginProcess)
+router.get ('/login', controlador.login)
+router.post ('/login',validations, controlador.loginProcess)
 router.get ('/logout', controlador.logout)
 
 

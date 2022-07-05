@@ -12,5 +12,33 @@
   "ciudad": "Capital",
   "terminos": "on",
   "avatar": "1652839240449_img.png"
+ },
+ {
+  "id": 2,
+  "nombre": "asdasdasd",
+  "apellido": "asdasdasd",
+  "email": "aguss_n0@hotmail.com",
+  "password": "$2a$10$wFVncdE/QJ/vtKkENtg7Y.di0HSpgLQ5iE33bHk9EBw0daeMheyPy",
+  "telefono": "asdasdas",
+  "genero": "Masculino",
+  "cumpleaños": "2022-07-22",
+  "pais": "Venezuela",
+  "ciudad": "asdasdasdasdasd",
+  "terminos": "on",
+  "avatar": "1656764214440_img.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "asdasdasd",
+  "apellido": "asdasdasd",
+  "email": "agustin_kpo10@live.com.ar",
+  "password": "$2a$10$ltwSloFSeRGVkE/qEnuNeuD7vu8AxGkRM4T4CWMTmjIU8n3VQlwhm",
+  "telefono": "123123",
+  "genero": "Masculino",
+  "cumpleaños": "2022-07-17",
+  "pais": "Paraguay",
+  "ciudad": "asdasdasdasdasd",
+  "terminos": "on",
+  "avatar": "1656771482010_img.jpg"
  }
 ]

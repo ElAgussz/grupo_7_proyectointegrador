@@ -57,6 +57,14 @@ const controlador = {
         res.render ("login.ejs")
     },
     loginProcess: (req, res) => {
+		const resultValidation = validationResult(req);
+
+		if(resultValidation.errors.length > 0) {
+			return res.render("login.ejs", {
+				errors: resultValidation.mapped(),
+			});
+		}
+
 		let userToLogin = User.findByField('email', req.body.email);
 		
 		if(userToLogin) {

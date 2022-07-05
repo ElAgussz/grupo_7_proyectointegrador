@@ -13,13 +13,13 @@ const validations = [
     body('terminos').notEmpty().withMessage('Tienes que aceptar los términos y condiciones'),
     body('avatar').custom((value, { req }) => {
         let file = req.file;
-        let extensionesPermitidas = [".jpg", ".png"];
+        let extensionesPermitidas = [".jpg", ".png", "jpeg", "gif"];
         if (!file) {
             throw new Error ('Tienes que subir una imagen');
         } else {
             let extensionArchivo = path.extname(file.originalname);
             if (!extensionesPermitidas.includes(extensionArchivo)) {
-                throw new Error ('Las extensiones permitidas son .jpg y .png' );
+                throw new Error ('Las extensiones permitidas son .jpg, .png, jpeg' );
             }
         }
         return true;
