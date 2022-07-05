@@ -38,7 +38,8 @@ const controlador = {
         })
         .then(() => {
             res.redirect("/formulario-productos")
-        }) 
+        })
+        .catch(error => console.error(error)) 
 
  
     },
