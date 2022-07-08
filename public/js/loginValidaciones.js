@@ -19,6 +19,7 @@
             e.preventDefault();
             
             let ulErrores = document.querySelector("div.errores ul")
+            ulErrores.innerHTML = " "
             errors.forEach(error => {
                 ulErrores.innerHTML += `<li>${error}<li>`   
             });

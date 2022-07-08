@@ -46,7 +46,7 @@ const controlador = {
 
 		User.create(userToCreate);
 		
-		return res.send("funciono bien")
+		return res.redirect("/")
 	},
 
     registerConfirmation: (req, res) => {

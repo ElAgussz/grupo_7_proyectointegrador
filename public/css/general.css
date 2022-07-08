@@ -111,6 +111,10 @@ nav .content .links{
   top: 0;
 }
 
+.errores{
+  color:#e91e63
+}
+
 /* Responsive code start */
 @media screen and (max-width: 1250px){
   .wrapper nav{

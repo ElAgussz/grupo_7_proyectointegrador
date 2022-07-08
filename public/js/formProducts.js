@@ -28,7 +28,7 @@
         let stock = document.querySelector("input.stock");
         
         if(stock.value == ""){
-            errores.push("El campo no puede estar vacio")
+            errores.push("El campo stock no puede estar vacio")
         } else if(isNaN(stock.value)){
             errores.push("Debe ingresar un valor numerico en stock")
         }
@@ -67,6 +67,7 @@
             e.preventDefault();
 
             let ulErrores = document.querySelector("div.errores ul")
+            ulErrores.innerHTML = " "
             errores.forEach(error => {
                 ulErrores.innerHTML += `<li>${error}<li>`   
             });

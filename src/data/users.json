@@ -40,5 +40,19 @@
   "ciudad": "asdasdasdasdasd",
   "terminos": "on",
   "avatar": "1656771482010_img.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "pepe",
+  "apellido": "pepepep",
+  "email": "papa@gmail.com",
+  "password": "$2a$10$FNQ5LY87fbxZMITpKybVp.Q.uVu5nwx2JF4pJ0jWSnTDzOXATqKKG",
+  "telefono": "",
+  "genero": "Masculino",
+  "cumpleaños": "123213-03-12",
+  "pais": "Argentina",
+  "ciudad": "23213213213",
+  "terminos": "on",
+  "avatar": "1657066591734_img.png"
  }
 ]
