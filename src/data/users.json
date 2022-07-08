@@ -43,6 +43,7 @@
  },
  {
   "id": 4,
+<<<<<<< HEAD
   "nombre": "pepe",
   "apellido": "pepepep",
   "email": "papa@gmail.com",
@@ -54,5 +55,18 @@
   "ciudad": "23213213213",
   "terminos": "on",
   "avatar": "1657066591734_img.png"
+=======
+  "nombre": "asdasdasd",
+  "apellido": "asdasdasdas",
+  "email": "elaguss_n0@hotmail.com",
+  "password": "$2a$10$er5t2X33RUIDjfExpLt/meuLoxqA.ulG45XLy6eGeLrwJrcc1mMzW",
+  "telefono": "123123123",
+  "genero": "Masculino",
+  "cumpleaños": "2022-07-29",
+  "pais": "Bolivia",
+  "ciudad": "123123",
+  "terminos": "on",
+  "avatar": "1657245321248_img.jpg"
+>>>>>>> 02cf0b99a50b0cc6392625118a82bf7275b874ed
  }
 ]

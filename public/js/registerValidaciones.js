@@ -1,20 +1,24 @@
-window.addEventListener("load", function () {
-    let nombre = document.querySelector(".camponombre").value
-    let email = document.querySelector(".campomail").value
-    let contraseña = document.querySelector(".campocontraseña").value
-    let avatar = document.querySelector(".campoavatar").value
+// window.addEventListener("load", function () {
+    
+
+window.onload = function () {
+let nombre = document.querySelector(".camponombre")
+    let email = document.querySelector(".campoemail")
+    let contraseña = document.querySelector(".campocontraseña")
+    let avatar = document.querySelector(".campoavatar")
+    let form = document.querySelector(".formularioregistro")
 
     nombre.addEventListener("blur", (e) => {
 
         let errores = 0
 
-        if (nombre == "" || nombre.lenght >= 2) {
+        if (nombre.value == "" || nombre.value.lenght >= 2) {
             errores + 1
         }
     })
 
     contraseña.addEventListener("blur", (e) => {
-        if (contraseña == "" || contraseña.length < 8) {
+        if (contraseña.value == "" || contraseña.value.length < 8) {
             errores + 1
         }
     })
@@ -31,7 +35,7 @@ window.addEventListener("load", function () {
         const correoValido = (correo) => {
             cosaRara = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
             correoValidado = cosaRara.test(correo)
-            if (!correoValidado || email == "") {
+            if (!correoValidado || email.value == "") {
                 errores + 1
             }
         }
@@ -43,5 +47,5 @@ window.addEventListener("load", function () {
             e.preventDefault()
         }
     })
-})
- 
+
+}
