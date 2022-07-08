@@ -40,5 +40,19 @@
   "ciudad": "asdasdasdasdasd",
   "terminos": "on",
   "avatar": "1656771482010_img.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "asdasdasd",
+  "apellido": "asdasdasdas",
+  "email": "elaguss_n0@hotmail.com",
+  "password": "$2a$10$er5t2X33RUIDjfExpLt/meuLoxqA.ulG45XLy6eGeLrwJrcc1mMzW",
+  "telefono": "123123123",
+  "genero": "Masculino",
+  "cumpleaños": "2022-07-29",
+  "pais": "Bolivia",
+  "ciudad": "123123",
+  "terminos": "on",
+  "avatar": "1657245321248_img.jpg"
  }
 ]
