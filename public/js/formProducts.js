@@ -60,6 +60,9 @@
         if( categoria.selectedIndex == null || categoria.selectedIndex == 0 ){
             errores.push("Debe seleccionar una categoria")
         }
+        if( image.value == "" ){
+            errores.push("Debe cargar una imagen")
+        }
         
         // capturando errores //
 
