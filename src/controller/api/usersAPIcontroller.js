@@ -20,14 +20,17 @@
 
 
 const path = require('path');
-const db = require('../../database/models');
+const db = require('../../database/models/');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 const moment = require('moment');
 
+//const users = db.users
+
+
 
 const usersAPIController = {
-    list: (req, res) => {
+    'list': (req, res) => {
         db.users
         .findAll()
         .then(users => {

@@ -45,7 +45,8 @@ app.use('/', routerProducts);
 app.use('/', routerUser);
 app.use('/', routerAdmin);
 
-
+const routerUsers = require('./routes/api/users.js');
+app.use('/', routerUsers);
 
 //************* Config puerto **************/
 const PORT = process.env.PORT || 3000;

@@ -1,6 +1,6 @@
 module.exports = (sequelize, dataTypes) => {
 
-    let alias = "Usuarios";
+    let alias = "users";
     let cols = {
         id:{
             type: dataTypes.INTEGER(10),
@@ -8,7 +8,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false,
             autoIncrement: true
         }, 
-        name:{ 
+        nombre:{ 
             type: dataTypes.STRING(500),
             allowNull: false
         },
