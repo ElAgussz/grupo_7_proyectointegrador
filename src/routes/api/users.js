@@ -6,7 +6,7 @@ const usersAPIController = require('../../controller/api/usersAPIcontroller');
 //Listado de productos
 router.get('/users', usersAPIController.list);
 //Detalle de una película
-//router.get('/users/:id', usersAPIController.detail);
+router.get('/users/:id', usersAPIController.detail);
 
 
 module.exports = router;

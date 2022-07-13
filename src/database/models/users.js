@@ -43,6 +43,10 @@ module.exports = (sequelize, dataTypes) => {
         ciudad:{
             type: dataTypes.STRING(500),
             allowNull: false
+        },
+        imagen : {
+            type: dataTypes.BLOB(),
+            allowNull: true 
         }
     }
 

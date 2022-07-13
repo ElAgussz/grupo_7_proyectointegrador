@@ -41,6 +41,18 @@ const usersAPIController = {
                 status: 200
             })
         })
+    },
+    'detail': (req, res) => {
+        db.users
+        .findByPk(req.params.id,)
+            .then(users => {
+                return res.json({
+                    count: users.length,
+    
+                    data: users,
+                    status: 200
+                })
+            })
     }
 }
 
