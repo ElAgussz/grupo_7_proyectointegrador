@@ -5,7 +5,8 @@ const usersAPIController = require('../../controller/api/usersAPIcontroller');
 //Rutas
 //Listado de productos
 router.get('/users', usersAPIController.list);
-//Detalle de una película
+
+//Detalle de un producto
 router.get('/users/:id', usersAPIController.detail);
 
 

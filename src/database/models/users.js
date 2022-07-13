@@ -44,10 +44,10 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(500),
             allowNull: false
         },
-        imagen : {
+        /*imagen : {
             type: dataTypes.BLOB(),
             allowNull: true 
-        }
+        }*/
     }
 
     let config = {

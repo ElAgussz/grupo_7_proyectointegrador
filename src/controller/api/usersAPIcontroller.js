@@ -24,32 +24,29 @@ const db = require('../../database/models/');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 const moment = require('moment');
-
-//const users = db.users
-
+const { error } = require('console');
 
 
 const usersAPIController = {
+    
     'list': (req, res) => {
-        db.users
-        .findAll()
+        db.users.findAll()
         .then(users => {
             return res.json({
                 count: users.length,
-
                 data: users,
-                status: 200
-            })
+                status: 200 
+            }) 
         })
+        .catch(error => console.log(error))
     },
     'detail': (req, res) => {
-        db.users
-        .findByPk(req.params.id,)
-            .then(users => {
+        
+        db.users.findByPk(req.params.id,)
+            .then(user => {
                 return res.json({
-                    count: users.length,
-    
-                    data: users,
+                    count: user.length,
+                    data: user,
                     status: 200
                 })
             })

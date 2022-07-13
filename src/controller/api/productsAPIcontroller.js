@@ -5,4 +5,4 @@ const { Op } = require("sequelize");
 const moment = require('moment');
 
 
-const products = db.products;
+
