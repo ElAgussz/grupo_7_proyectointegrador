@@ -26,7 +26,7 @@ const controlador = {
 
     create: (req, res) => { 
         
-        db.Productos.create({
+        db.products.create({
             name: req.body.name,
             price: req.body.price,
             discount: req.body.discount,
@@ -45,7 +45,7 @@ const controlador = {
     },
     edicionProducto: (req, res) => {
 
-        let producto = db.Productos.findByPk(req.params.id)
+        let producto = db.produdcts.findByPk(req.params.id)
         let productoGenero = db.Generos.findAll(); 
         //let productoCategoria = db.Categorias.findAll();
 
@@ -56,7 +56,7 @@ const controlador = {
 
     },
     actualizarProducto: (req, res) => {
-        db.Productos.update({
+        db.products.update({
             name: req.body.name,
             price: req.body.price,
             discount: req.body.discount,
@@ -74,7 +74,7 @@ const controlador = {
         res.redirect("/editar/" + req.params.id)
     },
     eliminarProducto: (req, res) => {
-        db.Productos.destroy({
+        db.products.destroy({
             where: {
                 id: req.params.id
             }
