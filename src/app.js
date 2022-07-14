@@ -5,6 +5,7 @@ const methodOverride = require("method-override"); // Para poder usar los métod
 const session = require("express-session")
 const cookies = require('cookie-parser');
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
+const cors = require("cors")
 
 //************* Path´s **************/
 const publicPath = path.join(__dirname, "../", "public") 
@@ -32,6 +33,7 @@ app.use(session({
 app.use(cookies());
 app.use(userLoggedMiddleware); // VER PROBLEMAS ACA
 app.use(express.urlencoded({ extended: false }));
+app.use(cors())
 
 
 //************* Rutas: requires & use **************/
@@ -54,7 +56,7 @@ app.use('/', routerProduct);
 
 
 //************* Config puerto **************/
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
     console.log ("Se inició el servidor en el puerto " + PORT)
