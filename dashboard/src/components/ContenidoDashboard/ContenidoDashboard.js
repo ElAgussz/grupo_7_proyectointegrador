@@ -8,7 +8,11 @@ import Logo from "./subcomponents/Logo.js"
 
 function ContenidoDashboard() {
 	return (
-		<div class="container-fluid">
+
+		
+
+
+		<div className="container-fluid">
 			<Logo />
 			<Total />
 			<LastUser />
