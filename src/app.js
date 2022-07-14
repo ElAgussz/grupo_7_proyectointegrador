@@ -56,7 +56,7 @@ app.use('/', routerProduct);
 
 
 //************* Config puerto **************/
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3009;
 
 app.listen(PORT, () => {
     console.log ("Se inició el servidor en el puerto " + PORT)

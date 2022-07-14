@@ -3,7 +3,8 @@ const db = require('../../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 const moment = require('moment');
-const products = require('../../database/models/products');
+const { error } = require('console');
+//const products = require('../../database/models/products');
 
 
 
@@ -20,18 +21,20 @@ const productsAPIController = {
             }) 
         })
         .catch(error => console.log(error))
-    }/*,
+    },
     'detail': (req, res) => {
         
         db.products.findByPk(req.params.id,)
-            .then(user => {
+            .then(product => {
                 return res.json({
-                    count: .length,
-                    data: user,
+                    count: product.length,
+                    data: product,
                     status: 200
                 })
             })
-    }*/
-}
+        .catch(error => console.log(error))
+    },
+    }
+
 
 module.exports = productsAPIController;

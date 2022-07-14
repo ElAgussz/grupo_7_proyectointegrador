@@ -11,21 +11,21 @@ class ProductList extends Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:3001/products")
+        fetch("http://localhost:3009/products")
             .then((response) => response.json())
             .then((product) => {
                 console.log(product)
             })
     }
 
-    // mapper = (genero, index) => {
+    mapper = (genero, index) => {
 
-    //     <div className="col-lg-6 mb-4" key={product.name + index}>
-    //         <div className="card bg-dark text-white shadow">
-    //             <div className="card-body">{product.name}</div>
-    //         </div>
-    //     </div>
-    // }
+         <div className="col-lg-6 mb-4" key={product.name + index}>
+             <div className="card bg-dark text-white shadow">
+                 <div className="card-body">{product.name}</div>
+             </div>
+         </div>
+    }
 
     render() {
         return (
@@ -37,7 +37,7 @@ class ProductList extends Component {
                     <div className="card-body">
                         <div className="row">
                             {
-                                // this.state.productList.map(this.mapper)
+                                this.state.productList.map(this.mapper)
                             }
                         </div>
                     </div>
