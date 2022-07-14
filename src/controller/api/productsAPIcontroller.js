@@ -11,7 +11,7 @@ const productsAPIController = {
     
     'list': (req, res) => {
         db.products.findAll()
-        .then(users => {
+        .then(products => {
             return res.json({
                 count: products.length,
                /* countByCategory: products.category.length,*/
