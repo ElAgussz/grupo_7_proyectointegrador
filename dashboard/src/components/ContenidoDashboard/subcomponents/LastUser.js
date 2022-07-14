@@ -1,6 +1,6 @@
 import React from "react";
 
-function LastMovieInDB () {
+function LastUser () {
     return( 
         <div className="row">
         <div className="col-lg-6 mb-4">
@@ -19,5 +19,5 @@ function LastMovieInDB () {
     
 }
 
-export default LastMovieInDB
+export default LastUser
 

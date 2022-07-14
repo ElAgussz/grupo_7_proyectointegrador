@@ -1,10 +1,10 @@
 import './App.css';
-import ContentWrapper from './components/ContentWrapper/ContentWrapper';
+import ContenidoDashboard from './components/ContenidoDashboard/ContenidoDashboard';
 
 function App() {
   return (
     <div id="wrapper">
-    <ContentWrapper />
+    <ContenidoDashboard />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContentRowMovies() {
+function Total() {
     return (
         <div className="row">
             <div className="col-md-4 mb-4">
@@ -55,4 +55,4 @@ function ContentRowMovies() {
 
 }
 
-export default ContentRowMovies
+export default Total
