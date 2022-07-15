@@ -34,13 +34,6 @@ class Total extends Component {
     //         <div className="h5 mb-0 font-weight-bold text-gray-800">{users.count}</div>
     //     </div>
     // )
-    // totalDeCategorias = (category, index) => (
-    //     <div className="col mr-2" key={category.id + index}>
-    //         <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Total De Categorias</div>
-    //         <div className="h5 mb-0 font-weight-bold text-gray-800">{category.count}</div>
-    //     </div>
-    // )
-
 
 
     render() {
@@ -85,9 +78,7 @@ class Total extends Component {
                         <div className="row no-gutters align-items-center">
                             <div className="col mr-2">
                                 <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Total De Categorias</div>
-                                {/* {
-                                    this.state.totalCategories.map(this.totalDeCategorias)
-                                } */}
+                                <div className="h5 mb-0 font-weight-bold text-gray-800">3</div>
                                 </div>
                             </div>
                         </div>
