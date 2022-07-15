@@ -3,28 +3,46 @@ import React, { Component } from "react";
 
 class ProductList extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             productList: []
         }
     }
 
+    /*apiCall(url, consecuencia) {
+        fetch(url)
+            .then(response => response.json())
+            .then(data => consecuencia(data))
+            .catch(error => console.log(error))
+    }*/
+
     componentDidMount() {
+        //this.apiCall("http://localhost:3009/products", this.mostrarProductos)
         fetch("http://localhost:3009/products")
             .then((response) => response.json())
             .then((product) => {
-                console.log(product)
+                console.log(product.data);
+                this.setState({ productList: product.data})
+                
             })
+            .catch(error => console.log(error))
     }
 
-    mapper = (genero, index) => {
+    /*mostrarProductos = data => 
+        this.setState(
+            {
+                productList: data.data
+            }
+        )*/
 
-         <div className="col-lg-6 mb-4" key={product.name + index}>
+    mapper = (product, index) => {
+
+        return (<div className="col-lg-6 mb-4" key={product.name + index}>
              <div className="card bg-dark text-white shadow">
                  <div className="card-body">{product.name}</div>
              </div>
-         </div>
+        </div>)
     }
 
     render() {
@@ -39,6 +57,7 @@ class ProductList extends Component {
                             {
                                 this.state.productList.map(this.mapper)
                             }
+                            Hola estoy aca
                         </div>
                     </div>
                 </div>
