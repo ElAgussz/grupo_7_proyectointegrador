@@ -5,13 +5,8 @@ import Total from './subcomponents/Total.js'
 import CategoriaxProducto from "./subcomponents/CategoriaxProducto"
 import Logo from "./subcomponents/Logo.js"
 
-
 function ContenidoDashboard() {
 	return (
-
-		
-
-
 		<div className="container-fluid">
 			<Logo />
 			<Total />

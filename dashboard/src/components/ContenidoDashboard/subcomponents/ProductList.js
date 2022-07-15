@@ -14,18 +14,18 @@ class ProductList extends Component {
         fetch("http://localhost:3009/products")
             .then((response) => response.json())
             .then((product) => {
-                console.log(product)
+                this.setState({ productList: product.count})
             })
     }
 
-    mapper = (genero, index) => {
-
-         <div className="col-lg-6 mb-4" key={product.name + index}>
+    mapper = (product, index) => (
+         <div className="col-lg-6 mb-4" key={product.count + index}>
              <div className="card bg-dark text-white shadow">
-                 <div className="card-body">{product.name}</div>
+                 <div className="card-body">{product.count}
+                 </div>
              </div>
          </div>
-    }
+    )
 
     render() {
         return (
