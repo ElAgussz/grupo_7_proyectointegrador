@@ -26,8 +26,10 @@ const productsAPIController = {
         
         db.products.findByPk(req.params.id,)
             .then(product => {
+                
                 return res.json({
                     count: product.length,
+                    url: '/products/8',
                     data: product,
                     status: 200
                 })
