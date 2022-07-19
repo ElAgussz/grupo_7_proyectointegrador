@@ -54,6 +54,7 @@ const controlador = {
     },
 
 	login: (req, res) => {
+		
         res.render ("login.ejs")
     },
     loginProcess: (req, res) => {
@@ -97,6 +98,8 @@ const controlador = {
 		})
 	},
 	profile: (req, res) => {
+		console.log("estas en profile")
+		console.log(req.session)
 		return res.render('userProfile', {
 			user: req.session.userLogged
 		});

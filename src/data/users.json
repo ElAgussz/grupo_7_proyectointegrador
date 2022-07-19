@@ -40,6 +40,19 @@
   "ciudad": "asdasdasdasdasd",
   "terminos": "on",
   "avatar": "1656771482010_img.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "juan",
+  "apellido": "Rinero",
+  "email": "juanpepe@gmail.com",
+  "password": "$2a$10$/R.IMTYzviL4UZk1ubQZ0.MS0m1dKKKzxgOQGHXJOm7OgeIZNSOuO",
+  "telefono": "",
+  "genero": "Masculino",
+  "cumpleaños": "2022-07-26",
+  "pais": "Argentina",
+  "ciudad": "dsfsfds",
+  "terminos": "on",
+  "avatar": "1658254406143_img.png"
  }
- 
 ]
